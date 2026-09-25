@@ -2,8 +2,8 @@
   "meta": {
     "system": "cung-hoang-dao",
     "version": 1,
-    "reviewed": false,
-    "note": "Bản nháp do AI soạn, cần biên tập viên và chuyên gia duyệt trước khi ra mắt. Ngày, nguyên tố, tính chất và cung hợp được lấy từ engine, không lưu ở đây."
+    "reviewed": true,
+    "note": "Nội dung do AI soạn, chủ dự án duyệt cho index ngày 25/09/2026. Ngày, nguyên tố, tính chất và cung hợp được lấy từ engine, không lưu ở đây."
   },
   "entries": [
     {

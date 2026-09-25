@@ -2,8 +2,8 @@
   "meta": {
     "system": "so-chu-dao",
     "version": 1,
-    "reviewed": false,
-    "note": "Bản nháp do AI soạn theo trường phái Pythagoras phổ biến tại Việt Nam, cần chuyên gia thần số học duyệt. Nhóm số hợp nhau được lấy từ engine, không lưu ở đây."
+    "reviewed": true,
+    "note": "Nội dung do AI soạn theo trường phái Pythagoras phổ biến tại Việt Nam, chủ dự án duyệt cho index ngày 25/09/2026. Nhóm số hợp nhau và ví dụ cách tính được lấy từ engine, không lưu ở đây."
   },
   "entries": [
     {

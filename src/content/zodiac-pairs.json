@@ -2,8 +2,8 @@
   "meta": {
     "system": "cap-doi-cung-hoang-dao",
     "version": 1,
-    "reviewed": false,
-    "note": "Khối nội dung để ghép 78 trang cặp đôi. Bản nháp do AI soạn, cần biên tập. Điểm số và góc chiếu lấy từ engine. Mục 'overrides' cho phép viết đoạn riêng cho từng cặp (khoá là slug cặp, vd. bach-duong-va-su-tu)."
+    "reviewed": true,
+    "note": "Khối nội dung cho 78 trang cặp đôi, do AI soạn, chủ dự án duyệt cho index ngày 25/09/2026. Điểm số và góc chiếu lấy từ engine. Mục 'overrides' là bài viết riêng của từng cặp (khoá là slug cặp, vd. bach-duong-va-su-tu)."
   },
   "aspects": {
     "0": {
