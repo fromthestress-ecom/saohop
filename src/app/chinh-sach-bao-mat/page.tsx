@@ -56,7 +56,7 @@ const SECTIONS: Array<{ title: string; items: string[] }> = [
 
 export default function PrivacyPage() {
   return (
-    <article className="max-w-3xl space-y-10 pt-8 md:pt-12">
+    <article className="space-y-10 pt-8 md:pt-12">
       <header className="space-y-4">
         <Breadcrumb items={[{ href: "/", label: "Trang chủ" }, { label: "Chính sách bảo mật" }]} />
         <h1 className="font-display text-4xl font-bold tracking-tighter md:text-5xl">Chính sách bảo mật</h1>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
           <h2 className="font-display text-2xl font-semibold">{s.title}</h2>
           <ul className="ml-5 list-disc space-y-2 text-ink-muted marker:text-accent">
             {s.items.map((item) => (
-              <li key={item} className="max-w-[65ch] leading-relaxed">
+              <li key={item} className="leading-relaxed">
                 {item}
               </li>
             ))}

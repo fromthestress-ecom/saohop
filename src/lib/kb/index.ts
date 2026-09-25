@@ -23,6 +23,22 @@ const metaSchema = z.object({
   note: z.string(),
 });
 
+/** Bài viết chuyên sâu: các mục có tiêu đề (đoạn văn, có thể kèm gạch đầu dòng) và hỏi đáp. */
+const deepSchema = z.object({
+  sections: z
+    .array(
+      z.object({
+        id: z.string().regex(/^[a-z0-9-]+$/),
+        heading: text,
+        paragraphs: z.array(text).min(1),
+        bullets: z.array(text).min(2).optional(),
+      }),
+    )
+    .min(3)
+    .refine((s) => new Set(s.map((x) => x.id)).size === s.length, "id các mục phải khác nhau"),
+  faq: z.array(z.object({ q: text, a: text })).default([]),
+});
+
 const zodiacEntrySchema = z.object({
   slug: z.string(),
   ruler: text,
@@ -32,6 +48,7 @@ const zodiacEntrySchema = z.object({
   inLove: text,
   dateIdea: text,
   advice: text,
+  deep: deepSchema.optional(),
 });
 
 const lifePathEntrySchema = z.object({
@@ -49,6 +66,7 @@ export const zodiacContent = z.object({ meta: metaSchema, entries: z.array(zodia
 export const lifePathContent = z.object({ meta: metaSchema, entries: z.array(lifePathEntrySchema) }).parse(lifePathJson);
 
 export type ZodiacEntry = z.infer<typeof zodiacEntrySchema>;
+export type DeepContent = z.infer<typeof deepSchema>;
 export type LifePathEntry = z.infer<typeof lifePathEntrySchema>;
 
 // ---- Cung hoàng đạo ----

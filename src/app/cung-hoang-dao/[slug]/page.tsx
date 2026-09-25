@@ -2,10 +2,17 @@ import { IconArrowLeft, IconArrowRight, IconBulb, IconHeartHandshake } from "@ta
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Breadcrumb, CrushCta, Highlight, TraitColumns } from "@/components/kb-blocks";
+import { Breadcrumb, CrushCta, DeepSection, Faq, Highlight, Toc, TraitColumns } from "@/components/kb-blocks";
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
-import { getZodiac, zodiacContent, zodiacMatches, zodiacPairSlug } from "@/lib/kb";
+import { getZodiac, zodiacContent, zodiacMatches, zodiacPairSlug, type ZodiacMatch } from "@/lib/kb";
+
+/** Nhóm các cung hợp nhất theo quan hệ góc chiếu: "Sư Tử và Nhân Mã (tam hợp...)" */
+function matchGroups(matches: ZodiacMatch[]) {
+  const groups = new Map<string, string[]>();
+  for (const m of matches) groups.set(m.relation, [...(groups.get(m.relation) ?? []), m.sign.name]);
+  return [...groups].map(([relation, names]) => `${names.join(" và ")} (${relation.replace(/\s*\(.*\)$/, "").toLowerCase()})`);
+}
 
 export const dynamicParams = false;
 
@@ -34,6 +41,27 @@ export default async function ZodiacPage({ params }: PageProps<"/cung-hoang-dao/
   const hardest = matches.slice(-2);
   const prev = ZODIAC_SIGNS[(sign.index + 11) % 12];
   const next = ZODIAC_SIGNS[(sign.index + 1) % 12];
+  const deep = entry.deep;
+  const [from, to] = dateRange.split(" - ");
+  const [firstGroup, ...otherGroups] = matchGroups(best);
+  const faq = [
+    {
+      q: `${sign.name} sinh ngày nào?`,
+      a: `${sign.name} gồm những người sinh từ ngày ${from} đến ngày ${to}. Nếu bạn sinh sát ranh giới giữa hai cung, hãy kiểm tra thêm năm và giờ sinh, vì thời điểm Mặt Trời chuyển cung xê dịch nhẹ theo từng năm.`,
+    },
+    {
+      q: `${sign.name} hợp với cung nào nhất?`,
+      a: `Xét theo góc chiếu, ${sign.name} hợp nhất với ${firstGroup}${otherGroups.length ? `, tiếp theo là ${otherGroups.join(", ")}` : ""}. Độ hợp thật sự còn tùy vào nhiều yếu tố khác, khi check crush Sao Hợp tính thêm thần số học và con giáp.`,
+    },
+    ...(deep?.faq ?? []),
+  ];
+  const toc = deep
+    ? [
+        ...deep.sections.map((s) => ({ id: s.id, label: s.heading })),
+        { id: "hop", label: `${sign.name} hợp với cung nào` },
+        { id: "hoi-dap", label: "Hỏi đáp" },
+      ]
+    : [];
 
   return (
     <article className="space-y-12 pt-8 md:pt-12">
@@ -68,9 +96,21 @@ export default async function ZodiacPage({ params }: PageProps<"/cung-hoang-dao/
 
       <TraitColumns good={entry.strengths} watch={entry.weaknesses} />
 
-      <Highlight title={`${sign.name} khi yêu`}>{entry.inLove}</Highlight>
+      {deep ? (
+        <>
+          <Toc items={toc} />
+          {deep.sections.map((section) => (
+            <div key={section.id} className="space-y-12">
+              <DeepSection {...section} />
+              {section.id === "chinh-phuc" && <CrushCta title={`Thử xem bạn và crush ${sign.name} hợp nhau bao nhiêu phần trăm`} />}
+            </div>
+          ))}
+        </>
+      ) : (
+        <Highlight title={`${sign.name} khi yêu`}>{entry.inLove}</Highlight>
+      )}
 
-      <section aria-labelledby="hop" className="space-y-4">
+      <section aria-labelledby="hop" className="scroll-mt-24 space-y-4">
         <h2 id="hop" className="font-display text-2xl font-semibold">
           {sign.name} hợp với cung nào?
         </h2>
@@ -112,6 +152,8 @@ export default async function ZodiacPage({ params }: PageProps<"/cung-hoang-dao/
           <p className="mt-2 text-ink-muted">{entry.advice}</p>
         </section>
       </div>
+
+      <Faq id="hoi-dap" title={`Hỏi đáp về cung ${sign.name}`} items={faq} />
 
       <CrushCta title={`Crush của bạn có phải cung hợp với ${sign.name} không?`} />
 

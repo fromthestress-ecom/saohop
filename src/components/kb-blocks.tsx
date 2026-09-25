@@ -76,6 +76,80 @@ export function Highlight({ title, children }: { title: string; children: ReactN
   );
 }
 
+export interface TocItem {
+  id: string;
+  label: string;
+}
+
+/** Mục lục cho bài viết dài */
+export function Toc({ items }: { items: TocItem[] }) {
+  return (
+    <nav aria-labelledby="toc-title" className="panel p-6">
+      <h2 id="toc-title" className="text-sm font-semibold uppercase tracking-wider text-ink-muted">
+        Trong bài này
+      </h2>
+      <ol className="mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+        {items.map((item, i) => (
+          <li key={item.id} className="flex gap-3">
+            <span className="w-5 shrink-0 text-right text-sm tabular-nums text-ink-muted">{i + 1}</span>
+            <a href={`#${item.id}`} className="hover:text-accent">
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+/** Một mục của bài viết chuyên sâu: tiêu đề, các đoạn văn và gạch đầu dòng nếu có */
+export function DeepSection({ id, heading, paragraphs, bullets }: { id: string; heading: string; paragraphs: string[]; bullets?: string[] }) {
+  return (
+    <section aria-labelledby={id} className="scroll-mt-24 space-y-4">
+      <h2 id={id} className="font-display text-2xl font-semibold md:text-3xl">
+        {heading}
+      </h2>
+      {paragraphs.map((p) => (
+        <p key={p} className=" text-lg leading-relaxed text-ink-muted">
+          {p}
+        </p>
+      ))}
+      {bullets && (
+        <ul className="max-w-[68ch] space-y-3 pt-1">
+          {bullets.map((b) => (
+            <li key={b} className="flex gap-3 text-lg leading-relaxed">
+              <IconCheck size={20} stroke={2} className="mt-1.5 shrink-0 text-accent" aria-hidden />
+              {b}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
+
+/** Hỏi đáp dạng gập mở */
+export function Faq({ id, title, items }: { id: string; title: string; items: Array<{ q: string; a: string }> }) {
+  return (
+    <section aria-labelledby={id} className="scroll-mt-24 space-y-4">
+      <h2 id={id} className="font-display text-2xl font-semibold md:text-3xl">
+        {title}
+      </h2>
+      <div className="divide-y divide-line border-y border-line">
+        {items.map((item) => (
+          <details key={item.q} className="group py-4">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold [&::-webkit-details-marker]:hidden">
+              {item.q}
+              <IconArrowRight size={18} className="shrink-0 text-ink-muted transition-transform group-open:rotate-90" aria-hidden />
+            </summary>
+            <p className="mt-3 max-w-[68ch] leading-relaxed text-ink-muted">{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export function CrushCta({ title }: { title: string }) {
   return (
     <section
