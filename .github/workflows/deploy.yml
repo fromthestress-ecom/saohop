@@ -89,7 +89,8 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           source: upload/*
-          target: /var/www/saohop/incoming/${{ github.sha }}
+          # Tách theo môi trường: develop và master có thể cùng commit và chạy song song.
+          target: /var/www/saohop/incoming/${{ steps.target.outputs.env }}-${{ github.sha }}
           strip_components: 1
 
       - name: Kích hoạt bản mới
@@ -110,7 +111,7 @@ jobs:
             BASE=/var/www/saohop
             ENV_DIR="$BASE/$TARGET_ENV"
             REL="$ENV_DIR/releases/$SHA"
-            IN="$BASE/incoming/$SHA"
+            IN="$BASE/incoming/$TARGET_ENV-$SHA"
 
             mkdir -p "$ENV_DIR/releases" "$ENV_DIR/shared"
             [ -f "$ENV_DIR/shared/.env" ] || { touch "$ENV_DIR/shared/.env"; chmod 600 "$ENV_DIR/shared/.env"; }
