@@ -11,6 +11,12 @@ const zodiacPairRedirects = ZODIAC_SIGNS.flatMap((a) =>
 );
 
 const nextConfig: NextConfig = {
+  // Build gọn cho Docker: .next/standalone chứa server.js và đúng những file cần chạy.
+  output: "standalone",
+  // Route ảnh OG đọc font và logo bằng fs lúc chạy, cần khai báo để được copy vào bản standalone.
+  outputFileTracingIncludes: {
+    "/api/og/crush": ["./assets/fonts/**", "./public/brand/logo-mark.svg"],
+  },
   async redirects() {
     return zodiacPairRedirects;
   },

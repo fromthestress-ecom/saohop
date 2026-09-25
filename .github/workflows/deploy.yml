@@ -1,0 +1,150 @@
+# CI/CD Sao Hợp (PM2 + Nginx trên VPS dùng chung).
+#   - Mọi push / pull request: lint, kiểm tra kiểu, test.
+#   - Push develop: build và deploy lên môi trường test (dev.DOMAIN, PM2 saohop-staging, cổng 3102).
+#   - Push master:  build và deploy lên production (DOMAIN, PM2 saohop-prod, cổng 3101).
+#
+# Cần khai báo trong GitHub > Settings > Secrets and variables > Actions:
+#   Secrets:   VPS_HOST, VPS_USER, VPS_SSH_KEY
+#   Variables: DOMAIN (vd. saohop.com)
+
+name: CI/CD
+
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [master, develop]
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npx tsc --noEmit
+      - run: npm test
+
+  deploy:
+    needs: check
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref_name == 'master' && 'production' || 'staging' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Chọn môi trường
+        id: target
+        run: |
+          if [ -z "${{ vars.DOMAIN }}" ]; then
+            echo "::error::Chưa khai báo biến DOMAIN (Settings > Secrets and variables > Actions > Variables)"
+            exit 1
+          fi
+          if [ "${GITHUB_REF_NAME}" = "master" ]; then
+            { echo "env=prod"; echo "app=saohop-prod"; echo "port=3101"; echo "site_url=https://${{ vars.DOMAIN }}"; } >> "$GITHUB_OUTPUT"
+          else
+            { echo "env=staging"; echo "app=saohop-staging"; echo "port=3102"; echo "site_url=https://dev.${{ vars.DOMAIN }}"; } >> "$GITHUB_OUTPUT"
+          fi
+
+      # VPS chạy Node 20, build cùng phiên bản cho chắc.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ steps.target.outputs.site_url }}
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Đóng gói bản standalone
+        run: |
+          cp -r public .next/standalone/public
+          cp -r .next/static .next/standalone/.next/static
+          echo "${GITHUB_SHA}" > .next/standalone/COMMIT
+          mkdir upload
+          tar -czf upload/release.tar.gz -C .next/standalone .
+          cp deploy/ecosystem.config.cjs upload/
+          cp deploy/nginx/saohop.conf upload/nginx-saohop.conf
+          ls -lh upload
+
+      - name: Chép lên VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          source: upload/*
+          target: /var/www/saohop/incoming/${{ github.sha }}
+          strip_components: 1
+
+      - name: Kích hoạt bản mới
+        uses: appleboy/ssh-action@v1.2.0
+        env:
+          TARGET_ENV: ${{ steps.target.outputs.env }}
+          APP: ${{ steps.target.outputs.app }}
+          PORT: ${{ steps.target.outputs.port }}
+          SHA: ${{ github.sha }}
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          envs: TARGET_ENV,APP,PORT,SHA
+          script_stop: true
+          script: |
+            set -euo pipefail
+            BASE=/var/www/saohop
+            ENV_DIR="$BASE/$TARGET_ENV"
+            REL="$ENV_DIR/releases/$SHA"
+            IN="$BASE/incoming/$SHA"
+
+            mkdir -p "$ENV_DIR/releases" "$ENV_DIR/shared"
+            [ -f "$ENV_DIR/shared/.env" ] || { touch "$ENV_DIR/shared/.env"; chmod 600 "$ENV_DIR/shared/.env"; }
+
+            rm -rf "$REL" && mkdir -p "$REL"
+            tar -xzf "$IN/release.tar.gz" -C "$REL"
+            cp "$IN/ecosystem.config.cjs" "$BASE/ecosystem.config.cjs"
+            # Bản mẫu cấu hình Nginx để root chép vào /etc/nginx (workflow không tự sửa Nginx).
+            cp "$IN/nginx-saohop.conf" "$BASE/nginx-saohop.conf"
+            rm -rf "$IN"
+
+            PREV="$(readlink -f "$ENV_DIR/current" 2>/dev/null || true)"
+            ln -sfn "$REL" "$ENV_DIR/current"
+            pm2 startOrReload "$BASE/ecosystem.config.cjs" --only "$APP" --update-env
+
+            ok=0
+            for i in $(seq 1 20); do
+              if curl -fsS "http://127.0.0.1:$PORT/api/health" 2>/dev/null | grep -q "$SHA"; then ok=1; break; fi
+              sleep 3
+            done
+
+            if [ "$ok" -ne 1 ]; then
+              echo "::error::$APP không phản hồi đúng bản $SHA sau 60 giây"
+              pm2 logs "$APP" --lines 60 --nostream || true
+              if [ -n "$PREV" ] && [ -d "$PREV" ] && [ "$PREV" != "$REL" ]; then
+                ln -sfn "$PREV" "$ENV_DIR/current"
+                pm2 startOrReload "$BASE/ecosystem.config.cjs" --only "$APP" --update-env
+                echo "Đã quay về bản trước: $PREV"
+              fi
+              exit 1
+            fi
+
+            # Lưu danh sách tiến trình để PM2 tự chạy lại khi VPS khởi động lại.
+            pm2 save
+            # Chỉ giữ 5 bản gần nhất.
+            ls -1dt "$ENV_DIR"/releases/* | tail -n +6 | xargs -r rm -rf
+            echo "Deploy $APP ($SHA) thành công"
