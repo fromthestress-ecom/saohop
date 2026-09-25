@@ -4,6 +4,7 @@ import Link from "next/link";
 import { verdictOf } from "@/lib/engines/compatibility";
 import { zodiacBySlug } from "@/lib/engines/zodiac";
 import { parseShareCard, shareQuery } from "@/lib/share";
+import { SITE_NAME } from "@/lib/site";
 
 export async function generateMetadata({ searchParams }: PageProps<"/chia-se/crush">): Promise<Metadata> {
   const card = parseShareCard(await searchParams);
@@ -14,7 +15,14 @@ export async function generateMetadata({ searchParams }: PageProps<"/chia-se/cru
   return {
     title,
     description,
-    openGraph: { title, description, images: [{ url: image, width: 1200, height: 630 }] },
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      locale: "vi_VN",
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 630 }],
+    },
     twitter: { card: "summary_large_image", title, description, images: [image] },
     robots: { index: false },
   };

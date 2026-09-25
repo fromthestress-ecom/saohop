@@ -36,6 +36,13 @@ export const metadata: Metadata = {
   description:
     "Khám phá bản thân qua thần số học, cung hoàng đạo, con giáp và ngũ hành. Xem bạn với crush hợp nhau bao nhiêu phần trăm. Miễn phí, luận giải bằng AI.",
   applicationName: SITE_NAME,
+  // Ảnh chia sẻ mặc định: src/app/opengraph-image.jpg và twitter-image.jpg (1200x630).
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "vi_VN",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
