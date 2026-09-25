@@ -5,7 +5,7 @@
 #
 # Cần khai báo trong GitHub > Settings > Secrets and variables > Actions:
 #   Secrets:   VPS_HOST, VPS_USER, VPS_SSH_KEY
-#   Variables: DOMAIN (vd. saohop.com)
+#   Variables (tuỳ chọn): DOMAIN, mặc định saohop.com
 
 name: CI/CD
 
@@ -21,6 +21,10 @@ concurrency:
 
 permissions:
   contents: read
+
+env:
+  # Tên miền công khai, không phải bí mật. Biến DOMAIN (tab Variables) nếu có sẽ được ưu tiên.
+  DOMAIN: ${{ vars.DOMAIN || 'saohop.com' }}
 
 jobs:
   check:
@@ -47,14 +51,10 @@ jobs:
       - name: Chọn môi trường
         id: target
         run: |
-          if [ -z "${{ vars.DOMAIN }}" ]; then
-            echo "::error::Chưa khai báo biến DOMAIN (Settings > Secrets and variables > Actions > Variables)"
-            exit 1
-          fi
           if [ "${GITHUB_REF_NAME}" = "master" ]; then
-            { echo "env=prod"; echo "app=saohop-prod"; echo "port=3101"; echo "site_url=https://${{ vars.DOMAIN }}"; } >> "$GITHUB_OUTPUT"
+            { echo "env=prod"; echo "app=saohop-prod"; echo "port=3101"; echo "site_url=https://${DOMAIN}"; } >> "$GITHUB_OUTPUT"
           else
-            { echo "env=staging"; echo "app=saohop-staging"; echo "port=3102"; echo "site_url=https://dev.${{ vars.DOMAIN }}"; } >> "$GITHUB_OUTPUT"
+            { echo "env=staging"; echo "app=saohop-staging"; echo "port=3102"; echo "site_url=https://dev.${DOMAIN}"; } >> "$GITHUB_OUTPUT"
           fi
 
       # VPS chạy Node 20, build cùng phiên bản cho chắc.
