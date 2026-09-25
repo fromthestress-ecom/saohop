@@ -10,7 +10,8 @@ import lifePathJson from "@/content/life-path.json";
 import zodiacPairsJson from "@/content/zodiac-pairs.json";
 import zodiacJson from "@/content/zodiac.json";
 import { numberCompat, zodiacAspect } from "@/lib/engines/compatibility";
-import { LIFE_PATH_NUMBERS } from "@/lib/engines/numerology";
+import { LIFE_PATH_NUMBERS, lifePathNumber } from "@/lib/engines/numerology";
+import type { SolarDate } from "@/lib/engines/types";
 import { ZODIAC_SIGNS, zodiacBySlug, type ZodiacSign } from "@/lib/engines/zodiac";
 
 const text = z.string().trim().min(1);
@@ -60,6 +61,7 @@ const lifePathEntrySchema = z.object({
   inLove: text,
   career: text,
   advice: text,
+  deep: deepSchema.optional(),
 });
 
 export const zodiacContent = z.object({ meta: metaSchema, entries: z.array(zodiacEntrySchema) }).parse(zodiacJson);
@@ -193,6 +195,40 @@ export function lifePathMatches(n: number): LifePathMatch[] {
       return { number: m, relation: f.relation, score: f.score };
     })
     .sort((a, b) => b.score - a.score || a.number - b.number);
+}
+
+export interface LifePathExample {
+  date: SolarDate;
+  /** Các chữ số của ngày sinh, theo thứ tự ngày, tháng, năm. */
+  digits: number[];
+  total: number;
+  /** Các lần rút gọn sau tổng, rỗng nếu tổng đã là số chủ đạo. */
+  steps: number[];
+}
+
+const sumDigits = (n: number) => String(n).split("").reduce((a, d) => a + Number(d), 0);
+
+/**
+ * Một ngày sinh ví dụ ra đúng số chủ đạo n, dùng engine để tính nên luôn khớp với trang ban-do.
+ * Ưu tiên người sinh quanh năm 2000 và ví dụ có ít nhất một bước rút gọn (trừ 22 và 33, vốn phải là tổng giữ nguyên).
+ */
+export function lifePathExample(n: number): LifePathExample | null {
+  const years = [2000, 2001, 2002, 2003, 2004, 2005, 1999, 1998, 1997, 1996, 1995];
+  for (const year of years) {
+    for (let month = 1; month <= 12; month++) {
+      for (let day = 1; day <= 28; day++) {
+        const date = { day, month, year };
+        if (lifePathNumber(date) !== n) continue;
+        const digits = `${day}${month}${year}`.split("").map(Number);
+        const total = digits.reduce((a, b) => a + b, 0);
+        if (total === n && n !== 22 && n !== 33) continue;
+        const steps: number[] = [];
+        for (let x = total; x !== n; ) steps.push((x = sumDigits(x)));
+        return { date, digits, total, steps };
+      }
+    }
+  }
+  return null;
 }
 
 export function getLifePath(n: number) {

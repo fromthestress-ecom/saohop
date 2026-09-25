@@ -5,6 +5,7 @@ import {
   getLifePath,
   getZodiac,
   lifePathContent,
+  lifePathExample,
   lifePathMatches,
   parseLifePathSlug,
   parseZodiacPairSlug,
@@ -51,6 +52,17 @@ describe("kho kiến thức", () => {
     const top = lifePathMatches(3)[0];
     expect([6, 9, 33]).toContain(top.number);
     expect(top.relation).toBe("Cùng nhóm");
+  });
+
+  it("mỗi số chủ đạo có một ngày sinh ví dụ tính ra đúng số đó", () => {
+    for (const n of LIFE_PATH_NUMBERS) {
+      const ex = lifePathExample(n);
+      expect(ex, `số ${n}`).not.toBeNull();
+      expect(ex!.steps.at(-1) ?? ex!.total).toBe(n);
+    }
+    expect(lifePathExample(22)!.total).toBe(22);
+    expect(lifePathExample(33)!.total).toBe(33);
+    expect(lifePathExample(4)!.steps.length).toBeGreaterThan(0);
   });
 
   it("đọc slug số chủ đạo", () => {
