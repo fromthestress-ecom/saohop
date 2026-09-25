@@ -2,7 +2,7 @@ import { IconBulb, IconHeartHandshake } from "@tabler/icons-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Breadcrumb, CrushCta, Highlight } from "@/components/kb-blocks";
+import { Breadcrumb, CrushCta, DeepSection, Faq, Highlight, Toc } from "@/components/kb-blocks";
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { verdictOf } from "@/lib/engines/compatibility";
 import { getZodiacPair, ZODIAC_PAIRS, zodiacContent, zodiacMatches, zodiacPairSlug, zodiacPairsContent } from "@/lib/kb";
@@ -21,7 +21,9 @@ export async function generateMetadata({ params }: PageProps<"/cung-hoang-dao/ca
   const names = same ? `${a.sign.name} và ${a.sign.name}` : `${a.sign.name} và ${b.sign.name}`;
   return {
     title: `${names} có hợp nhau không? Độ hợp ${score}/100`,
-    description: `${data.aspectText.headline}. ${data.elementText}${same ? "" : ` Xem thêm ${b.sign.name} và ${a.sign.name} khi yêu, điểm dễ va chạm và gợi ý hẹn hò.`}`,
+    description:
+      data.override?.summary ??
+      `${data.aspectText.headline}. ${data.elementText}${same ? "" : ` Xem thêm ${b.sign.name} và ${a.sign.name} khi yêu, điểm dễ va chạm và gợi ý hẹn hò.`}`,
     alternates: { canonical: `/cung-hoang-dao/cap-doi/${data.slug}` },
     robots: { index: zodiacContent.meta.reviewed && zodiacPairsContent.meta.reviewed },
   };
@@ -47,6 +49,19 @@ export default async function ZodiacPairPage({ params }: PageProps<"/cung-hoang-
   if (!data) notFound();
   const { a, b } = data;
   const same = a.sign.slug === b.sign.slug;
+  const deep = data.override?.deep;
+  const pairName = same ? `hai ${a.sign.name}` : `${a.sign.name} và ${b.sign.name}`;
+  const relationName = data.relation.replace(/\s*\(.*\)$/, "").toLowerCase();
+  const faq = [
+    {
+      q: same ? `Hai ${a.sign.name} hợp nhau bao nhiêu phần trăm?` : `${a.sign.name} và ${b.sign.name} hợp nhau bao nhiêu phần trăm?`,
+      a: `Xét riêng cung hoàng đạo, ${pairName} đạt ${data.score}/100 điểm hợp, xếp loại "${verdictOf(data.score)}", với sức hút ${data.passion}/100. Đây là góc ${relationName}: ${data.aspectText.headline.toLowerCase()}. Kết quả check crush trên Sao Hợp còn cộng thêm thần số học và con giáp nên có thể cao hoặc thấp hơn.`,
+    },
+    ...(deep?.faq ?? []),
+  ];
+  const toc = deep
+    ? [...deep.sections.map((s) => ({ id: s.id, label: s.heading })), { id: "hoi-dap", label: "Hỏi đáp" }]
+    : [];
 
   // Liên kết nội bộ: các cặp khác của hai cung này, xếp theo độ hợp.
   const related = [a.sign, ...(same ? [] : [b.sign])].map((sign) => ({
@@ -116,7 +131,14 @@ export default async function ZodiacPairPage({ params }: PageProps<"/cung-hoang-
         </section>
       </div>
 
-      {same ? (
+      {deep ? (
+        <>
+          <Toc items={toc} />
+          {deep.sections.map((section) => (
+            <DeepSection key={section.id} {...section} />
+          ))}
+        </>
+      ) : same ? (
         <Highlight title={`${a.sign.name} khi yêu`}>{a.entry.inLove}</Highlight>
       ) : (
         <section aria-labelledby="khi-yeu" className="space-y-6">
@@ -156,6 +178,8 @@ export default async function ZodiacPairPage({ params }: PageProps<"/cung-hoang-
           <p className="mt-2 text-ink-muted">{data.aspectText.tip}</p>
         </section>
       </div>
+
+      <Faq id="hoi-dap" title={`Hỏi đáp về cặp ${same ? `${a.sign.name} và ${a.sign.name}` : `${a.sign.name} và ${b.sign.name}`}`} items={faq} />
 
       <CrushCta title="Cung hoàng đạo mới là một phần. Check thêm thần số học và con giáp để biết hai bạn hợp bao nhiêu phần trăm." />
 

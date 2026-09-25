@@ -112,4 +112,31 @@ describe("cặp đôi cung hoàng đạo", () => {
   it("không có dấu gạch dài trong khối nội dung", () => {
     for (const s of allStrings(zodiacPairsContent)) expect(s).not.toMatch(/[–—]/);
   });
+
+  it("cả 78 cặp đều có bài viết riêng", () => {
+    for (const [a, b] of ZODIAC_PAIRS) {
+      const pair = getZodiacPair(zodiacPairSlug(a, b))!;
+      expect(pair.override?.deep?.sections.length, pair.slug).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it("bài viết cặp đôi nhắc đúng góc chiếu và nguyên tố mà engine tính", () => {
+    // Từ khoá trong bài -> quan hệ engine phải có
+    const ASPECT_WORDS: Array<[RegExp, string]> = [
+      [/tam hợp/i, "Tam hợp"],
+      [/(?<!bán )lục hợp/i, "Lục hợp"],
+      [/bán lục hợp/i, "Bán lục hợp"],
+      [/góc vuông/i, "Vuông góc"],
+      [/lệch pha/i, "Lệch pha"],
+      [/đối xứng|cung đối diện/i, "Đối xứng"],
+    ];
+    for (const [a, b] of ZODIAC_PAIRS) {
+      const pair = getZodiacPair(zodiacPairSlug(a, b))!;
+      const text = allStrings(pair.override).join(" ");
+      for (const [re, relation] of ASPECT_WORDS) {
+        if (re.test(text)) expect(pair.relation, `${pair.slug} nhắc "${re.source}"`).toContain(relation);
+      }
+      if (/cùng nguyên tố/i.test(text)) expect(a.element, `${pair.slug} nói cùng nguyên tố`).toBe(b.element);
+    }
+  });
 });

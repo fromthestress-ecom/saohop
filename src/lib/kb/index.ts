@@ -122,16 +122,6 @@ const aspectBlockSchema = z.object({ headline: text, body: text, tip: text });
 const exactKeys = (keys: string[]) => (o: Record<string, unknown>) =>
   Object.keys(o).length === keys.length && keys.every((k) => k in o);
 
-export const zodiacPairsContent = z
-  .object({
-    meta: metaSchema,
-    aspects: z.record(z.string(), aspectBlockSchema).refine(exactKeys(["0", "1", "2", "3", "4", "5", "6"]), "Cần đủ 7 góc chiếu 0..6"),
-    elements: z.record(z.string(), text).refine(exactKeys(ELEMENT_KEYS), "Cần đủ 10 cặp nguyên tố"),
-    modalities: z.record(z.string(), text).refine(exactKeys(MODALITY_KEYS), "Cần đủ 6 cặp tính chất"),
-    overrides: z.record(z.string(), z.object({ summary: text })),
-  })
-  .parse(zodiacPairsJson);
-
 /** Slug chuẩn của một cặp: cung đứng trước trên vòng hoàng đạo viết trước, vd. "bach-duong-va-su-tu". */
 export function zodiacPairSlug(a: ZodiacSign, b: ZodiacSign): string {
   const [x, y] = a.index <= b.index ? [a, b] : [b, a];
@@ -142,6 +132,19 @@ export function zodiacPairSlug(a: ZodiacSign, b: ZodiacSign): string {
 export const ZODIAC_PAIRS: ReadonlyArray<readonly [ZodiacSign, ZodiacSign]> = ZODIAC_SIGNS.flatMap((a) =>
   ZODIAC_SIGNS.filter((b) => b.index >= a.index).map((b) => [a, b] as const),
 );
+
+export const zodiacPairsContent = z
+  .object({
+    meta: metaSchema,
+    aspects: z.record(z.string(), aspectBlockSchema).refine(exactKeys(["0", "1", "2", "3", "4", "5", "6"]), "Cần đủ 7 góc chiếu 0..6"),
+    elements: z.record(z.string(), text).refine(exactKeys(ELEMENT_KEYS), "Cần đủ 10 cặp nguyên tố"),
+    modalities: z.record(z.string(), text).refine(exactKeys(MODALITY_KEYS), "Cần đủ 6 cặp tính chất"),
+    /** Bài viết riêng cho từng cặp, khoá là slug chuẩn của cặp. */
+    overrides: z
+      .record(z.string(), z.object({ summary: text, deep: deepSchema.optional() }))
+      .refine((o) => Object.keys(o).every((slug) => ZODIAC_PAIRS.some(([a, b]) => zodiacPairSlug(a, b) === slug)), "Khoá overrides phải là slug cặp chuẩn"),
+  })
+  .parse(zodiacPairsJson);
 
 /** Chỉ nhận slug theo thứ tự chuẩn để mỗi cặp có đúng một URL. */
 export function parseZodiacPairSlug(slug: string): readonly [ZodiacSign, ZodiacSign] | null {
