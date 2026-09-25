@@ -1,26 +1,340 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens. Nền trung tính lạnh + gradient thương hiệu "tinh vân": hồng → tím → cam đào.
+ * Màu nhấn đơn (--accent) vẫn là hồng; gradient chỉ dùng cho điểm nhấn có chủ đích
+ * (chữ nhấn ở hero, nút chính, vòng điểm, radar, nền tinh vân).
+ * Tự theo chế độ sáng/tối của hệ thống.
+ *
+ * Quy tắc bo góc (dùng thống nhất toàn site):
+ *   - Nút bấm, chip, nhãn:   rounded-full
+ *   - Khung nội dung, panel: rounded-2xl (16px)
+ *   - Ô nhập liệu:           rounded-xl  (12px)
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --bg: #f4f3f8;
+  --surface: #fbfbfd;
+  --surface-2: #eae8f1;
+  --line: #dad8e4;
+  --ink: #17161f;
+  --ink-muted: #56556a;
+  --accent: #c8305f;
+  --accent-2: #6a55d6;
+  --accent-3: #e0873a;
+  --accent-ink: #fdfcfe;
+  --accent-soft: #f6dde5;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Tinh vân nền + màu sao (bộ số RGB để canvas đọc) */
+  --nebula-1: rgb(200 48 95 / 0.16);
+  --nebula-2: rgb(106 85 214 / 0.16);
+  --nebula-3: rgb(240 160 90 / 0.18);
+  --star-rgb: 86 80 130;
+  --star-alpha: 0.35;
+
+  --grad-brand: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 55%, var(--accent-3) 100%);
+  /* Nền nút: đủ đậm để chữ trắng đạt WCAG AA ở cả hai chế độ */
+  --btn-from: #c8305f;
+  --btn-to: #7a4fd0;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #08070f;
+    --surface: #14131d;
+    --surface-2: #1f1d2b;
+    --line: #2c2a3b;
+    --ink: #f3f1f8;
+    --ink-muted: #a7a4ba;
+    --accent: #f06a94;
+    --accent-2: #9d8cff;
+    --accent-3: #f7b267;
+    --accent-ink: #1c0911;
+    --accent-soft: #3a1826;
+
+    --nebula-1: rgb(240 106 148 / 0.22);
+    --nebula-2: rgb(124 108 246 / 0.26);
+    --nebula-3: rgb(247 178 103 / 0.10);
+    --star-rgb: 255 255 255;
+    --star-alpha: 0.9;
+    --btn-from: #c93a6c;
+    --btn-to: #6f5ce0;
+    color-scheme: dark;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-3: var(--accent-3);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-brand: var(--font-josefin);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Quỹ đạo và tinh vân trang trí được phép tràn ra ngoài mép, nhưng không được tạo thanh cuộn ngang.
+   Dùng clip (không phải hidden) để position: sticky vẫn hoạt động. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* ---------- Gradient thương hiệu ---------- */
+
+@utility text-gradient-brand {
+  background-image: var(--grad-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* chừa chỗ cho dấu tiếng Việt và phần chân chữ khi dùng background-clip */
+  padding-block: 0.08em;
+}
+
+@utility bg-gradient-brand {
+  background-image: var(--grad-brand);
+}
+
+/* ---------- Form ---------- */
+
+@utility field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 0.7rem 0.9rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  &::placeholder {
+    color: var(--ink-muted);
+    opacity: 0.8;
+  }
+  &:focus-visible {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+  }
+}
+
+/* ---------- Nút ---------- */
+
+/* Nút chính: nền gradient, bóng màu thương hiệu, phản hồi khi bấm */
+@utility btn-primary {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 9999px;
+  background-image: linear-gradient(100deg, var(--btn-from), var(--btn-to));
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 8px 28px -8px color-mix(in srgb, var(--accent) 70%, transparent);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s;
+  &:hover {
+    filter: brightness(1.08);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/*
+ * Viền "quầng sáng" xoay quanh nút: một hình vuông conic-gradient lớn xoay (chỉ transform)
+ * nằm dưới lớp nền, bị cắt bởi overflow hidden. Dùng cho CTA quan trọng nhất.
+ */
+@utility btn-halo {
+  overflow: hidden;
+  background: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    width: 140%;
+    aspect-ratio: 1;
+    translate: -50% -50%;
+    background: conic-gradient(from 0deg, var(--accent), var(--accent-2), var(--accent-3), var(--accent));
+    animation: spin 4s linear infinite;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 2px;
+    border-radius: inherit;
+    background-image: linear-gradient(100deg, var(--btn-from), var(--btn-to));
+  }
+}
+
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: 9999px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s;
+  &:hover {
+    border-color: var(--ink-muted);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Panel hơi trong suốt để bầu trời sao phía sau lấp ló (không dùng blur để giữ FPS). */
+@utility panel {
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+}
+
+/* ---------- Chuyển động ---------- */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes drift-a {
+  50% {
+    transform: translate(8vw, 6vh) scale(1.15);
+  }
+}
+
+@keyframes drift-b {
+  50% {
+    transform: translate(-10vw, -4vh) scale(0.9);
+  }
+}
+
+@keyframes drift-c {
+  50% {
+    transform: translate(5vw, -8vh) scale(1.1);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes pulse-glow {
+  50% {
+    opacity: 0.45;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: CSS thuần để nội dung hiện ngay khi HTML tới, không chờ JS. */
+  .enter-up {
+    animation: enter-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--delay, 0s);
+  }
+  .float {
+    animation: float 7s ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+  }
+  .orbit {
+    animation: spin var(--orbit-duration, 80s) linear infinite;
+  }
+  .orbit-reverse {
+    animation-direction: reverse;
+  }
+  .nebula-a {
+    animation: drift-a 38s ease-in-out infinite;
+  }
+  .nebula-b {
+    animation: drift-b 46s ease-in-out infinite;
+  }
+  .nebula-c {
+    animation: drift-c 54s ease-in-out infinite;
+  }
+  .glow-pulse {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-halo::before {
+    animation: none;
+  }
+}
+
+/* Khung chờ có vệt sáng lướt qua */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent-2) 22%, transparent), transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shimmer::after {
+    animation: shimmer 1.6s ease-in-out infinite;
+  }
+}
+
+.cursor-blink::after {
+  content: "▍";
+  margin-left: 2px;
+  color: var(--accent);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink::after {
+    animation: none;
+  }
 }

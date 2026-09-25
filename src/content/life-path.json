@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "system": "so-chu-dao",
+    "version": 1,
+    "reviewed": false,
+    "note": "Bản nháp do AI soạn theo trường phái Pythagoras phổ biến tại Việt Nam, cần chuyên gia thần số học duyệt. Nhóm số hợp nhau được lấy từ engine, không lưu ở đây."
+  },
+  "entries": [
+    {
+      "number": 2,
+      "title": "Người hoà giải",
+      "summary": "Số 2 mang năng lượng của trực giác và sự kết nối. Bạn nhạy cảm với cảm xúc xung quanh, giỏi lắng nghe và thường là người giữ hoà khí trong nhóm.",
+      "strengths": ["Trực giác nhạy bén", "Tinh tế, biết lắng nghe", "Giỏi hợp tác và kết nối mọi người", "Kiên nhẫn, dịu dàng"],
+      "challenges": ["Dễ tổn thương vì lời nói", "Hay thiếu tự tin vào bản thân", "Dễ bị cảm xúc của người khác chi phối"],
+      "inLove": "Số 2 yêu bằng sự dịu dàng và tận tụy. Bạn cần một người biết trân trọng những điều nhỏ và thể hiện tình cảm rõ ràng, vì bạn cảm nhận rất sâu nhưng ngại hỏi thẳng.",
+      "career": "Tư vấn, chăm sóc khách hàng, giáo dục, nghệ thuật, các vai trò cần sự kết nối con người.",
+      "advice": "Tin vào trực giác của mình và tập nói không khi cần."
+    },
+    {
+      "number": 3,
+      "title": "Người sáng tạo",
+      "summary": "Số 3 là con số của tư duy và sự biểu đạt. Bạn có trí nhớ tốt, óc hài hước và nhiều ý tưởng, thường là người mang lại tiếng cười cho người khác.",
+      "strengths": ["Tư duy nhanh, trí nhớ tốt", "Hài hước, có duyên", "Sáng tạo, nhiều ý tưởng", "Diễn đạt tốt bằng lời hoặc chữ"],
+      "challenges": ["Hay phân tích quá mức", "Dễ đánh giá người khác", "Thiếu kiên nhẫn với việc lặp lại"],
+      "inLove": "Số 3 cần một người có thể cùng cười, cùng tranh luận vui vẻ. Bạn thể hiện tình cảm qua lời nói và những ý tưởng bất ngờ, nhưng đôi khi cần học cách lắng nghe cảm xúc thay vì phân tích nó.",
+      "career": "Truyền thông, sáng tạo nội dung, giảng dạy, thiết kế, marketing.",
+      "advice": "Viết ra ý tưởng và chọn một cái để làm đến nơi đến chốn."
+    },
+    {
+      "number": 4,
+      "title": "Người thực tế",
+      "summary": "Số 4 là nền móng vững chắc. Bạn làm việc có kế hoạch, kỷ luật và đáng tin cậy, là người mà ai cũng muốn có trong đội khi cần hoàn thành việc lớn.",
+      "strengths": ["Kỷ luật, có tổ chức", "Thực tế, chắc chắn", "Chăm chỉ, bền bỉ", "Trung thực, giữ lời"],
+      "challenges": ["Dễ cứng nhắc với kế hoạch", "Hay làm việc quá sức", "Ít bộc lộ cảm xúc"],
+      "inLove": "Số 4 yêu một cách ổn định và bảo vệ. Bạn thể hiện tình cảm bằng hành động cụ thể và cam kết lâu dài. Người ấy sẽ hạnh phúc hơn nếu thỉnh thoảng bạn nói ra những điều mình cảm nhận.",
+      "career": "Kỹ thuật, tài chính, quản lý dự án, xây dựng, vận hành.",
+      "advice": "Chừa chỗ cho sự linh hoạt, kế hoạch tốt nhất vẫn cần khoảng trống."
+    },
+    {
+      "number": 5,
+      "title": "Người tự do",
+      "summary": "Số 5 là con số của cảm xúc và trải nghiệm. Bạn yêu tự do, giàu cảm xúc và học được nhiều nhất khi được tự mình trải qua.",
+      "strengths": ["Giàu cảm xúc, đồng cảm tốt", "Thích nghi nhanh", "Yêu tự do, dám thay đổi", "Có sức hút tự nhiên"],
+      "challenges": ["Dễ bốc đồng", "Nhanh chán với điều quen thuộc", "Khó cam kết khi cảm thấy bị ràng buộc"],
+      "inLove": "Số 5 cần một tình yêu có nhiều trải nghiệm mới và không gian để thở. Bạn yêu nồng nhiệt, nhưng sẽ gắn bó lâu nhất với người cho bạn cảm giác được là chính mình.",
+      "career": "Du lịch, bán hàng, sự kiện, báo chí, các công việc năng động.",
+      "advice": "Tự do thật sự đến từ việc làm chủ cảm xúc, không phải né tránh ràng buộc."
+    },
+    {
+      "number": 6,
+      "title": "Người chăm sóc",
+      "summary": "Số 6 là con số của sự sáng tạo và trách nhiệm. Bạn có trái tim ấm áp, luôn muốn chăm lo cho gia đình và những người xung quanh.",
+      "strengths": ["Giàu tình yêu thương", "Có trách nhiệm, chu đáo", "Sáng tạo, có gu", "Biết chữa lành và vỗ về"],
+      "challenges": ["Hay lo lắng cho người khác", "Dễ ôm đồm quá nhiều việc", "Có xu hướng hy sinh quá mức"],
+      "inLove": "Số 6 yêu bằng sự chăm sóc và cam kết. Bạn muốn xây dựng một tổ ấm thật sự, nhưng hãy nhớ rằng tình yêu lành mạnh cần cả hai cùng chăm sóc nhau.",
+      "career": "Y tế, giáo dục, thiết kế, ẩm thực, công tác xã hội.",
+      "advice": "Chăm sóc bản thân trước, bạn mới có đủ năng lượng để chăm sóc người khác."
+    },
+    {
+      "number": 7,
+      "title": "Người trải nghiệm",
+      "summary": "Số 7 học hỏi qua trải nghiệm và chiêm nghiệm. Bạn độc lập, sâu sắc và thường hiểu cuộc sống theo cách riêng của mình.",
+      "strengths": ["Sâu sắc, thích tìm hiểu", "Độc lập trong suy nghĩ", "Học được nhiều từ trải nghiệm", "Có trực giác về bản chất sự việc"],
+      "challenges": ["Khó chia sẻ nỗi lòng", "Dễ cảm thấy cô đơn", "Thường phải học bài học qua mất mát"],
+      "inLove": "Số 7 cần một người tôn trọng thế giới nội tâm và khoảng lặng của bạn. Bạn yêu sâu nhưng mở lòng chậm. Khi đã tin, bạn là người đồng hành chân thành và rất đáng quý.",
+      "career": "Nghiên cứu, phân tích, công nghệ, tâm lý, viết lách.",
+      "advice": "Chia sẻ bớt gánh nặng với người tin cậy, bạn không phải tự mình trải qua mọi thứ."
+    },
+    {
+      "number": 8,
+      "title": "Người độc lập",
+      "summary": "Số 8 là con số của bản lĩnh và sự tự chủ. Bạn mạnh mẽ, có năng lực quản lý và thường gánh vác trách nhiệm lớn.",
+      "strengths": ["Bản lĩnh, tự lập", "Có đầu óc tổ chức và tài chính", "Kiên định với mục tiêu", "Giàu tình cảm dù ít thể hiện"],
+      "challenges": ["Bề ngoài cứng rắn, khó gần", "Ngại nhờ giúp đỡ", "Áp lực thành công đè nặng"],
+      "inLove": "Số 8 yêu sâu đậm nhưng thường giấu sau vẻ ngoài mạnh mẽ. Bạn che chở và lo lắng cho người mình thương theo cách thực tế. Để người ấy thấy phía mềm mại của bạn sẽ làm mối quan hệ gần hơn nhiều.",
+      "career": "Kinh doanh, quản lý, tài chính, luật, khởi nghiệp.",
+      "advice": "Mạnh mẽ không có nghĩa là không được yếu lòng."
+    },
+    {
+      "number": 9,
+      "title": "Người lý tưởng",
+      "summary": "Số 9 là con số của lý tưởng và lòng nhân ái. Bạn có hoài bão lớn, sống có trách nhiệm và muốn đóng góp điều tốt đẹp cho cộng đồng.",
+      "strengths": ["Nhân ái, bao dung", "Có hoài bão và lý tưởng", "Trách nhiệm, đáng tin", "Truyền cảm hứng cho người khác"],
+      "challenges": ["Dễ ôm đồm việc của người khác", "Đôi khi xa rời thực tế", "Quá nghiêm túc với bản thân"],
+      "inLove": "Số 9 yêu một cách bao dung và rộng lượng. Bạn cần một người cùng chia sẻ giá trị sống, và cần nhớ dành cho mối quan hệ riêng sự quan tâm như bạn dành cho mọi người.",
+      "career": "Giáo dục, phi lợi nhuận, nghệ thuật, y tế, lãnh đạo cộng đồng.",
+      "advice": "Làm từng việc nhỏ cụ thể, lý tưởng lớn được xây từ đó."
+    },
+    {
+      "number": 10,
+      "title": "Người linh hoạt",
+      "summary": "Số 10 mang năng lượng của sự thích nghi. Bạn hoà đồng, tự tin và có thể xoay xở tốt trong nhiều hoàn cảnh khác nhau.",
+      "strengths": ["Thích nghi nhanh", "Hoà đồng, dễ mến", "Tự tin trước đám đông", "Linh hoạt trong cách giải quyết"],
+      "challenges": ["Dễ bị môi trường cuốn theo", "Đôi khi thiếu định hướng rõ ràng", "Lòng tự trọng cao nên dễ tổn thương"],
+      "inLove": "Số 10 yêu vui vẻ và dễ hoà hợp. Bạn cần một người vừa cho bạn tự do vừa giúp bạn giữ hướng đi. Một mối quan hệ có mục tiêu chung sẽ khiến bạn gắn bó hơn.",
+      "career": "Kinh doanh, truyền thông, dịch vụ, sự kiện, các vị trí cần ứng biến.",
+      "advice": "Xác định điều mình thực sự muốn, rồi để sự linh hoạt phục vụ mục tiêu đó."
+    },
+    {
+      "number": 11,
+      "title": "Người truyền cảm hứng",
+      "summary": "11 là số master, mang trực giác và năng lượng tinh thần rất mạnh. Bạn nhạy cảm, có khả năng truyền cảm hứng và thường cảm nhận được điều người khác chưa nói ra.",
+      "strengths": ["Trực giác đặc biệt mạnh", "Truyền cảm hứng tự nhiên", "Nhạy cảm, thấu hiểu sâu", "Có tầm nhìn về ý nghĩa sống"],
+      "challenges": ["Dễ căng thẳng, lo âu", "Kỳ vọng quá cao vào bản thân", "Khi mệt mỏi dễ thu mình lại"],
+      "inLove": "Số 11 tìm kiếm một kết nối tâm hồn thật sự. Bạn yêu sâu và tinh tế, cần một người ổn định, kiên nhẫn để cùng bạn cân bằng giữa lý tưởng và đời thường.",
+      "career": "Tư vấn, nghệ thuật, giảng dạy, chữa lành, sáng tạo.",
+      "advice": "Giữ cơ thể và nhịp sống ổn định để trực giác của bạn làm việc tốt nhất."
+    },
+    {
+      "number": 22,
+      "title": "Người kiến tạo",
+      "summary": "22 là số master của người xây dựng. Bạn kết hợp tầm nhìn lớn với khả năng thực thi, có thể biến ý tưởng thành điều có thật.",
+      "strengths": ["Tầm nhìn xa", "Khả năng thực thi mạnh", "Tổ chức và lãnh đạo tốt", "Kiên trì với dự án lớn"],
+      "challenges": ["Áp lực tự đặt ra rất lớn", "Dễ cầu toàn", "Có thể quên chăm sóc các mối quan hệ"],
+      "inLove": "Số 22 cần một người đồng hành hiểu và ủng hộ những mục tiêu lớn của bạn. Bạn yêu nghiêm túc và bền bỉ, nhưng hãy chắc rằng người ấy có chỗ trong kế hoạch của bạn, không chỉ ở bên lề.",
+      "career": "Quản lý, kiến trúc, khởi nghiệp, kỹ thuật, các dự án tầm vóc.",
+      "advice": "Chia mục tiêu lớn thành những bước nhỏ và ăn mừng từng bước."
+    },
+    {
+      "number": 33,
+      "title": "Người chữa lành",
+      "summary": "33 là số master hiếm gặp, gắn với tình yêu thương vô điều kiện. Bạn có khả năng nâng đỡ và chữa lành cho người khác bằng sự bao dung.",
+      "strengths": ["Yêu thương vô điều kiện", "Bao dung, vị tha", "Có sức ảnh hưởng tích cực", "Sáng tạo và giàu lòng trắc ẩn"],
+      "challenges": ["Gánh vác quá nhiều nỗi lo của người khác", "Dễ bỏ quên nhu cầu của bản thân", "Kỳ vọng mình phải hoàn hảo"],
+      "inLove": "Số 33 yêu bằng cả trái tim và luôn muốn người mình thương được hạnh phúc. Bạn cần một người biết đáp lại sự chăm sóc ấy, để tình yêu là sự nuôi dưỡng từ hai phía.",
+      "career": "Giáo dục, y tế, tâm lý, nghệ thuật, công tác cộng đồng.",
+      "advice": "Bạn cũng xứng đáng được chăm sóc như cách bạn chăm sóc người khác."
+    }
+  ]
+}

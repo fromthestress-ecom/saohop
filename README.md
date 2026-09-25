@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sao Hợp — huyền học AI & check crush
 
-## Getting Started
+Web xem thần số học, cung hoàng đạo, con giáp/ngũ hành và **độ hợp với crush**, luận giải bằng Claude.
 
-First, run the development server:
+## Chạy local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # điền ANTHROPIC_API_KEY
+npm run dev                  # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Không có API key app vẫn chạy: mọi con số hiển thị đầy đủ, chỉ phần luận giải AI hiện thông báo tạm nghỉ.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Lệnh
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Lệnh | Việc |
+|---|---|
+| `npm run dev` | Dev server |
+| `npm test` | Unit test engine (Vitest) |
+| `npm run lint` | ESLint |
+| `npm run build` | Build production |
 
-## Learn More
+## Kiến trúc
 
-To learn more about Next.js, take a look at the following resources:
+- `src/lib/engines/` — **engine tính toán tất định** (âm lịch VN UTC+7 theo thuật toán Hồ Ngọc Đức, can chi, nạp âm, cung hoàng đạo, thần số học Pythagoras, độ hợp). Hàm thuần, có test.
+- `src/lib/ai/` — prompt + streaming Claude. Nguyên tắc: **AI chỉ diễn giải số liệu do engine tính**, không tự tính. Chỉ gửi dữ liệu đã suy ra và tên gọi, không gửi ngày sinh/họ tên đầy đủ.
+- `src/app/api/reading`, `src/app/api/compat` — API stream luận giải (tính lại trên server, rate limit theo IP).
+- `src/app/api/og/crush` — ảnh chia sẻ 1200×630 và story 1080×1920 (`&format=story`). URL chia sẻ chỉ chứa điểm, cung, con giáp.
+- Trang: `/` · `/ban-do` · `/crush` · `/chia-se/crush`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Model mặc định: `claude-haiku-4-5` cho bản miễn phí (đổi qua `AI_MODEL_FAST`).

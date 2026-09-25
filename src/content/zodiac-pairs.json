@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "system": "cap-doi-cung-hoang-dao",
+    "version": 1,
+    "reviewed": false,
+    "note": "Khối nội dung để ghép 78 trang cặp đôi. Bản nháp do AI soạn, cần biên tập. Điểm số và góc chiếu lấy từ engine. Mục 'overrides' cho phép viết đoạn riêng cho từng cặp (khoá là slug cặp, vd. bach-duong-va-su-tu)."
+  },
+  "aspects": {
+    "0": {
+      "headline": "Hai bản sao của nhau",
+      "body": "Hai người cùng cung hiểu nhau gần như không cần giải thích, vì cùng cách nghĩ và cùng nhịp cảm xúc. Nhưng cũng vì giống nhau nên điểm yếu dễ bị nhân đôi: khi cả hai cùng bướng hoặc cùng né tránh, không ai kéo mối quan hệ trở lại.",
+      "tip": "Chủ động phân vai: mỗi người giữ một thế mạnh riêng thay vì cùng làm một việc."
+    },
+    "1": {
+      "headline": "Hai người hàng xóm khác nếp",
+      "body": "Hai cung đứng cạnh nhau trên vòng hoàng đạo nhưng khác nguyên tố, khác tính chất, nên lúc đầu dễ thấy lạ lẫm. Mỗi người lại có đúng điều người kia còn thiếu, chỉ là cần thời gian để nhận ra.",
+      "tip": "Tò mò về thế giới của người kia thay vì cố kéo họ về phía mình."
+    },
+    "2": {
+      "headline": "Bạn thân rồi thành người thương",
+      "body": "Góc lục hợp là mối quan hệ của những người bạn tốt: hai nguyên tố bổ trợ nhau, trò chuyện dễ dàng, hợp tác trơn tru. Tình cảm thường lớn lên từ sự thoải mái và tin tưởng hơn là từ tiếng sét ái tình.",
+      "tip": "Thêm chút bất ngờ để sự thân thiết chuyển thành rung động."
+    },
+    "3": {
+      "headline": "Ma sát tạo ra tia lửa",
+      "body": "Góc vuông tạo ra ma sát: hai cung cùng tính chất nhưng khác nguyên tố, nên ai cũng muốn làm theo cách của mình. Sự căng thẳng này vừa dễ gây cãi vã vừa tạo sức hút mạnh. Vượt qua được, đây là cặp giúp nhau trưởng thành nhanh nhất.",
+      "tip": "Thống nhất cách giải quyết bất đồng trước khi bất đồng xảy ra."
+    },
+    "4": {
+      "headline": "Cùng một ngôn ngữ cảm xúc",
+      "body": "Tam hợp là góc hài hoà nhất: hai cung cùng nguyên tố nên cảm nhận thế giới theo cùng một cách. Ở bên nhau thấy tự nhiên, ít phải gồng, và thường nhanh chóng thân thiết.",
+      "tip": "Đừng để sự dễ dàng thành nhàm chán, hãy cùng đặt ra một mục tiêu mới."
+    },
+    "5": {
+      "headline": "Hai người nói hai thứ tiếng",
+      "body": "Góc lệch pha nối hai cung khác cả nguyên tố lẫn tính chất, nên khó tìm thấy điểm chung rõ ràng. Mối quan hệ cần nhiều điều chỉnh, nhưng chính sự khác biệt lại mở ra những trải nghiệm cả hai chưa từng có.",
+      "tip": "Nói rõ nhu cầu của mình bằng lời, đừng mong người kia tự đoán."
+    },
+    "6": {
+      "headline": "Hút nhau như nam châm",
+      "body": "Hai cung đối diện nhau trên vòng hoàng đạo: cùng tính chất, nguyên tố bổ sung cho nhau, mỗi người như tấm gương phản chiếu người kia. Sức hút rất mạnh nhưng cũng dễ giằng co xem ai đúng.",
+      "tip": "Xem khác biệt là mảnh ghép còn thiếu, không phải cuộc thi hơn thua."
+    }
+  },
+  "elements": {
+    "Lửa+Lửa": "Hai ngọn lửa gặp nhau: đam mê, nhiệt huyết và cùng thích hành động. Chỉ cần cẩn thận những lúc cả hai cùng nóng.",
+    "Lửa+Đất": "Lửa muốn đi nhanh, Đất muốn đi chắc. Đất giúp Lửa thực tế hơn, còn Lửa giúp Đất dám thử điều mới.",
+    "Lửa+Khí": "Khí thổi bùng ngọn Lửa: nhiều ý tưởng, nhiều năng lượng, ở cạnh nhau hiếm khi thấy chán.",
+    "Lửa+Nước": "Lửa sôi nổi gặp Nước sâu lắng: rất hấp dẫn, nhưng dễ vô tình làm nhau tổn thương nếu thiếu tinh tế.",
+    "Đất+Đất": "Hai người thực tế cùng xây dựng: ổn định, đáng tin, chỉ cần thêm chút lãng mạn cho đời bớt khô.",
+    "Đất+Khí": "Đất cần sự chắc chắn, Khí cần sự tự do. Tôn trọng nhịp sống của nhau là chìa khoá.",
+    "Đất+Nước": "Nước nuôi dưỡng Đất: một cặp ấm áp, biết chăm sóc nhau, rất hợp cho quan hệ lâu dài.",
+    "Khí+Khí": "Hai bộ óc gặp nhau: nói chuyện không dứt, nhưng cần học cách nói về cảm xúc chứ không chỉ ý tưởng.",
+    "Khí+Nước": "Khí thiên về nghĩ, Nước thiên về cảm. Một người lý trí, một người cảm xúc, cần kiên nhẫn để hiểu nhau.",
+    "Nước+Nước": "Hai trái tim nhạy cảm: thấu hiểu nhau rất sâu, nhưng dễ cùng chùng xuống khi có chuyện buồn."
+  },
+  "modalities": {
+    "Tiên phong+Tiên phong": "Cả hai đều thích dẫn dắt, nên cần thay phiên nhau cầm lái.",
+    "Tiên phong+Kiên định": "Một người khởi xướng, một người giữ vững. Phối hợp tốt nếu không ai quá cố chấp.",
+    "Tiên phong+Linh hoạt": "Một người vạch hướng đi, một người linh hoạt thích nghi, nên nhịp độ khá nhịp nhàng.",
+    "Kiên định+Kiên định": "Hai người kiên định: bền bỉ với nhau, nhưng khó nhường nhau khi bất đồng.",
+    "Kiên định+Linh hoạt": "Một người giữ gốc, một người mang đến thay đổi: cân bằng giữa ổn định và mới mẻ.",
+    "Linh hoạt+Linh hoạt": "Hai người linh hoạt: dễ thích nghi, dễ chiều nhau, nhưng cần ai đó chốt quyết định."
+  },
+  "overrides": {}
+}

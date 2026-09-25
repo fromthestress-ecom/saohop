@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "system": "cung-hoang-dao",
+    "version": 1,
+    "reviewed": false,
+    "note": "Bản nháp do AI soạn, cần biên tập viên và chuyên gia duyệt trước khi ra mắt. Ngày, nguyên tố, tính chất và cung hợp được lấy từ engine, không lưu ở đây."
+  },
+  "entries": [
+    {
+      "slug": "bach-duong",
+      "ruler": "Sao Hỏa",
+      "summary": "Bạch Dương là cung mở đầu vòng hoàng đạo, mang năng lượng của người đi tiên phong. Bạn hành động nhanh, thẳng thắn và thích được thử thách.",
+      "strengths": ["Dũng cảm, dám làm trước", "Nhiệt tình, truyền năng lượng cho người khác", "Thẳng thắn, không vòng vo", "Hồi phục nhanh sau thất bại"],
+      "weaknesses": ["Nóng vội, dễ bỏ dở giữa chừng", "Hay nói trước nghĩ sau", "Khó kiên nhẫn với người chậm hơn mình"],
+      "inLove": "Khi thích ai, Bạch Dương thường là người chủ động trước. Bạn yêu nồng nhiệt, thích cảm giác chinh phục và cần một người đủ bản lĩnh để theo kịp nhịp của mình. Điều bạn cần học là kiên nhẫn khi mối quan hệ bước qua giai đoạn đầu đầy hứng khởi.",
+      "dateIdea": "Một buổi hẹn có vận động: leo núi trong nhà, đạp xe đêm hoặc chơi bowling.",
+      "advice": "Chậm lại một nhịp trước những quyết định lớn, nhất là lúc đang giận."
+    },
+    {
+      "slug": "kim-nguu",
+      "ruler": "Sao Kim",
+      "summary": "Kim Ngưu là cung Đất đầu tiên, gắn với sự vững vàng và biết tận hưởng. Bạn thích những gì chắc chắn, đẹp đẽ và dễ chịu.",
+      "strengths": ["Kiên định, đã hứa là làm", "Đáng tin cậy, chung thuỷ", "Có gu thẩm mỹ và biết tận hưởng", "Bình tĩnh trước áp lực"],
+      "weaknesses": ["Ngại thay đổi", "Dễ cố chấp khi đã quyết", "Đôi khi quá chú trọng sự an toàn vật chất"],
+      "inLove": "Kim Ngưu yêu chậm mà chắc. Bạn cần thời gian để tin tưởng, nhưng khi đã yêu thì rất chung thuỷ và chiều chuộng người mình thương bằng những điều cụ thể: một bữa ăn ngon, một món quà chăm chút. Điều bạn sợ nhất là cảm giác bấp bênh.",
+      "dateIdea": "Một bữa tối ấm cúng ở quán ngon, hoặc cùng nhau vào bếp.",
+      "advice": "Thử một điều mới mỗi tháng. Thay đổi nhỏ không làm mất đi sự ổn định của bạn."
+    },
+    {
+      "slug": "song-tu",
+      "ruler": "Sao Thủy",
+      "summary": "Song Tử là cung Khí linh hoạt, gắn với giao tiếp và trí tò mò. Bạn nhanh nhạy, nói chuyện có duyên và luôn muốn biết thêm điều mới.",
+      "strengths": ["Nói chuyện cuốn hút, dễ kết bạn", "Học nhanh, thích nghi tốt", "Hài hước, nhiều ý tưởng", "Nhìn được nhiều góc của một vấn đề"],
+      "weaknesses": ["Dễ chán, thiếu kiên trì", "Hay thay đổi ý định", "Đôi khi lướt qua cảm xúc thay vì ở lại với nó"],
+      "inLove": "Với Song Tử, rung động bắt đầu từ những cuộc trò chuyện. Bạn cần một người vừa là người yêu vừa là bạn tâm giao, có thể nói chuyện đến khuya mà không cạn chủ đề. Sự đơn điệu là thử thách lớn nhất của bạn trong tình yêu.",
+      "dateIdea": "Dạo hội sách, xem hài độc thoại hoặc cùng khám phá một quán cà phê mới.",
+      "advice": "Chọn một việc quan trọng và theo đến cùng trước khi mở thêm việc mới."
+    },
+    {
+      "slug": "cu-giai",
+      "ruler": "Mặt Trăng",
+      "summary": "Cự Giải là cung Nước gắn với gia đình và cảm xúc. Bạn giàu tình cảm, nhạy cảm và luôn muốn che chở cho người mình thương.",
+      "strengths": ["Chu đáo, biết chăm sóc", "Trực giác tốt, đọc được cảm xúc người khác", "Chung thuỷ, trọng gia đình", "Nhớ lâu những kỷ niệm đẹp"],
+      "weaknesses": ["Dễ tổn thương, hay tự ái", "Tâm trạng lên xuống thất thường", "Khó buông bỏ chuyện cũ"],
+      "inLove": "Cự Giải yêu bằng cả trái tim và cần cảm giác an toàn. Bạn thể hiện tình cảm qua sự quan tâm hằng ngày: hỏi han, nấu ăn, nhớ những điều nhỏ. Người yêu bạn cần kiên nhẫn với lớp vỏ bảo vệ ban đầu, vì bên trong là một người rất ấm áp.",
+      "dateIdea": "Một buổi picnic nhỏ, xem phim ở nhà hoặc nấu ăn cùng nhau.",
+      "advice": "Nói ra điều mình cần thay vì chờ người khác tự hiểu."
+    },
+    {
+      "slug": "su-tu",
+      "ruler": "Mặt Trời",
+      "summary": "Sư Tử là cung Lửa kiên định, được Mặt Trời chiếu mệnh. Bạn tự tin, hào phóng và tự nhiên trở thành tâm điểm ở nơi mình xuất hiện.",
+      "strengths": ["Tự tin, có khí chất lãnh đạo", "Hào phóng, rộng lượng", "Trung thành với người mình quý", "Sáng tạo và biết truyền cảm hứng"],
+      "weaknesses": ["Cần được công nhận, dễ tự ái", "Đôi khi kiêu hãnh quá mức", "Khó nhận mình sai"],
+      "inLove": "Sư Tử yêu rực rỡ và muốn người kia cảm thấy mình đặc biệt. Bạn thích những cử chỉ lãng mạn, những bất ngờ nho nhỏ và cũng mong nhận lại sự ngưỡng mộ. Khi được trân trọng, bạn là người yêu trung thành và che chở hết mình.",
+      "dateIdea": "Một buổi tối ăn mặc thật đẹp: nhà hàng có view, xem hoà nhạc hoặc đi chụp ảnh.",
+      "advice": "Lắng nghe nhiều hơn một chút. Sự chú ý bạn dành cho người khác cũng quý như sự chú ý bạn nhận về."
+    },
+    {
+      "slug": "xu-nu",
+      "ruler": "Sao Thủy",
+      "summary": "Xử Nữ là cung Đất linh hoạt, gắn với sự tỉ mỉ và tinh thần phục vụ. Bạn quan sát kỹ, làm việc có phương pháp và luôn muốn mọi thứ tốt hơn.",
+      "strengths": ["Tỉ mỉ, chu toàn", "Thực tế, giỏi giải quyết vấn đề", "Tận tâm giúp đỡ người khác", "Khiêm tốn, đáng tin"],
+      "weaknesses": ["Cầu toàn, hay lo nghĩ", "Dễ khắt khe với bản thân và người khác", "Ngại bộc lộ cảm xúc"],
+      "inLove": "Xử Nữ yêu một cách kín đáo và thể hiện qua hành động: nhớ lịch của người kia, lo từng chi tiết nhỏ. Bạn cần thời gian để mở lòng và đánh giá cao sự chân thành hơn lời hoa mỹ. Hãy để người ấy thấy cả những phần chưa hoàn hảo của bạn.",
+      "dateIdea": "Một buổi học làm gốm hoặc nấu ăn, hoặc dạo bảo tàng vào buổi sáng.",
+      "advice": "Chấp nhận rằng đủ tốt đôi khi đã là tốt."
+    },
+    {
+      "slug": "thien-binh",
+      "ruler": "Sao Kim",
+      "summary": "Thiên Bình là cung Khí tiên phong, gắn với cái đẹp và sự cân bằng. Bạn tinh tế, khéo léo và luôn tìm cách để mọi người cùng dễ chịu.",
+      "strengths": ["Khéo léo, giỏi hoà giải", "Có gu thẩm mỹ tốt", "Công bằng, biết lắng nghe", "Duyên dáng trong giao tiếp"],
+      "weaknesses": ["Hay do dự, khó quyết định", "Ngại va chạm nên dễ né tránh", "Đôi khi chiều lòng người khác quá mức"],
+      "inLove": "Thiên Bình là cung của các mối quan hệ, nên tình yêu chiếm vị trí quan trọng với bạn. Bạn lãng mạn, thích sự hài hoà và một người biết trân trọng cái đẹp. Điều cần học là dám nói ra điều mình không đồng ý, vì cân bằng thật sự cần cả hai phía lên tiếng.",
+      "dateIdea": "Xem triển lãm, ngồi một quán cà phê đẹp hoặc nghe nhạc acoustic buổi tối.",
+      "advice": "Đặt thời hạn cho mỗi quyết định để không bị kẹt mãi trong phân vân."
+    },
+    {
+      "slug": "bo-cap",
+      "ruler": "Sao Diêm Vương (cổ điển: Sao Hỏa)",
+      "summary": "Bọ Cạp là cung Nước kiên định, gắn với chiều sâu và sự chuyển hoá. Bạn mãnh liệt, sâu sắc và có một sức hút khó giải thích.",
+      "strengths": ["Sâu sắc, nhìn thấu vấn đề", "Kiên định, theo đuổi đến cùng", "Trung thành tuyệt đối", "Bản lĩnh trước khủng hoảng"],
+      "weaknesses": ["Hay nghi ngờ, khó tin người", "Dễ ghen và muốn giữ chặt", "Khó tha thứ khi bị tổn thương"],
+      "inLove": "Bọ Cạp không yêu nửa vời. Bạn tìm kiếm sự gắn kết sâu sắc, thật lòng và sẵn sàng cho đi tất cả khi đã tin. Đổi lại, bạn cần sự trung thực tuyệt đối. Học cách tin tưởng và cho người kia không gian riêng sẽ giúp tình yêu của bạn bền hơn.",
+      "dateIdea": "Một buổi tối trò chuyện sâu ở quán yên tĩnh, hoặc cùng chơi phòng thoát hiểm.",
+      "advice": "Buông những điều không thể kiểm soát. Sự bình yên bắt đầu từ đó."
+    },
+    {
+      "slug": "nhan-ma",
+      "ruler": "Sao Mộc",
+      "summary": "Nhân Mã là cung Lửa linh hoạt, gắn với tự do và khám phá. Bạn lạc quan, thích đi đây đi đó và luôn tìm ý nghĩa lớn hơn trong cuộc sống.",
+      "strengths": ["Lạc quan, vui vẻ", "Ham học hỏi, thích khám phá", "Thẳng thắn, chân thành", "Tư duy rộng mở"],
+      "weaknesses": ["Ngại ràng buộc, dễ hứa rồi quên", "Nói thẳng đến mức vô tình làm người khác buồn", "Thiếu kiên nhẫn với chi tiết"],
+      "inLove": "Nhân Mã cần một người vừa là người yêu vừa là bạn đồng hành trên những chuyến đi. Bạn yêu tự do và sợ cảm giác bị giữ chặt. Một mối quan hệ cho phép cả hai cùng lớn lên, cùng khám phá sẽ khiến bạn gắn bó lâu dài.",
+      "dateIdea": "Một chuyến đi ngắn cuối tuần, cắm trại hoặc thử món ăn của một nước khác.",
+      "advice": "Giữ những lời hứa nhỏ cũng quan trọng như theo đuổi ước mơ lớn."
+    },
+    {
+      "slug": "ma-ket",
+      "ruler": "Sao Thổ",
+      "summary": "Ma Kết là cung Đất tiên phong, gắn với trách nhiệm và thành tựu. Bạn kỷ luật, có mục tiêu rõ ràng và kiên trì leo từng bậc.",
+      "strengths": ["Kỷ luật, có trách nhiệm", "Kiên trì với mục tiêu dài hạn", "Thực tế, biết quản lý", "Đáng tin trong lúc khó khăn"],
+      "weaknesses": ["Nghiêm khắc, khó thả lỏng", "Hay đặt công việc lên trên cảm xúc", "Dễ bi quan khi mọi thứ lệch kế hoạch"],
+      "inLove": "Ma Kết yêu nghiêm túc và nhìn xa. Bạn không vội vàng, nhưng khi đã chọn thì xây dựng mối quan hệ như xây một ngôi nhà: chắc chắn và bền bỉ. Người ấy sẽ thấy tình yêu của bạn qua sự có mặt đều đặn và những kế hoạch chung.",
+      "dateIdea": "Ăn tối ở một nơi chỉn chu, hoặc cùng lên kế hoạch cho một mục tiêu chung.",
+      "advice": "Nghỉ ngơi cũng là một phần của kế hoạch."
+    },
+    {
+      "slug": "bao-binh",
+      "ruler": "Sao Thiên Vương (cổ điển: Sao Thổ)",
+      "summary": "Bảo Bình là cung Khí kiên định, gắn với sự độc lập và đổi mới. Bạn có cách nghĩ riêng, quan tâm đến cộng đồng và không ngại khác biệt.",
+      "strengths": ["Độc lập, tư duy khác biệt", "Nhân ái, quan tâm đến cộng đồng", "Sáng tạo, nhiều ý tưởng mới", "Cởi mở với mọi người"],
+      "weaknesses": ["Có vẻ xa cách về cảm xúc", "Cứng đầu với quan điểm riêng", "Khó đoán, dễ làm người khác hụt hẫng"],
+      "inLove": "Với Bảo Bình, tình bạn thường là nền móng của tình yêu. Bạn cần một người tôn trọng không gian riêng và cùng chia sẻ những ý tưởng lớn. Bạn thể hiện tình cảm theo cách không giống ai, và cần người ấy hiểu rằng khoảng cách không có nghĩa là hết thương.",
+      "dateIdea": "Đi xem chiếu sao ở nhà mô hình vũ trụ, xem triển lãm công nghệ hoặc cùng làm tình nguyện.",
+      "advice": "Thỉnh thoảng hãy nói thẳng cảm xúc của mình, không chỉ nói ý tưởng."
+    },
+    {
+      "slug": "song-ngu",
+      "ruler": "Sao Hải Vương (cổ điển: Sao Mộc)",
+      "summary": "Song Ngư là cung Nước linh hoạt, khép lại vòng hoàng đạo. Bạn mơ mộng, giàu lòng trắc ẩn và có trực giác rất nhạy.",
+      "strengths": ["Giàu lòng trắc ẩn, dễ đồng cảm", "Sáng tạo, giàu trí tưởng tượng", "Trực giác nhạy bén", "Dịu dàng, bao dung"],
+      "weaknesses": ["Dễ trốn tránh thực tế", "Hay mềm lòng, khó từ chối", "Dễ bị cảm xúc của người khác cuốn theo"],
+      "inLove": "Song Ngư yêu lãng mạn như trong phim và sẵn sàng hy sinh vì người mình thương. Bạn cần một người vừa dịu dàng vừa đủ vững vàng để giữ bạn ở lại với thực tế. Đặt ranh giới rõ ràng sẽ giúp bạn yêu mà không đánh mất chính mình.",
+      "dateIdea": "Ngắm hoàng hôn bên biển hoặc hồ, xem phim nghệ thuật hoặc đi nghe nhạc.",
+      "advice": "Tin vào trực giác, nhưng kiểm chứng bằng hành động cụ thể."
+    }
+  ]
+}
