@@ -9,6 +9,7 @@ import { draftToPerson, emptyDraft, PersonFields, type PersonDraft } from "@/com
 import { compatibility, type FactorSystem } from "@/lib/engines/compatibility";
 import { buildProfile } from "@/lib/engines/profile";
 import type { PersonInput } from "@/lib/engines/types";
+import { track } from "@/lib/analytics";
 import { shareCardOf, shareQuery } from "@/lib/share";
 
 const SYSTEM_LABELS: Record<FactorSystem, string> = {
@@ -46,6 +47,7 @@ export function CrushClient() {
     setInvalid(null);
     setCopied(false);
     setPair({ a, b });
+    track("crush_check", { score: compatibility(buildProfile(a), buildProfile(b)).overall, with_names: Boolean(a.fullName || b.fullName) });
     requestAnimationFrame(() => document.getElementById("ket-qua")?.scrollIntoView({ behavior: reduce ? "auto" : "smooth" }));
   };
 
@@ -54,9 +56,11 @@ export function CrushClient() {
     const url = `${window.location.origin}/chia-se/crush?${view.query}`;
     const text = `Mình với crush hợp nhau ${view.result.overall}%, "${view.result.verdict}". Thử check của bạn đi!`;
     if (navigator.share) {
+      track("share_result", { method: "native", score: view.result.overall });
       await navigator.share({ title: "Check crush", text, url }).catch(() => undefined);
       return;
     }
+    track("share_result", { method: "copy_link", score: view.result.overall });
     await navigator.clipboard.writeText(`${text} ${url}`);
     setCopied(true);
   };
@@ -139,7 +143,12 @@ export function CrushClient() {
                 <IconShare size={18} stroke={1.5} aria-hidden />
                 {copied ? "Đã copy link" : "Chia sẻ"}
               </button>
-              <a href={`/api/og/crush?${view.query}&format=story`} download="check-crush.png" className="btn-secondary">
+              <a
+                href={`/api/og/crush?${view.query}&format=story`}
+                download="check-crush.png"
+                className="btn-secondary"
+                onClick={() => track("download_story", { score: view.result.overall })}
+              >
                 <IconDownload size={18} stroke={1.5} aria-hidden />
                 Tải ảnh story
               </a>

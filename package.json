@@ -15,6 +15,7 @@
     "@anthropic-ai/sdk": "^0.128.0",
     "@fontsource/be-vietnam-pro": "^5.3.0",
     "@fontsource/josefin-sans": "^5.3.0",
+    "@next/third-parties": "^16.3.6",
     "@tabler/icons-react": "^3.48.0",
     "motion": "^13.4.3",
     "next": "16.3.6",

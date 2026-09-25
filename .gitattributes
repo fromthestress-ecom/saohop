@@ -1,0 +1,7 @@
+# Luôn dùng xuống dòng LF, kể cả khi làm việc trên Windows:
+# script .sh, cấu hình Nginx và workflow chạy trên Linux sẽ lỗi nếu có CRLF.
+* text=auto eol=lf
+
+*.png binary
+*.woff binary
+*.ico binary

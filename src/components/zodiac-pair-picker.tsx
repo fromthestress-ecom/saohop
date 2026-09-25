@@ -3,6 +3,7 @@
 import { IconArrowRight } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
 
 /** Chọn 2 cung rồi chuyển tới trang cặp đôi theo slug chuẩn (cung đứng trước viết trước). */
@@ -17,6 +18,7 @@ export function ZodiacPairPicker() {
     const sb = ZODIAC_SIGNS.find((s) => s.slug === b);
     if (!sa || !sb) return;
     const [x, y] = sa.index <= sb.index ? [sa, sb] : [sb, sa];
+    track("zodiac_pair_pick", { pair: `${x.slug}-va-${y.slug}` });
     router.push(`/cung-hoang-dao/cap-doi/${x.slug}-va-${y.slug}`);
   };
 

@@ -3,7 +3,8 @@
 import { IconArrowRight, IconPencil } from "@tabler/icons-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useId, useRef, useState } from "react";
+import { track } from "@/lib/analytics";
 import { LIFE_PATH_KEYWORDS } from "@/lib/content/keywords";
 import { birthChart, lifePathNumber } from "@/lib/engines/numerology";
 import { isValidSolarDate, type SolarDate } from "@/lib/engines/types";
@@ -31,7 +32,14 @@ export function NumerologyPlayground() {
   const lifePath = lifePathNumber(shown);
   const chart = birthChart(shown);
 
+  // Chỉ ghi sự kiện một lần mỗi lượt xem trang.
+  const tracked = useRef(false);
+
   const update = (patch: Partial<SolarDate>) => {
+    if (!tracked.current) {
+      tracked.current = true;
+      track("numerology_try");
+    }
     const next = { ...date, ...patch };
     setDate(next);
     if (isValidSolarDate(next)) setLastValid(next);

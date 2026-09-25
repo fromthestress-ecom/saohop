@@ -5,7 +5,7 @@
 #
 # Cần khai báo trong GitHub > Settings > Secrets and variables > Actions:
 #   Secrets:   VPS_HOST, VPS_USER, VPS_SSH_KEY
-#   Variables (tuỳ chọn): DOMAIN, mặc định saohop.com
+#   Variables (tuỳ chọn): DOMAIN (mặc định saohop.com), GA_MEASUREMENT_ID (Google Analytics, chỉ dùng cho production)
 
 name: CI/CD
 
@@ -52,9 +52,9 @@ jobs:
         id: target
         run: |
           if [ "${GITHUB_REF_NAME}" = "master" ]; then
-            { echo "env=prod"; echo "app=saohop-prod"; echo "port=3101"; echo "site_url=https://${DOMAIN}"; } >> "$GITHUB_OUTPUT"
+            { echo "env=prod"; echo "app=saohop-prod"; echo "port=3101"; echo "site_url=https://${DOMAIN}"; echo "ga_id=${{ vars.GA_MEASUREMENT_ID }}"; } >> "$GITHUB_OUTPUT"
           else
-            { echo "env=staging"; echo "app=saohop-staging"; echo "port=3102"; echo "site_url=https://dev.${DOMAIN}"; } >> "$GITHUB_OUTPUT"
+            { echo "env=staging"; echo "app=saohop-staging"; echo "port=3102"; echo "site_url=https://dev.${DOMAIN}"; echo "ga_id="; } >> "$GITHUB_OUTPUT"
           fi
 
       # VPS chạy Node 20, build cùng phiên bản cho chắc.
@@ -69,6 +69,8 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: ${{ steps.target.outputs.site_url }}
+          # Chỉ production có mã GA; môi trường test không gửi số liệu.
+          NEXT_PUBLIC_GA_ID: ${{ steps.target.outputs.ga_id }}
           NEXT_TELEMETRY_DISABLED: "1"
 
       - name: Đóng gói bản standalone

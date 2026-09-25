@@ -7,6 +7,7 @@ import { draftToPerson, emptyDraft, PersonFields, type PersonDraft } from "@/com
 import { CanChiCard, NumerologyCard, ZodiacCard } from "@/components/profile-cards";
 import { buildProfile } from "@/lib/engines/profile";
 import type { PersonInput } from "@/lib/engines/types";
+import { track } from "@/lib/analytics";
 
 export function BanDoClient() {
   const reduce = useReducedMotion();
@@ -20,7 +21,10 @@ export function BanDoClient() {
     e.preventDefault();
     const person = draftToPerson(draft);
     setInvalid(!person);
-    if (person) setSubmitted(person);
+    if (person) {
+      setSubmitted(person);
+      track("ban_do_view", { with_name: Boolean(person.fullName) });
+    }
   };
 
   return (

@@ -1,7 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Bricolage_Grotesque, Josefin_Sans } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Link from "next/link";
+import Script from "next/script";
+import { ConsentBanner, ConsentSettingsLink } from "@/components/consent-banner";
 import { CosmicBackground } from "@/components/cosmic-background";
+import { CONSENT_DEFAULT_SCRIPT, GA_ID } from "@/lib/analytics";
 import { SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
@@ -45,6 +49,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="vi" className={`${body.variable} ${heading.variable} ${brand.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
+        {GA_ID && (
+          // Consent Mode v2: khai báo mặc định trước khi Google Analytics khởi tạo.
+          <Script id="ga-consent-default" strategy="beforeInteractive">
+            {CONSENT_DEFAULT_SCRIPT}
+          </Script>
+        )}
         <CosmicBackground />
         <header className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6">
           <Link href="/" className="flex items-center gap-2.5 whitespace-nowrap">
@@ -75,8 +85,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <p>Nội dung mang tính giải trí và tham khảo, không thay thế lời khuyên chuyên môn.</p>
             <p>Ngày sinh của crush ở chế độ xem nhanh không được lưu lại.</p>
           </div>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+            <Link href="/chinh-sach-bao-mat" className="hover:text-accent">
+              Chính sách bảo mật
+            </Link>
+            {GA_ID && <ConsentSettingsLink />}
+          </div>
         </footer>
+        {GA_ID && <ConsentBanner />}
       </body>
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
