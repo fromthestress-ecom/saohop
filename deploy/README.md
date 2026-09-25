@@ -36,16 +36,13 @@ ANTHROPIC_API_KEY=...
    - Secrets: `VPS_HOST` (IP), `VPS_USER` (`deploy`), `VPS_SSH_KEY` (khoá riêng dành cho Sao Hợp)
    - Variable: `DOMAIN` = `saohop.com`
 4. **Deploy lần đầu**: push `develop`, sau đó `master`.
-5. **Nginx và HTTPS** (root), sau khi DNS đã trỏ đúng:
+5. **Nginx và HTTPS** (root), sau khi DNS đã trỏ đúng. Chép `deploy/enable-saohop-nginx.sh` lên `/var/www/saohop/` rồi chạy:
 
    ```bash
-   cp /var/www/saohop/nginx-saohop.conf /etc/nginx/sites-available/saohop.conf
-   ln -s /etc/nginx/sites-available/saohop.conf /etc/nginx/sites-enabled/saohop.conf
-   printf "saohop:$(openssl passwd -apr1)\n" > /etc/nginx/.htpasswd-saohop-dev   # nhập mật khẩu cho dev.saohop.com
-   chmod 640 /etc/nginx/.htpasswd-saohop-dev && chown root:www-data /etc/nginx/.htpasswd-saohop-dev
-   nginx -t && systemctl reload nginx
-   certbot --nginx -d saohop.com -d www.saohop.com -d dev.saohop.com
+   bash /var/www/saohop/enable-saohop-nginx.sh
    ```
+
+   Script cài `saohop.conf`, đặt mật khẩu cho `dev.saohop.com` (tên đăng nhập `saohop`), kiểm tra `nginx -t` trước khi nạp lại (lỗi thì tự gỡ, không ảnh hưởng site khác) và chạy certbot. Chạy lại nhiều lần vẫn an toàn.
 
 ## Hằng ngày
 - Làm việc trên `develop`, push lên thì tự deploy `dev.saohop.com`.
