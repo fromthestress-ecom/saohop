@@ -75,8 +75,14 @@ jobs:
 
       - name: Đóng gói bản standalone
         run: |
-          cp -r public .next/standalone/public
-          cp -r .next/static .next/standalone/.next/static
+          # Chép NỘI DUNG thư mục (dấu /.): bản standalone có thể đã có sẵn public/ (file được trace),
+          # "cp -r public đích" khi đó sẽ tạo nhầm public/public.
+          mkdir -p .next/standalone/public .next/standalone/.next/static
+          cp -r public/. .next/standalone/public/
+          cp -r .next/static/. .next/standalone/.next/static/
+          # Kiểm tra nhanh: file tĩnh phải nằm đúng chỗ.
+          test -f .next/standalone/public/brand/logo.svg
+          test ! -d .next/standalone/public/public
           echo "${GITHUB_SHA}" > .next/standalone/COMMIT
           mkdir upload
           tar -czf upload/release.tar.gz -C .next/standalone .
