@@ -2,8 +2,8 @@
   "meta": {
     "system": "cung-hoang-dao-bien-the",
     "version": 1,
-    "reviewed": false,
-    "note": "Bài viết theo giới tính (nam, nữ) và theo tháng sinh cho từng cung, do AI soạn. Khoảng ngày trong tháng và thập độ lấy từ engine, không lưu ở đây."
+    "reviewed": true,
+    "note": "Bài viết theo giới tính (nam, nữ) và theo tháng sinh cho từng cung, do AI soạn, chủ dự án duyệt cho index ngày 26/09/2026. Khoảng ngày trong tháng và thập độ lấy từ engine, không lưu ở đây."
   },
   "signs": {
     "bach-duong": {
