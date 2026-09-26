@@ -1,7 +1,16 @@
 import type { MetadataRoute } from "next";
 import { LIFE_PATH_NUMBERS } from "@/lib/engines/numerology";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
-import { lifePathContent, lifePathSlug, ZODIAC_PAIRS, zodiacContent, zodiacPairSlug, zodiacPairsContent } from "@/lib/kb";
+import {
+  lifePathContent,
+  lifePathSlug,
+  ZODIAC_PAIRS,
+  zodiacContent,
+  zodiacPairSlug,
+  zodiacPairsContent,
+  zodiacVariantLinks,
+  zodiacVariantsContent,
+} from "@/lib/kb";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -15,6 +24,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   if (zodiacContent.meta.reviewed) {
     pages.push({ url: `${SITE}/cung-hoang-dao`, priority: 0.8 });
     for (const s of ZODIAC_SIGNS) pages.push({ url: `${SITE}/cung-hoang-dao/${s.slug}`, priority: 0.7 });
+    if (zodiacVariantsContent.meta.reviewed) {
+      for (const s of ZODIAC_SIGNS) for (const v of zodiacVariantLinks(s)) pages.push({ url: `${SITE}${v.href}`, priority: 0.6 });
+    }
     if (zodiacPairsContent.meta.reviewed) {
       pages.push({ url: `${SITE}/cung-hoang-dao/cap-doi`, priority: 0.8 });
       for (const [a, b] of ZODIAC_PAIRS) pages.push({ url: `${SITE}/cung-hoang-dao/cap-doi/${zodiacPairSlug(a, b)}`, priority: 0.6 });

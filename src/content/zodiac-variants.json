@@ -1,0 +1,3348 @@
+{
+  "meta": {
+    "system": "cung-hoang-dao-bien-the",
+    "version": 1,
+    "reviewed": false,
+    "note": "Bài viết theo giới tính (nam, nữ) và theo tháng sinh cho từng cung, do AI soạn. Khoảng ngày trong tháng và thập độ lấy từ engine, không lưu ở đây."
+  },
+  "signs": {
+    "bach-duong": {
+      "nam": {
+        "summary": "Bạch Dương nam là kiểu người đàn ông thẳng thắn, nhiệt huyết và luôn muốn đi đầu. Anh ấy sống nhanh, yêu nhanh và rất ghét sự nhàm chán.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bạch Dương nam",
+              "paragraphs": [
+                "Bạch Dương nam mang năng lượng của người tiên phong. Anh ấy thích thử thách, thích cạnh tranh và thường là người đứng ra khi cả nhóm còn ngại ngần. Sự tự tin và dám làm khiến Bạch Dương nam dễ nổi bật ở bất cứ đâu.",
+                "Anh ấy nói thẳng, ghét vòng vo và thể hiện cảm xúc khá rõ ràng. Vui thì cười lớn, giận thì bộc lộ ngay, nhưng cũng nguôi rất nhanh và hiếm khi thù dai.",
+                "Mặt trái là tính nóng vội và thiếu kiên nhẫn. Bạch Dương nam có thể quyết định khi chưa suy nghĩ kỹ, dễ nói những lời làm người khác tổn thương lúc nóng giận, và đôi khi hơi coi trọng cái tôi."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bạch Dương nam khi yêu",
+              "paragraphs": [
+                "Khi thích ai, Bạch Dương nam thường chủ động trước: nhắn tin, rủ đi chơi, thậm chí tỏ tình khá sớm. Anh ấy thích cảm giác chinh phục và yêu một cách nồng nhiệt, hết mình.",
+                "Bạch Dương nam cần một người có cá tính, đủ bản lĩnh để đứng ngang hàng nhưng cũng đủ ấm áp để giúp anh ấy dịu lại. Thử thách lớn nhất của anh ấy là giữ được sự kiên nhẫn khi mối quan hệ qua giai đoạn đầu đầy hứng khởi."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bạch Dương nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chủ động nhắn tin, rủ đi chơi, thậm chí rủ ngay trong ngày",
+                "Hay trêu chọc, thách đố hoặc tranh luận vui với bạn",
+                "Muốn thể hiện trước mặt bạn: khoe thành tích, làm giúp việc khó",
+                "Bảo vệ bạn khi có ai làm bạn khó chịu",
+                "Nói thẳng rằng bạn đẹp hoặc giỏi mà không vòng vo"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bạch Dương nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bạch Dương nam hơn:"
+              ],
+              "bullets": [
+                "Rủ làm điều gì đó có vận động hoặc mới lạ",
+                "Thẳng thắn nói điều mình nghĩ, kể cả khi không đồng ý",
+                "Có đam mê và mục tiêu riêng, đừng xoay quanh anh ấy",
+                "Để anh ấy chủ động, nhưng đừng để mình bị lấn át",
+                "Đợi cơn giận qua đi rồi hãy nói chuyện nghiêm túc"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bạch Dương nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bạch Dương nam làm tốt ở những nơi có tốc độ, thử thách và cơ hội dẫn dắt: khởi nghiệp, kinh doanh, bán hàng, thể thao, cứu hộ hay quản lý dự án giai đoạn đầu. Anh ấy không thích bị quản lý quá chặt.",
+                "Với tiền bạc, Bạch Dương nam kiếm tiền quyết liệt nhưng cũng chi tiêu theo cảm hứng. Thói quen chờ một ngày trước khi mua món đồ đắt tiền sẽ giúp anh ấy cân bằng hơn."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bạch Dương nam có ghen không?",
+              "a": "Bạch Dương nam khá chiếm hữu và dễ ghen khi cảm thấy có người cạnh tranh. Tuy vậy anh ấy thường thể hiện thẳng thay vì âm thầm, và nguôi nhanh khi được trấn an."
+            },
+            {
+              "q": "Bạch Dương nam có dễ chán không?",
+              "a": "Bạch Dương nam dễ chán khi mọi thứ trở nên đều đều. Những trải nghiệm mới, mục tiêu chung và chút thử thách vui vẻ sẽ giữ cho anh ấy luôn hứng thú với mối quan hệ."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Bạch Dương nữ là kiểu người con gái mạnh mẽ, độc lập và đầy năng lượng. Cô ấy biết mình muốn gì và không ngại chủ động theo đuổi.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bạch Dương nữ",
+              "paragraphs": [
+                "Bạch Dương nữ tự tin, quyết đoán và thường là người dám nghĩ dám làm trong nhóm bạn. Cô ấy không thích chờ đợi người khác quyết định thay mình, và sẵn sàng tự mở đường.",
+                "Cô ấy thẳng thắn, vui vẻ và rất thật với cảm xúc. Bạch Dương nữ ghét sự giả tạo và thường nói ra điều mình nghĩ, dù đôi khi hơi mạnh tay.",
+                "Mặt trái là sự nóng nảy và thiếu kiên nhẫn. Bạch Dương nữ có thể bực bội khi mọi thứ diễn ra chậm, và đôi khi hành động trước khi cân nhắc hết hậu quả."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bạch Dương nữ khi yêu",
+              "paragraphs": [
+                "Trong tình yêu, Bạch Dương nữ không ngại chủ động. Nếu thích ai, cô ấy có thể là người mở lời trước. Cô ấy yêu nồng nhiệt, thẳng thắn và mong đối phương cũng rõ ràng như mình.",
+                "Bạch Dương nữ cần một người tôn trọng sự độc lập của cô ấy, không tìm cách kiểm soát, và đủ tự tin để không cảm thấy bị lấn át. Cô ấy cũng cần học cách kiên nhẫn và mềm mỏng hơn khi mâu thuẫn xảy ra."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bạch Dương nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chủ động bắt chuyện, rủ bạn đi chơi",
+                "Trêu chọc, thách đố bạn một cách vui vẻ",
+                "Nói thẳng những gì cô ấy thích ở bạn",
+                "Rủ bạn cùng làm những hoạt động năng động",
+                "Tỏ ra khó chịu thấy rõ khi bạn thân thiết với người khác"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bạch Dương nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bạch Dương nữ hơn:"
+              ],
+              "bullets": [
+                "Tự tin và thẳng thắn, đừng úp mở quá lâu",
+                "Tôn trọng sự độc lập, đừng cố kiểm soát",
+                "Rủ những buổi hẹn năng động: leo núi, đạp xe, thể thao",
+                "Có mục tiêu và đam mê riêng",
+                "Kiên nhẫn khi cô ấy nóng, rồi nói chuyện khi đã bình tĩnh"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bạch Dương nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bạch Dương nữ phát huy tốt ở những vị trí cần sự chủ động và dám quyết: kinh doanh, khởi nghiệp, quản lý, truyền thông, thể thao hay bất kỳ nơi nào cho cô ấy được dẫn dắt.",
+                "Cô ấy thường tự lập tài chính từ sớm và không thích phụ thuộc. Điều cần để ý là tránh những quyết định chi tiêu hay đầu tư bốc đồng."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bạch Dương nữ có mạnh mẽ quá không?",
+              "a": "Bạch Dương nữ độc lập và quyết đoán, nhưng bên trong cũng có lúc cần được quan tâm. Người ở cạnh cô ấy nên tôn trọng sự mạnh mẽ đó, đồng thời cho cô ấy một nơi để được dựa vào."
+            },
+            {
+              "q": "Bạch Dương nữ có chủ động tỏ tình không?",
+              "a": "Có khá nhiều Bạch Dương nữ sẵn sàng chủ động khi đã thích ai. Cô ấy không thích chờ đợi mập mờ và muốn mọi thứ rõ ràng."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "3": {
+          "summary": "Bạch Dương tháng 3 là những người sinh từ 21/03 đến 31/03, phần lớn thuộc thập độ đầu tiên. Đây là những Bạch Dương thuần chất nhất: nhanh, can đảm và đầy nhiệt huyết.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bạch Dương tháng 3 khác gì Bạch Dương tháng 4",
+                "paragraphs": [
+                  "Người sinh cuối tháng 3 phần lớn thuộc thập độ đầu của Bạch Dương, nơi năng lượng Sao Hỏa đậm đặc nhất. Nếu Bạch Dương tháng 4 pha thêm sự tự tin của Sư Tử hay tinh thần phiêu lưu của Nhân Mã, thì Bạch Dương tháng 3 mang trọn vẹn sự quyết liệt và tốc độ của cung mở đầu vòng hoàng đạo.",
+                  "Những người sinh vài ngày đầu, khoảng 21 đến 22/03, đứng sát ranh giới với Song Ngư, nên đôi khi có thêm chút nhạy cảm và giàu tưởng tượng."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bạch Dương tháng 3",
+                "paragraphs": [
+                  "Bạch Dương tháng 3 hành động nhanh, thích dẫn đầu và rất ghét phải chờ đợi. Họ thẳng thắn, bộc trực và có sức hút của người dám làm.",
+                  "Họ cũng là những người dễ nóng nhất trong các Bạch Dương, nhưng nguôi rất nhanh. Sự can đảm của họ giúp mở đường cho người khác, còn sự thiếu kiên nhẫn là điều họ cần luyện cả đời."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bạch Dương tháng 3 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bạch Dương tháng 3 chủ động và nồng nhiệt. Họ thích cảm giác chinh phục và thể hiện tình cảm rất rõ ràng.",
+                  "Họ cần một người đủ năng động để theo kịp, và đủ bình tĩnh để giúp họ dịu lại những lúc bốc đồng."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bạch Dương tháng 3",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bạch Dương tháng 3:"
+                ],
+                "bullets": [
+                  "Can đảm, dám làm điều người khác ngại",
+                  "Nhiệt huyết, truyền năng lượng cho người xung quanh",
+                  "Thẳng thắn, không vòng vo",
+                  "Hồi phục nhanh sau thất bại"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bạch Dương tháng 3 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bạch Dương tháng 3 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Chậm lại một nhịp trước quyết định lớn",
+                  "Cẩn thận lời nói khi đang giận",
+                  "Kiên nhẫn đi đến cùng với những gì đã bắt đầu",
+                  "Lắng nghe ý kiến trước khi quyết thay cả nhóm"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 21/03 là Song Ngư hay Bạch Dương?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 21/03 thuộc cung Bạch Dương. Tuy vậy thời điểm Mặt Trời chuyển cung xê dịch nhẹ theo từng năm, nên người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Bạch Dương tháng 3 khác tháng 4 thế nào?",
+                "a": "Bạch Dương tháng 3 phần lớn thuộc thập độ đầu nên thuần chất và bốc lửa hơn. Bạch Dương tháng 4 pha thêm nét của Sư Tử và Nhân Mã nên thường tự tin, hào phóng và thích khám phá hơn."
+              }
+            ]
+          }
+        },
+        "4": {
+          "summary": "Bạch Dương tháng 4 là những người sinh từ 01/04 đến 19/04, thuộc thập độ hai và ba. Họ vẫn nhiệt huyết như mọi Bạch Dương, nhưng pha thêm sự tự tin của Sư Tử và tinh thần phiêu lưu của Nhân Mã.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bạch Dương tháng 4 khác gì Bạch Dương tháng 3",
+                "paragraphs": [
+                  "Khác với Bạch Dương tháng 3 thuần chất, Bạch Dương tháng 4 mang thêm màu sắc của hai cung Lửa khác. Người sinh đầu tháng 4 chịu ảnh hưởng của Sư Tử, nên thường tự tin, hào phóng và có sức hút lãnh đạo. Người sinh giữa tháng 4 trở đi chịu ảnh hưởng của Nhân Mã, nên lạc quan, thích đi xa và ham học hỏi.",
+                  "Những người sinh vào những ngày cuối, khoảng 18 đến 19/04, đứng sát ranh giới với Kim Ngưu, nên đôi khi kiên nhẫn và thực tế hơn Bạch Dương điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bạch Dương tháng 4",
+                "paragraphs": [
+                  "Bạch Dương tháng 4 vẫn mạnh mẽ và quyết đoán, nhưng thường rộng lượng và biết nhìn xa hơn. Người sinh đầu tháng 4 thích được công nhận và có khả năng truyền cảm hứng cho người khác.",
+                  "Người sinh giữa và cuối tháng 4 thì phóng khoáng, yêu tự do và có tinh thần triết lý. Họ không chỉ muốn thắng, mà còn muốn hiểu vì sao mình làm điều đó."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bạch Dương tháng 4 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bạch Dương tháng 4 nồng nhiệt và hào phóng. Người sinh đầu tháng 4 thích những cử chỉ lãng mạn lớn, còn người sinh giữa và cuối tháng 4 thích một người bạn đồng hành cùng khám phá thế giới.",
+                  "Họ cần một người vừa ngưỡng mộ họ, vừa cho họ đủ không gian tự do."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bạch Dương tháng 4",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bạch Dương tháng 4:"
+                ],
+                "bullets": [
+                  "Tự tin và có sức hút lãnh đạo",
+                  "Hào phóng, rộng lượng với người khác",
+                  "Lạc quan, yêu khám phá",
+                  "Biết nhìn xa hơn chuyện trước mắt"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bạch Dương tháng 4 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bạch Dương tháng 4 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh để cái tôi lấn át người khác",
+                  "Giữ lời hứa, đừng hứa quá nhiều",
+                  "Tế nhị hơn khi nói thẳng",
+                  "Cân bằng giữa tự do và cam kết"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 19/04 là Bạch Dương hay Kim Ngưu?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 19/04 thuộc cung Bạch Dương, còn Kim Ngưu bắt đầu từ 20/04. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh để chắc chắn."
+              },
+              {
+                "q": "Vì sao Bạch Dương tháng 4 lạc quan hơn?",
+                "a": "Người sinh giữa và cuối tháng 4 thuộc thập độ ba, chịu thêm ảnh hưởng của Nhân Mã, cung của sự lạc quan và phiêu lưu. Vì vậy họ thường nhìn đời tươi sáng và thích khám phá hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "kim-nguu": {
+      "nam": {
+        "summary": "Kim Ngưu nam là kiểu người đàn ông điềm tĩnh, chung thuỷ và đáng tin cậy. Anh ấy yêu chậm nhưng chắc, và biết cách làm cuộc sống trở nên dễ chịu.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Kim Ngưu nam",
+              "paragraphs": [
+                "Kim Ngưu nam sống theo nhịp của riêng mình. Anh ấy không thích bị hối thúc, nhưng khi đã bắt tay vào việc thì làm đều đặn và bền bỉ. Sự điềm tĩnh khiến anh ấy trở thành chỗ dựa vững vàng cho những người xung quanh.",
+                "Anh ấy yêu những điều giản dị mà chất lượng: đồ ăn ngon, âm nhạc hay, một không gian thoải mái. Nhiều Kim Ngưu nam nấu ăn giỏi hoặc có gu thẩm mỹ khá rõ ràng.",
+                "Mặt trái là tính cố chấp và ngại thay đổi. Khi đã quyết, Kim Ngưu nam rất khó bị lay chuyển, và có thể trở nên bảo thủ nếu cảm thấy mất an toàn."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Kim Ngưu nam khi yêu",
+              "paragraphs": [
+                "Kim Ngưu nam yêu từ tốn. Anh ấy quan sát kỹ, thử tin từng chút một, nhưng khi đã yêu thì rất chung thuỷ và nghiêm túc. Anh ấy thể hiện tình cảm qua hành động: đưa đón, nấu ăn, lo lắng cho tương lai của hai người.",
+                "Kim Ngưu nam cần một người ổn định, chân thành và kiên nhẫn. Điều anh ấy cần luyện là bớt giữ chặt và chấp nhận rằng tình yêu cũng cần những khoảng thở và những thay đổi."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Kim Ngưu nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Rủ bạn đi ăn ở những quán anh ấy rất thích",
+                "Nhớ những chi tiết nhỏ về sở thích của bạn",
+                "Nhắn tin đều đặn, không dồn dập nhưng không biến mất",
+                "Tặng quà thiết thực hoặc tự tay làm",
+                "Thoải mái ngồi cạnh bạn thật lâu dù không nói nhiều"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Kim Ngưu nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Kim Ngưu nam hơn:"
+              ],
+              "bullets": [
+                "Kiên nhẫn, đừng thúc ép anh ấy",
+                "Rủ đi ăn ngon hoặc cùng nấu một bữa",
+                "Giữ lời hứa, kể cả những lời hứa nhỏ",
+                "Tạo không gian dễ chịu, âm nhạc nhẹ nhàng",
+                "Cho anh ấy thấy bạn là người ổn định và chân thành"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Kim Ngưu nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Kim Ngưu nam phát huy tốt ở những nơi cần sự bền bỉ và kết quả hữu hình: tài chính, bất động sản, ẩm thực, kỹ thuật, thiết kế hay âm nhạc. Anh ấy thích môi trường ổn định và được ghi nhận công sức.",
+                "Kim Ngưu nam thường giỏi tiết kiệm và tích luỹ, nhưng cũng sẵn sàng chi mạnh cho những món đồ chất lượng. Anh ấy coi trọng sự an toàn tài chính cho gia đình."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Kim Ngưu nam có chung thuỷ không?",
+              "a": "Kim Ngưu nam được xem là một trong những kiểu người chung thuỷ nhất. Anh ấy yêu chậm, nhưng khi đã cam kết thì rất nghiêm túc và gắn bó lâu dài."
+            },
+            {
+              "q": "Kim Ngưu nam có lãng mạn không?",
+              "a": "Kim Ngưu nam lãng mạn theo kiểu giác quan: một bữa tối ngon, một món quà chất lượng, một cái ôm lâu. Anh ấy ít nói lời hoa mỹ nhưng rất chu đáo."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Kim Ngưu nữ là kiểu người con gái dịu dàng, kiên định và biết tận hưởng. Cô ấy mang đến cảm giác bình yên và an toàn cho những người mình thương.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Kim Ngưu nữ",
+              "paragraphs": [
+                "Kim Ngưu nữ điềm tĩnh, chững chạc và có gu thẩm mỹ tinh tế. Cô ấy thích những điều đẹp và chất lượng, từ quần áo, đồ ăn đến không gian sống.",
+                "Cô ấy thực tế, biết mình muốn gì và kiên trì theo đuổi. Kim Ngưu nữ không dễ bị lung lay bởi lời nói ngọt ngào, mà tin vào hành động và sự nhất quán.",
+                "Mặt trái là tính cứng đầu và ngại thay đổi. Khi đã quyết định, Kim Ngưu nữ khó bị thuyết phục, và có thể trở nên bất an khi cuộc sống xáo trộn."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Kim Ngưu nữ khi yêu",
+              "paragraphs": [
+                "Trong tình yêu, Kim Ngưu nữ thận trọng. Cô ấy cần thời gian để tin tưởng, nhưng khi đã yêu thì rất chung thuỷ và tận tâm. Cô ấy thích những buổi hẹn ấm cúng, những món quà tinh tế và những cái chạm tay nhẹ nhàng.",
+                "Kim Ngưu nữ cần một người ổn định, đáng tin và có kế hoạch cho tương lai. Những người thất thường, nóng lạnh thất thường thường khiến cô ấy mệt mỏi."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Kim Ngưu nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Rủ bạn đi ăn hoặc nấu cho bạn",
+                "Nhớ và làm theo những sở thích nhỏ của bạn",
+                "Kiên nhẫn trò chuyện đều đặn mỗi ngày",
+                "Thoải mái ở cạnh bạn trong im lặng",
+                "Giới thiệu bạn với những người thân thiết"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Kim Ngưu nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Kim Ngưu nữ hơn:"
+              ],
+              "bullets": [
+                "Kiên nhẫn và nhất quán, đừng tấn công dồn dập",
+                "Rủ những buổi hẹn ngon và ấm cúng",
+                "Giữ lời hứa và đúng hẹn",
+                "Trân trọng gu thẩm mỹ của cô ấy",
+                "Thể hiện bạn có kế hoạch rõ ràng cho tương lai"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Kim Ngưu nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Kim Ngưu nữ phát huy tốt ở những lĩnh vực cần sự tỉ mỉ và thẩm mỹ: tài chính, thiết kế, thời trang, làm đẹp, ẩm thực hay quản lý. Cô ấy làm việc bền bỉ và đáng tin.",
+                "Kim Ngưu nữ thường giỏi quản lý tiền và thích sự an toàn tài chính. Cô ấy vừa biết tiết kiệm vừa biết tận hưởng những điều đẹp đẽ."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Kim Ngưu nữ có khó theo đuổi không?",
+              "a": "Kim Ngưu nữ cần thời gian để tin tưởng nên có vẻ khó theo đuổi. Nhưng nếu bạn kiên nhẫn, chân thành và nhất quán, cô ấy sẽ mở lòng và gắn bó rất lâu dài."
+            },
+            {
+              "q": "Kim Ngưu nữ thích được tặng gì?",
+              "a": "Kim Ngưu nữ thường thích những món quà chất lượng, dùng được lâu và đẹp: một món đồ tinh tế, một bữa ăn ngon hay một trải nghiệm thư giãn."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "4": {
+          "summary": "Kim Ngưu tháng 4 là những người sinh từ 20/04 đến 30/04, phần lớn thuộc thập độ đầu tiên. Đây là những Kim Ngưu thuần chất nhất: điềm tĩnh, chung thuỷ và rất biết tận hưởng.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Kim Ngưu tháng 4 khác gì Kim Ngưu tháng 5",
+                "paragraphs": [
+                  "Người sinh cuối tháng 4 phần lớn thuộc thập độ đầu của Kim Ngưu, nơi năng lượng Sao Kim đậm đặc nhất. Nếu Kim Ngưu tháng 5 pha thêm sự tỉ mỉ của Xử Nữ hay tham vọng của Ma Kết, thì Kim Ngưu tháng 4 mang trọn vẹn sự điềm tĩnh, yêu cái đẹp và cảm giác của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 20 đến 21/04, đứng sát ranh giới với Bạch Dương, nên đôi khi có thêm chút nhanh nhẹn và quyết đoán."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Kim Ngưu tháng 4",
+                "paragraphs": [
+                  "Kim Ngưu tháng 4 thích sự ổn định, yêu cái đẹp và rất nhạy với cảm giác: món ăn ngon, âm nhạc hay, chất liệu mềm mại. Họ sống chậm rãi nhưng vững vàng.",
+                  "Họ là những người chung thuỷ và đáng tin, nhưng cũng là những Kim Ngưu cứng đầu nhất khi đã quyết định điều gì."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Kim Ngưu tháng 4 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Kim Ngưu tháng 4 lãng mạn theo kiểu giác quan: những bữa tối ngon, những cái ôm lâu và những món quà tinh tế.",
+                  "Họ cần một người kiên nhẫn, ổn định và biết trân trọng những điều giản dị."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Kim Ngưu tháng 4",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Kim Ngưu tháng 4:"
+                ],
+                "bullets": [
+                  "Điềm tĩnh trước áp lực",
+                  "Chung thuỷ, đáng tin cậy",
+                  "Gu thẩm mỹ tinh tế",
+                  "Biết tận hưởng cuộc sống"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Kim Ngưu tháng 4 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Kim Ngưu tháng 4 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Cởi mở hơn với thay đổi",
+                  "Tránh cố chấp khi hoàn cảnh đã khác",
+                  "Bớt giữ chặt trong các mối quan hệ",
+                  "Thử một điều mới mỗi tháng"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 20/04 là Bạch Dương hay Kim Ngưu?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 20/04 thuộc cung Kim Ngưu. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh, vì thời điểm chuyển cung xê dịch nhẹ theo từng năm."
+              },
+              {
+                "q": "Kim Ngưu tháng 4 khác tháng 5 thế nào?",
+                "a": "Kim Ngưu tháng 4 phần lớn thuộc thập độ đầu nên thuần chất, thiên về cảm giác và hưởng thụ. Kim Ngưu tháng 5 pha thêm nét của Xử Nữ và Ma Kết nên thực tế, tỉ mỉ và có tham vọng hơn."
+              }
+            ]
+          }
+        },
+        "5": {
+          "summary": "Kim Ngưu tháng 5 là những người sinh từ 01/05 đến 20/05, thuộc thập độ hai và ba. Họ vẫn điềm tĩnh như mọi Kim Ngưu, nhưng pha thêm sự tỉ mỉ của Xử Nữ và tham vọng của Ma Kết.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Kim Ngưu tháng 5 khác gì Kim Ngưu tháng 4",
+                "paragraphs": [
+                  "Khác với Kim Ngưu tháng 4 thuần chất, Kim Ngưu tháng 5 mang thêm màu sắc của hai cung Đất khác. Người sinh đầu tháng 5 chịu ảnh hưởng của Xử Nữ, nên chu đáo, tỉ mỉ và thích mọi thứ ngăn nắp. Người sinh giữa tháng 5 trở đi chịu ảnh hưởng của Ma Kết, nên có tham vọng, kỷ luật và nhìn xa hơn.",
+                  "Những người sinh vào những ngày cuối, khoảng 19 đến 20/05, đứng sát ranh giới với Song Tử, nên đôi khi hoạt bát và thích giao tiếp hơn Kim Ngưu điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Kim Ngưu tháng 5",
+                "paragraphs": [
+                  "Kim Ngưu tháng 5 thực tế và có năng lực tổ chức. Người sinh đầu tháng 5 để ý chi tiết, thích làm việc có phương pháp và hay giúp đỡ người khác bằng hành động cụ thể.",
+                  "Người sinh giữa và cuối tháng 5 có tham vọng rõ ràng, kiên trì với mục tiêu dài hạn và thường thành công nhờ sự bền bỉ."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Kim Ngưu tháng 5 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Kim Ngưu tháng 5 nghiêm túc và có trách nhiệm. Họ muốn một mối quan hệ lâu dài, có kế hoạch cho tương lai.",
+                  "Họ cần một người đáng tin, chăm chỉ và biết trân trọng những nỗ lực thầm lặng của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Kim Ngưu tháng 5",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Kim Ngưu tháng 5:"
+                ],
+                "bullets": [
+                  "Thực tế và có năng lực tổ chức",
+                  "Chu đáo, để ý chi tiết",
+                  "Kiên trì với mục tiêu dài hạn",
+                  "Có trách nhiệm trong tình yêu và công việc"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Kim Ngưu tháng 5 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Kim Ngưu tháng 5 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Đừng quá khắt khe với bản thân",
+                  "Dành thời gian nghỉ ngơi, không chỉ làm việc",
+                  "Thể hiện cảm xúc nhiều hơn",
+                  "Cởi mở với những cách làm khác"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 20/05 là Kim Ngưu hay Song Tử?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 20/05 thuộc cung Kim Ngưu, còn Song Tử bắt đầu từ 21/05. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Kim Ngưu tháng 5 thực tế hơn?",
+                "a": "Người sinh tháng 5 thuộc thập độ hai và ba, chịu thêm ảnh hưởng của Xử Nữ và Ma Kết, hai cung Đất thực tế và có kỷ luật. Vì vậy họ thường tỉ mỉ và có tham vọng hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "song-tu": {
+      "nam": {
+        "summary": "Song Tử nam là kiểu người đàn ông thông minh, hài hước và luôn có chuyện để nói. Anh ấy tò mò về mọi thứ và mang lại cảm giác không bao giờ nhàm chán.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Song Tử nam",
+              "paragraphs": [
+                "Song Tử nam nhanh trí, học nhanh và có khả năng nói chuyện với đủ kiểu người. Anh ấy thường là người kể chuyện hay nhất trong nhóm và biết cách làm không khí vui lên.",
+                "Anh ấy thích sự mới mẻ và có nhiều sở thích cùng lúc. Hôm nay anh ấy mê chụp ảnh, tháng sau lại đang học một ngôn ngữ mới.",
+                "Mặt trái là sự thiếu tập trung và hay thay đổi. Song Tử nam có thể bắt đầu nhiều thứ mà hoàn thành ít, và đôi khi lướt qua cảm xúc bằng những câu đùa thay vì đối mặt."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Song Tử nam khi yêu",
+              "paragraphs": [
+                "Với Song Tử nam, tình yêu bắt đầu từ cuộc trò chuyện. Anh ấy bị hút vào những người thông minh, hài hước và có cách nghĩ thú vị. Nhắn tin qua lại đến khuya là kiểu mở đầu rất Song Tử.",
+                "Song Tử nam cần một người vừa là người yêu vừa là bạn thân, có thể cùng tranh luận và cùng khám phá. Anh ấy cần học cách ổn định cảm xúc và nói rõ khi cần không gian thay vì biến mất."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Song Tử nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Nhắn tin nhiều, gửi cho bạn meme, bài hát, bài viết thú vị",
+                "Hỏi rất nhiều câu về bạn và nhớ câu trả lời",
+                "Trêu chọc, đùa với bạn nhiều hơn với người khác",
+                "Rủ bạn thử những thứ mới: quán mới, sự kiện mới",
+                "Kể cho bạn nghe những suy nghĩ riêng, không chỉ chuyện vui"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Song Tử nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Song Tử nam hơn:"
+              ],
+              "bullets": [
+                "Duy trì những cuộc trò chuyện có nội dung",
+                "Chia sẻ sở thích và kiến thức riêng của bạn",
+                "Rủ đi những nơi có nhiều thứ để xem và bàn luận",
+                "Cho anh ấy không gian riêng, đừng kiểm soát",
+                "Vui vẻ nhưng dám nói chuyện nghiêm túc khi cần"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Song Tử nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Song Tử nam phát huy tốt ở những lĩnh vực cần giao tiếp và xử lý thông tin nhanh: truyền thông, marketing, bán hàng, báo chí, công nghệ, giảng dạy. Anh ấy cần sự đa dạng để không thấy chán.",
+                "Song Tử nam có nhiều ý tưởng kiếm tiền nhưng cũng dễ chi tiêu theo hứng. Một kế hoạch tài chính đơn giản giúp anh ấy biến ý tưởng thành thành quả."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Song Tử nam có đào hoa không?",
+              "a": "Song Tử nam thân thiện, hài hước và giỏi nói chuyện nên dễ thu hút nhiều người. Điều đó không có nghĩa là thiếu chung thuỷ, nhưng người yêu anh ấy cần sự minh bạch và tin tưởng."
+            },
+            {
+              "q": "Làm sao giữ chân Song Tử nam?",
+              "a": "Hãy là người thú vị để trò chuyện, cho anh ấy tự do và cùng anh ấy khám phá những điều mới. Song Tử nam gắn bó với người khiến anh ấy không bao giờ thấy chán."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Song Tử nữ là kiểu người con gái lanh lợi, hoạt bát và đầy bất ngờ. Cô ấy có nhiều mặt thú vị và luôn khiến người khác tò mò.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Song Tử nữ",
+              "paragraphs": [
+                "Song Tử nữ nhanh nhạy, giao tiếp giỏi và có khiếu hài hước. Cô ấy dễ kết bạn, có nhiều mối quan hệ và thường là người mang lại không khí vui cho nhóm.",
+                "Cô ấy tò mò, thích học hỏi và có rất nhiều sở thích. Tâm trạng của Song Tử nữ cũng thay đổi nhanh, hôm nay muốn đi chơi, mai lại muốn ở nhà đọc sách.",
+                "Mặt trái là sự thiếu kiên nhẫn và dễ phân tán. Song Tử nữ có thể lo lắng, suy nghĩ nhiều, và đôi khi khó cam kết với một hướng đi dài hạn."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Song Tử nữ khi yêu",
+              "paragraphs": [
+                "Trong tình yêu, Song Tử nữ cần sự kết nối về trí tuệ. Cô ấy thích một người có thể nói chuyện với mình hàng giờ, làm mình cười và khiến mình tò mò.",
+                "Song Tử nữ cần tự do và không thích bị kiểm soát. Cô ấy cần học cách ổn định cảm xúc và cho người yêu cảm giác chắc chắn hơn."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Song Tử nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Nhắn tin liên tục, kể cho bạn đủ thứ chuyện",
+                "Hỏi han về sở thích, quan điểm của bạn",
+                "Trêu chọc bạn một cách đáng yêu",
+                "Rủ bạn đi những nơi mới lạ",
+                "Chia sẻ những suy nghĩ sâu hơn với riêng bạn"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Song Tử nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Song Tử nữ hơn:"
+              ],
+              "bullets": [
+                "Trò chuyện thông minh, có nội dung",
+                "Hài hước và cởi mở",
+                "Rủ những buổi hẹn đa dạng: hội sách, hài độc thoại, quán mới",
+                "Tôn trọng sự tự do của cô ấy",
+                "Kiên nhẫn khi tâm trạng cô ấy thay đổi"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Song Tử nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Song Tử nữ phát huy tốt ở những vị trí cần giao tiếp, sáng tạo và đa nhiệm: truyền thông, marketing, sáng tạo nội dung, biên phiên dịch, giáo dục hay tổ chức sự kiện.",
+                "Song Tử nữ thường có nhiều nguồn thu nhưng cũng dễ chi tiêu theo hứng thú. Theo dõi chi tiêu đơn giản giúp cô ấy chủ động hơn."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Song Tử nữ có hai mặt không?",
+              "a": "Song Tử nữ có nhiều khía cạnh tính cách và thay đổi tâm trạng khá nhanh, nên đôi khi bị cho là hai mặt. Thực ra đó là sự linh hoạt và khả năng nhìn một vấn đề từ nhiều phía."
+            },
+            {
+              "q": "Song Tử nữ thích mẫu người thế nào?",
+              "a": "Song Tử nữ thường thích người thông minh, hài hước, có nhiều điều để chia sẻ và tôn trọng sự tự do của cô ấy."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "5": {
+          "summary": "Song Tử tháng 5 là những người sinh từ 21/05 đến 31/05, phần lớn thuộc thập độ đầu tiên. Đây là những Song Tử thuần chất nhất: nhanh trí, tò mò và rất linh hoạt.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Song Tử tháng 5 khác gì Song Tử tháng 6",
+                "paragraphs": [
+                  "Người sinh cuối tháng 5 phần lớn thuộc thập độ đầu của Song Tử, nơi năng lượng Sao Thủy đậm đặc nhất. Nếu Song Tử tháng 6 pha thêm sự duyên dáng của Thiên Bình hay sự độc đáo của Bảo Bình, thì Song Tử tháng 5 mang trọn vẹn sự nhanh nhạy, tò mò và giỏi giao tiếp của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 21 đến 22/05, đứng sát ranh giới với Kim Ngưu, nên đôi khi điềm tĩnh và kiên nhẫn hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Song Tử tháng 5",
+                "paragraphs": [
+                  "Song Tử tháng 5 học nhanh, nói giỏi và có nhiều sở thích. Họ tò mò về mọi thứ và thường biết một chút về rất nhiều lĩnh vực.",
+                  "Họ là những Song Tử hay thay đổi nhất, cần sự đa dạng liên tục để không thấy chán."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Song Tử tháng 5 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Song Tử tháng 5 cần một người để trò chuyện không ngừng. Họ bị hút bởi sự thông minh và hài hước.",
+                  "Họ cần một người vừa thú vị, vừa đủ ổn định để làm điểm neo."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Song Tử tháng 5",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Song Tử tháng 5:"
+                ],
+                "bullets": [
+                  "Nhanh trí, học nhanh",
+                  "Giao tiếp giỏi, dễ kết bạn",
+                  "Linh hoạt, thích nghi tốt",
+                  "Hài hước, nhiều ý tưởng"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Song Tử tháng 5 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Song Tử tháng 5 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tập trung hoàn thành từng việc",
+                  "Ở lại với cảm xúc thay vì lảng tránh",
+                  "Giữ lời hứa nhỏ",
+                  "Bớt suy nghĩ quá nhiều"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 21/05 là Kim Ngưu hay Song Tử?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 21/05 thuộc cung Song Tử. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Song Tử tháng 5 khác tháng 6 thế nào?",
+                "a": "Song Tử tháng 5 phần lớn thuộc thập độ đầu nên thuần chất, nhanh nhạy và hay thay đổi. Song Tử tháng 6 pha thêm nét của Thiên Bình và Bảo Bình nên duyên dáng, lý tưởng và độc đáo hơn."
+              }
+            ]
+          }
+        },
+        "6": {
+          "summary": "Song Tử tháng 6 là những người sinh từ 01/06 đến 20/06, thuộc thập độ hai và ba. Họ vẫn thông minh như mọi Song Tử, nhưng pha thêm sự duyên dáng của Thiên Bình và sự độc đáo của Bảo Bình.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Song Tử tháng 6 khác gì Song Tử tháng 5",
+                "paragraphs": [
+                  "Khác với Song Tử tháng 5 thuần chất, Song Tử tháng 6 mang thêm màu sắc của hai cung Khí khác. Người sinh đầu tháng 6 chịu ảnh hưởng của Thiên Bình, nên duyên dáng, khéo léo và coi trọng các mối quan hệ. Người sinh giữa tháng 6 trở đi chịu ảnh hưởng của Bảo Bình, nên độc lập, sáng tạo và có tư duy khác biệt.",
+                  "Những người sinh vào những ngày cuối, khoảng 19 đến 20/06, đứng sát ranh giới với Cự Giải, nên đôi khi giàu cảm xúc và trọng gia đình hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Song Tử tháng 6",
+                "paragraphs": [
+                  "Song Tử tháng 6 vẫn giỏi giao tiếp, nhưng thường tinh tế và có chiều sâu hơn. Người sinh đầu tháng 6 có khiếu thẩm mỹ và biết cách làm hài lòng người khác.",
+                  "Người sinh giữa và cuối tháng 6 có những ý tưởng độc đáo, thích những điều mới lạ và quan tâm đến các vấn đề lớn."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Song Tử tháng 6 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Song Tử tháng 6 lãng mạn và biết cách chiều lòng người yêu. Người sinh đầu tháng 6 coi trọng sự hài hoà, người sinh giữa và cuối tháng 6 cần nhiều tự do và không gian.",
+                  "Họ cần một người vừa hợp về trí tuệ, vừa tôn trọng cá tính riêng của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Song Tử tháng 6",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Song Tử tháng 6:"
+                ],
+                "bullets": [
+                  "Duyên dáng, khéo léo trong giao tiếp",
+                  "Sáng tạo, có tư duy độc đáo",
+                  "Có gu thẩm mỹ",
+                  "Quan tâm đến những vấn đề lớn"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Song Tử tháng 6 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Song Tử tháng 6 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh do dự quá lâu",
+                  "Thể hiện cảm xúc rõ ràng hơn",
+                  "Cân bằng giữa tự do và cam kết",
+                  "Tập trung vào một vài mục tiêu"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 20/06 là Song Tử hay Cự Giải?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 20/06 thuộc cung Song Tử, còn Cự Giải bắt đầu từ 21/06. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Song Tử tháng 6 độc đáo hơn?",
+                "a": "Người sinh giữa và cuối tháng 6 thuộc thập độ ba, chịu thêm ảnh hưởng của Bảo Bình, cung của sự độc đáo và đổi mới. Vì vậy họ thường có những ý tưởng khác biệt."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "cu-giai": {
+      "nam": {
+        "summary": "Cự Giải nam là kiểu người đàn ông ấm áp, chu đáo và rất trọng gia đình. Bề ngoài có thể dè dặt, nhưng bên trong là một trái tim giàu tình cảm.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Cự Giải nam",
+              "paragraphs": [
+                "Cự Giải nam nhạy cảm và có trực giác tốt về cảm xúc của người khác. Anh ấy thường nhận ra khi ai đó buồn và biết cách an ủi đúng lúc.",
+                "Gia đình và những người thân thiết có vị trí đặc biệt với Cự Giải nam. Anh ấy nhớ những kỷ niệm, trân trọng những điều cũ và thích tạo ra một không gian ấm cúng.",
+                "Mặt trái là tâm trạng lên xuống và xu hướng thu mình khi bị tổn thương. Cự Giải nam có thể im lặng, dỗi hoặc nói bóng gió thay vì nói thẳng điều mình cần."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Cự Giải nam khi yêu",
+              "paragraphs": [
+                "Cự Giải nam yêu bằng sự chăm sóc. Anh ấy nhớ người yêu thích ăn gì, hôm nay có mệt không, và luôn muốn người kia cảm thấy an toàn, được che chở.",
+                "Anh ấy cần thời gian để tin tưởng, nhưng khi đã yêu thì rất chung thuỷ và nghĩ đến chuyện lâu dài. Cự Giải nam cần một người dịu dàng, nhất quán và không đùa cợt với cảm xúc của anh ấy."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Cự Giải nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Hỏi han bạn đã ăn chưa, ngủ đủ chưa",
+                "Nhớ những chuyện bạn kể từ rất lâu",
+                "Mang đồ ăn hoặc những món nhỏ cho bạn",
+                "Kể về gia đình và những kỷ niệm tuổi thơ",
+                "Hơi dỗi khi bạn không để ý đến anh ấy"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Cự Giải nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Cự Giải nam hơn:"
+              ],
+              "bullets": [
+                "Lắng nghe khi anh ấy tâm sự",
+                "Tôn trọng gia đình của anh ấy",
+                "Rủ những buổi hẹn ấm cúng: nấu ăn chung, xem phim ở nhà",
+                "Nhất quán, đừng lúc nóng lúc lạnh",
+                "Nhẹ nhàng khi góp ý, vì anh ấy nhớ rất lâu"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Cự Giải nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Cự Giải nam phát huy tốt ở những lĩnh vực liên quan đến chăm sóc và thấu hiểu con người: giáo dục, y tế, nhân sự, ẩm thực, bất động sản hay kinh doanh gia đình.",
+                "Cự Giải nam thường cẩn thận với tiền bạc vì coi trọng sự an toàn cho gia đình. Anh ấy giỏi tiết kiệm nhưng hay chi nhiều cho người thân."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Cự Giải nam có hay dỗi không?",
+              "a": "Cự Giải nam nhạy cảm nên đôi khi thể hiện bằng cách im lặng hoặc dỗi. Đó thường là tín hiệu anh ấy cần được quan tâm, và một lời hỏi han nhẹ nhàng sẽ giúp anh ấy mở lòng."
+            },
+            {
+              "q": "Cự Giải nam có phải người của gia đình?",
+              "a": "Đúng vậy, Cự Giải nam rất trọng gia đình và thường mơ về một tổ ấm bình yên. Anh ấy là kiểu người chồng, người cha chu đáo và tận tâm."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Cự Giải nữ là kiểu người con gái dịu dàng, tinh tế và giàu tình thương. Cô ấy chăm sóc mọi người bằng cả trái tim và rất coi trọng tổ ấm.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Cự Giải nữ",
+              "paragraphs": [
+                "Cự Giải nữ có trực giác cảm xúc rất nhạy. Cô ấy hiểu người khác từ những chi tiết nhỏ và thường là người bạn mà mọi người tìm đến để tâm sự.",
+                "Cô ấy trọng gia đình, nhớ những kỷ niệm và giữ gìn những mối quan hệ lâu năm. Cự Giải nữ biết cách tạo ra không khí ấm cúng ở bất cứ đâu.",
+                "Mặt trái là sự nhạy cảm dễ biến thành tổn thương và lo âu. Cự Giải nữ có thể nhớ lâu những lời nói làm đau lòng và có tâm trạng thay đổi theo chu kỳ."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Cự Giải nữ khi yêu",
+              "paragraphs": [
+                "Cự Giải nữ yêu bằng cả trái tim và sự chăm sóc. Cô ấy nhớ mọi điều về người mình thương và luôn muốn họ cảm thấy được yêu thương, an toàn.",
+                "Cô ấy cần một người nhất quán, dịu dàng và sẵn sàng xây dựng tương lai lâu dài. Điều Cự Giải nữ cần luyện là nói rõ nhu cầu thay vì mong người kia tự đoán."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Cự Giải nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Quan tâm đến sức khoẻ và cảm xúc của bạn",
+                "Nấu ăn hoặc chuẩn bị những điều nhỏ cho bạn",
+                "Kể cho bạn nghe về gia đình và kỷ niệm",
+                "Nhớ những ngày quan trọng với bạn",
+                "Buồn khi bạn lạnh nhạt dù không nói ra"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Cự Giải nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Cự Giải nữ hơn:"
+              ],
+              "bullets": [
+                "Dịu dàng và kiên nhẫn",
+                "Lắng nghe mà không vội đưa lời khuyên",
+                "Tôn trọng gia đình và bạn bè thân của cô ấy",
+                "Rủ những buổi hẹn ấm cúng, picnic nhỏ",
+                "Cho cô ấy cảm giác an toàn bằng sự nhất quán"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Cự Giải nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Cự Giải nữ phát huy tốt ở những lĩnh vực cần sự tận tâm và thấu hiểu: giáo dục, tâm lý, y tế, nhân sự, ẩm thực, thiết kế nội thất hay dịch vụ khách hàng.",
+                "Cự Giải nữ thường tiết kiệm giỏi và nghĩ nhiều cho gia đình. Dành riêng một khoản chăm sóc bản thân giúp cô ấy có năng lượng chăm sóc người khác."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Cự Giải nữ có ghen không?",
+              "a": "Cự Giải nữ yêu sâu và cần cảm giác an toàn, nên có thể ghen khi thấy bất an. Sự nhất quán và quan tâm từ người yêu là cách tốt nhất để cô ấy yên tâm."
+            },
+            {
+              "q": "Cự Giải nữ thích mẫu người nào?",
+              "a": "Cự Giải nữ thường thích người ấm áp, chung thuỷ, có trách nhiệm và biết trân trọng gia đình."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "6": {
+          "summary": "Cự Giải tháng 6 là những người sinh từ 21/06 đến 30/06, thuộc thập độ đầu tiên. Đây là những Cự Giải thuần chất nhất: giàu cảm xúc, trọng gia đình và giỏi chăm sóc.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Cự Giải tháng 6 khác gì Cự Giải tháng 7",
+                "paragraphs": [
+                  "Người sinh cuối tháng 6 thuộc thập độ đầu của Cự Giải, nơi năng lượng Mặt Trăng đậm đặc nhất. Nếu Cự Giải tháng 7 pha thêm chiều sâu của Bọ Cạp hay sự mơ mộng của Song Ngư, thì Cự Giải tháng 6 mang trọn vẹn sự ấm áp, trọng tổ ấm và nhạy cảm của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 21 đến 22/06, đứng sát ranh giới với Song Tử, nên đôi khi hoạt bát và thích giao tiếp hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Cự Giải tháng 6",
+                "paragraphs": [
+                  "Cự Giải tháng 6 có trực giác cảm xúc nhạy bén, biết chăm sóc và rất gắn bó với gia đình, bạn bè thân.",
+                  "Họ cũng là những Cự Giải có tâm trạng thay đổi rõ nhất, cần thời gian ở những nơi thân thuộc để cảm thấy an toàn."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Cự Giải tháng 6 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Cự Giải tháng 6 tận tâm và chu đáo. Họ muốn xây dựng một tổ ấm và chăm sóc người mình yêu từng chút.",
+                  "Họ cần một người dịu dàng, nhất quán và trân trọng sự quan tâm của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Cự Giải tháng 6",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Cự Giải tháng 6:"
+                ],
+                "bullets": [
+                  "Chu đáo, biết chăm sóc",
+                  "Trực giác cảm xúc nhạy bén",
+                  "Chung thuỷ, trọng gia đình",
+                  "Nhớ lâu những kỷ niệm đẹp"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Cự Giải tháng 6 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Cự Giải tháng 6 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Nói rõ nhu cầu thay vì dỗi",
+                  "Đặt ranh giới với cảm xúc của người khác",
+                  "Buông bỏ những tổn thương cũ",
+                  "Tự chăm sóc bản thân"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 21/06 là Song Tử hay Cự Giải?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 21/06 thuộc cung Cự Giải. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Cự Giải tháng 6 khác tháng 7 thế nào?",
+                "a": "Cự Giải tháng 6 thuộc thập độ đầu nên thuần chất, trọng gia đình và giỏi chăm sóc. Cự Giải tháng 7 pha thêm nét của Bọ Cạp và Song Ngư nên sâu sắc, mãnh liệt và mơ mộng hơn."
+              }
+            ]
+          }
+        },
+        "7": {
+          "summary": "Cự Giải tháng 7 là những người sinh từ 01/07 đến 22/07, thuộc thập độ hai và ba. Họ vẫn ấm áp như mọi Cự Giải, nhưng pha thêm chiều sâu của Bọ Cạp và sự mơ mộng của Song Ngư.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Cự Giải tháng 7 khác gì Cự Giải tháng 6",
+                "paragraphs": [
+                  "Khác với Cự Giải tháng 6 thuần chất, Cự Giải tháng 7 mang thêm màu sắc của hai cung Nước khác. Người sinh đầu tháng 7 chịu ảnh hưởng của Bọ Cạp, nên sâu sắc, mãnh liệt và có ý chí mạnh. Người sinh giữa tháng 7 trở đi chịu ảnh hưởng của Song Ngư, nên giàu tưởng tượng, lãng mạn và có tâm hồn nghệ sĩ.",
+                  "Những người sinh vào những ngày cuối, khoảng 21 đến 22/07, đứng sát ranh giới với Sư Tử, nên đôi khi tự tin và thích thể hiện hơn Cự Giải điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Cự Giải tháng 7",
+                "paragraphs": [
+                  "Cự Giải tháng 7 vẫn giàu tình cảm, nhưng người sinh đầu tháng 7 thường kín đáo, nhìn thấu tâm lý và bảo vệ người thân rất quyết liệt.",
+                  "Người sinh giữa và cuối tháng 7 thì mơ mộng, nhân hậu và thường có năng khiếu nghệ thuật."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Cự Giải tháng 7 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Cự Giải tháng 7 yêu sâu đậm. Người sinh đầu tháng 7 cần sự chung thuỷ tuyệt đối, người sinh giữa và cuối tháng 7 lãng mạn và bao dung.",
+                  "Họ cần một người chân thành, tinh tế và hiểu được những cảm xúc sâu kín."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Cự Giải tháng 7",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Cự Giải tháng 7:"
+                ],
+                "bullets": [
+                  "Tình cảm sâu sắc và bền bỉ",
+                  "Nhìn thấu tâm lý người khác",
+                  "Giàu trí tưởng tượng và lòng trắc ẩn",
+                  "Bảo vệ người thân hết mình"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Cự Giải tháng 7 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Cự Giải tháng 7 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh nghi ngờ và ghen tuông",
+                  "Đối mặt với vấn đề thay vì né tránh",
+                  "Chia sẻ cảm xúc với người tin cậy",
+                  "Giữ chân trên mặt đất khi mơ mộng"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/07 là Cự Giải hay Sư Tử?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/07 thuộc cung Cự Giải, còn Sư Tử bắt đầu từ 23/07. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Cự Giải tháng 7 sâu sắc hơn?",
+                "a": "Người sinh đầu tháng 7 thuộc thập độ hai, chịu thêm ảnh hưởng của Bọ Cạp, cung của chiều sâu cảm xúc. Vì vậy họ thường kín đáo, mãnh liệt và nhìn thấu người khác hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "su-tu": {
+      "nam": {
+        "summary": "Sư Tử nam là kiểu người đàn ông tự tin, hào phóng và có sức hút tự nhiên. Anh ấy thích được ngưỡng mộ và luôn muốn bảo vệ những người mình thương.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Sư Tử nam",
+              "paragraphs": [
+                "Sư Tử nam nổi bật ở bất cứ đâu. Anh ấy tự tin, có phong thái và thường tự nhiên trở thành trung tâm của cuộc vui.",
+                "Anh ấy hào phóng, trung thành và rất ấm áp với người thân. Sư Tử nam sẵn sàng bảo vệ bạn bè và muốn mọi người quanh mình được vui.",
+                "Mặt trái là lòng tự trọng cao và đôi khi hơi kiêu ngạo. Sư Tử nam rất khó chịu khi bị coi thường, và có thể bướng bỉnh khi tự ái."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Sư Tử nam khi yêu",
+              "paragraphs": [
+                "Sư Tử nam yêu rực rỡ và hào phóng. Anh ấy thích những cử chỉ lãng mạn lớn, những buổi hẹn đẹp và muốn người yêu cảm thấy mình đặc biệt.",
+                "Anh ấy cần được ngưỡng mộ và khen ngợi chân thành. Sư Tử nam cũng cần học cách để người yêu có chỗ toả sáng và dám nhận sai khi cần."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Sư Tử nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chăm chút ngoại hình hơn hẳn khi gặp bạn",
+                "Kể về thành tích và dự định lớn để bạn chú ý",
+                "Hào phóng mời bạn ăn uống, tặng quà",
+                "Bênh vực bạn trước mặt người khác",
+                "Để ý xem bạn có khen hay quan tâm đến anh ấy không"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Sư Tử nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Sư Tử nam hơn:"
+              ],
+              "bullets": [
+                "Khen ngợi thật lòng và cụ thể",
+                "Tự tin và chăm chút bản thân",
+                "Rủ những buổi hẹn có không khí: nhà hàng đẹp, hoà nhạc",
+                "Không chê bai anh ấy trước mặt người khác",
+                "Đáp lại sự hào phóng bằng sự quan tâm"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Sư Tử nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Sư Tử nam toả sáng ở những vị trí được thể hiện và dẫn dắt: quản lý, kinh doanh, biểu diễn, truyền thông, tổ chức sự kiện. Anh ấy cần được ghi nhận.",
+                "Sư Tử nam thích sống đẹp và chi tiêu khá hào phóng. Một ngân sách rõ ràng cho những khoản \"sống đẹp\" giúp anh ấy vững vàng tài chính."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Sư Tử nam có sĩ diện không?",
+              "a": "Sư Tử nam có lòng tự trọng cao nên khá coi trọng hình ảnh. Tránh chê bai anh ấy trước mặt người khác, và góp ý riêng tư sẽ giúp mọi chuyện nhẹ nhàng hơn."
+            },
+            {
+              "q": "Sư Tử nam có chung thuỷ không?",
+              "a": "Sư Tử nam rất trung thành khi đã yêu, và muốn bảo vệ người mình thương. Điều anh ấy cần là được trân trọng và ngưỡng mộ trong mối quan hệ."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Sư Tử nữ là kiểu người con gái rạng rỡ, tự tin và đầy cuốn hút. Cô ấy biết giá trị của mình và sống hết mình với mọi thứ.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Sư Tử nữ",
+              "paragraphs": [
+                "Sư Tử nữ có phong thái nổi bật và sức hút tự nhiên. Cô ấy tự tin, thích được chú ý và có khả năng truyền năng lượng tích cực cho người khác.",
+                "Cô ấy hào phóng, trung thành và rất ấm áp với bạn bè. Sư Tử nữ sẵn sàng đứng ra bảo vệ người thân và thích làm mọi người vui.",
+                "Mặt trái là lòng tự trọng cao và đôi khi cứng đầu. Sư Tử nữ có thể tổn thương khi không được ghi nhận và khó chấp nhận góp ý."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Sư Tử nữ khi yêu",
+              "paragraphs": [
+                "Sư Tử nữ yêu nồng nhiệt và hào phóng. Cô ấy muốn được yêu một cách rực rỡ, được khen ngợi và được ưu tiên.",
+                "Cô ấy cần một người tự tin, không bị lấn át bởi ánh hào quang của cô ấy, và biết trân trọng cô ấy một cách chân thành."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Sư Tử nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chăm chút ngoại hình khi gặp bạn",
+                "Muốn gây ấn tượng bằng sự tự tin và hài hước",
+                "Hào phóng, sẵn sàng chia sẻ với bạn",
+                "Bảo vệ bạn trước người khác",
+                "Muốn bạn chú ý và khen ngợi"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Sư Tử nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Sư Tử nữ hơn:"
+              ],
+              "bullets": [
+                "Khen ngợi chân thành, cụ thể",
+                "Tự tin và có phong cách riêng",
+                "Rủ những buổi hẹn đẹp và đáng nhớ",
+                "Tôn trọng lòng tự trọng của cô ấy",
+                "Cho cô ấy cảm giác được ưu tiên"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Sư Tử nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Sư Tử nữ phát huy tốt ở những vị trí cần sức hút và khả năng dẫn dắt: quản lý, truyền thông, nghệ thuật, làm đẹp, thời trang, tổ chức sự kiện.",
+                "Sư Tử nữ thích sống đẹp và có thể chi mạnh cho quần áo, làm đẹp. Kế hoạch tiết kiệm tự động giúp cô ấy vừa giữ phong cách vừa vững vàng."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Sư Tử nữ có kiêu không?",
+              "a": "Sư Tử nữ tự tin và có lòng tự trọng cao nên đôi khi bị nhìn là kiêu. Thực tế cô ấy rất hào phóng và ấm áp với những người mình quý."
+            },
+            {
+              "q": "Sư Tử nữ thích được tặng gì?",
+              "a": "Sư Tử nữ thường thích những món quà đẹp, có phong cách và thể hiện rằng bạn đã chọn rất kỹ cho riêng cô ấy."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "7": {
+          "summary": "Sư Tử tháng 7 là những người sinh từ 23/07 đến 31/07, thuộc thập độ đầu tiên. Đây là những Sư Tử thuần chất nhất: tự tin, rực rỡ và giàu nhiệt huyết.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Sư Tử tháng 7 khác gì Sư Tử tháng 8",
+                "paragraphs": [
+                  "Người sinh cuối tháng 7 thuộc thập độ đầu của Sư Tử, nơi năng lượng Mặt Trời đậm đặc nhất. Nếu Sư Tử tháng 8 pha thêm tinh thần phiêu lưu của Nhân Mã hay sự quyết liệt của Bạch Dương, thì Sư Tử tháng 7 mang trọn vẹn sự tự tin, hào phóng và thích toả sáng của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 23 đến 24/07, đứng sát ranh giới với Cự Giải, nên đôi khi giàu cảm xúc và trọng gia đình hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Sư Tử tháng 7",
+                "paragraphs": [
+                  "Sư Tử tháng 7 có sức hút tự nhiên, thích được chú ý và rất hào phóng. Họ sống hết mình và muốn mọi người quanh mình cùng vui.",
+                  "Họ cũng là những Sư Tử có lòng tự trọng cao nhất, cần được ghi nhận để phát huy hết năng lực."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Sư Tử tháng 7 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Sư Tử tháng 7 lãng mạn và rực rỡ. Họ thích những cử chỉ lớn và muốn tình yêu của mình được cả thế giới biết.",
+                  "Họ cần một người biết ngưỡng mộ và trân trọng họ chân thành."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Sư Tử tháng 7",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Sư Tử tháng 7:"
+                ],
+                "bullets": [
+                  "Tự tin, có sức hút",
+                  "Hào phóng, ấm áp",
+                  "Trung thành với người thân",
+                  "Sáng tạo và thích thể hiện"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Sư Tử tháng 7 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Sư Tử tháng 7 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tìm giá trị bản thân từ bên trong",
+                  "Lắng nghe góp ý mà không tự ái",
+                  "Nhường sân khấu cho người khác",
+                  "Chi tiêu có kế hoạch"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 23/07 là Cự Giải hay Sư Tử?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 23/07 thuộc cung Sư Tử. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Sư Tử tháng 7 khác tháng 8 thế nào?",
+                "a": "Sư Tử tháng 7 thuộc thập độ đầu nên thuần chất, tự tin và thích toả sáng. Sư Tử tháng 8 pha thêm nét của Nhân Mã và Bạch Dương nên phóng khoáng, quyết liệt và thích phiêu lưu hơn."
+              }
+            ]
+          }
+        },
+        "8": {
+          "summary": "Sư Tử tháng 8 là những người sinh từ 01/08 đến 22/08, chủ yếu thuộc thập độ hai và ba. Họ vẫn rực rỡ như mọi Sư Tử, nhưng pha thêm tinh thần phiêu lưu của Nhân Mã và sự quyết liệt của Bạch Dương.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Sư Tử tháng 8 khác gì Sư Tử tháng 7",
+                "paragraphs": [
+                  "Khác với Sư Tử tháng 7 thuần chất, Sư Tử tháng 8 mang thêm màu sắc của hai cung Lửa khác. Người sinh đầu tháng 8 chịu ảnh hưởng của Nhân Mã, nên lạc quan, yêu tự do và thích khám phá. Người sinh giữa tháng 8 trở đi chịu ảnh hưởng của Bạch Dương, nên quyết đoán, dám làm và có tinh thần cạnh tranh.",
+                  "Những người sinh vào những ngày cuối, khoảng 21 đến 22/08, đứng sát ranh giới với Xử Nữ, nên đôi khi tỉ mỉ và thực tế hơn Sư Tử điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Sư Tử tháng 8",
+                "paragraphs": [
+                  "Sư Tử tháng 8 vẫn tự tin và hào phóng, nhưng người sinh đầu tháng 8 thường phóng khoáng, thích đi xa và có tầm nhìn rộng.",
+                  "Người sinh giữa và cuối tháng 8 thì mạnh mẽ, quyết liệt và luôn muốn dẫn đầu."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Sư Tử tháng 8 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Sư Tử tháng 8 nồng nhiệt và chủ động. Người sinh đầu tháng 8 cần tự do, người sinh giữa và cuối tháng 8 thích chinh phục và bảo vệ người mình yêu.",
+                  "Họ cần một người vừa ngưỡng mộ họ, vừa đủ bản lĩnh để đứng ngang hàng."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Sư Tử tháng 8",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Sư Tử tháng 8:"
+                ],
+                "bullets": [
+                  "Lạc quan và yêu khám phá",
+                  "Quyết đoán, dám làm",
+                  "Có tầm nhìn và khả năng lãnh đạo",
+                  "Hào phóng, nhiệt huyết"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Sư Tử tháng 8 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Sư Tử tháng 8 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh nóng vội trong quyết định",
+                  "Tế nhị hơn khi nói thẳng",
+                  "Kiên nhẫn đi đến cùng",
+                  "Cân bằng giữa tự do và cam kết"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/08 là Sư Tử hay Xử Nữ?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/08 thuộc cung Sư Tử, còn Xử Nữ bắt đầu từ 23/08. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Sư Tử tháng 8 quyết liệt hơn?",
+                "a": "Người sinh giữa và cuối tháng 8 thuộc thập độ ba, chịu thêm ảnh hưởng của Bạch Dương, cung của hành động và cạnh tranh. Vì vậy họ thường quyết đoán và mạnh mẽ hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "xu-nu": {
+      "nam": {
+        "summary": "Xử Nữ nam là kiểu người đàn ông chỉn chu, chu đáo và đáng tin cậy. Anh ấy thể hiện sự quan tâm qua những việc làm thiết thực hơn là lời nói.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Xử Nữ nam",
+              "paragraphs": [
+                "Xử Nữ nam để ý chi tiết, thích mọi thứ gọn gàng và làm việc có phương pháp. Anh ấy thường nhìn ra những điều người khác bỏ qua.",
+                "Anh ấy khiêm tốn, chăm chỉ và thích giúp đỡ người khác bằng những việc cụ thể. Xử Nữ nam hiếm khi hứa suông.",
+                "Mặt trái là tính cầu toàn và hay lo lắng. Xử Nữ nam có thể khắt khe với bản thân lẫn người khác, và đôi khi góp ý khiến người nghe thấy bị chê."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Xử Nữ nam khi yêu",
+              "paragraphs": [
+                "Xử Nữ nam yêu thận trọng và chân thành. Anh ấy để ý những điều nhỏ: người ấy có giữ lời không, có tôn trọng người khác không.",
+                "Khi đã yêu, anh ấy chăm sóc chu đáo và bền bỉ. Xử Nữ nam cần học cách bớt phân tích, khen nhiều hơn góp ý, và cho phép mình tận hưởng cảm xúc."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Xử Nữ nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chủ động giúp bạn giải quyết những việc rắc rối",
+                "Nhớ và để ý thói quen nhỏ của bạn",
+                "Góp ý cho bạn vì thật sự quan tâm",
+                "Sắp xếp lịch bận rộn để gặp bạn",
+                "Dần chia sẻ những lo lắng riêng"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Xử Nữ nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Xử Nữ nam hơn:"
+              ],
+              "bullets": [
+                "Đúng giờ và giữ lời hứa",
+                "Trò chuyện thông minh, có chiều sâu",
+                "Rủ những buổi hẹn có nội dung: workshop, bảo tàng, nấu ăn",
+                "Ghi nhận những điều anh ấy làm cho bạn",
+                "Giúp anh ấy thư giãn khi lo lắng"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Xử Nữ nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Xử Nữ nam phát huy tốt ở những lĩnh vực cần sự chính xác: phân tích dữ liệu, kế toán, y tế, lập trình, kiểm định chất lượng, biên tập, nghiên cứu.",
+                "Xử Nữ nam quản lý tiền chặt chẽ và có kế hoạch. Anh ấy nên cho phép mình tận hưởng thay vì lo lắng quá mức về tương lai."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Xử Nữ nam có khó tính không?",
+              "a": "Xử Nữ nam có tiêu chuẩn cao nên dễ bị cho là khó tính. Nhưng phần lớn sự khắt khe hướng vào chính anh ấy, và những góp ý thường xuất phát từ ý tốt."
+            },
+            {
+              "q": "Xử Nữ nam thể hiện tình cảm thế nào?",
+              "a": "Xử Nữ nam thể hiện tình cảm qua hành động: giúp bạn sửa đồ, nhắc bạn uống thuốc, lên kế hoạch cho hai người. Anh ấy ít nói lời ngọt ngào nhưng rất chu đáo."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Xử Nữ nữ là kiểu người con gái tinh tế, thông minh và chu đáo. Cô ấy có tiêu chuẩn cao nhưng rất tận tâm với những người mình thương.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Xử Nữ nữ",
+              "paragraphs": [
+                "Xử Nữ nữ để ý chi tiết, thích sự ngăn nắp và làm việc cẩn thận. Cô ấy thông minh, có óc phân tích và thường là người đáng tin nhất trong nhóm.",
+                "Cô ấy khiêm tốn, kín đáo và quan tâm người khác bằng những việc thiết thực. Xử Nữ nữ thích giúp đỡ nhưng ít khi đòi hỏi.",
+                "Mặt trái là tính cầu toàn và hay lo nghĩ. Xử Nữ nữ có thể quá khắt khe với chính mình và khó thư giãn khi mọi thứ chưa hoàn hảo."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Xử Nữ nữ khi yêu",
+              "paragraphs": [
+                "Xử Nữ nữ yêu chậm và kỹ lưỡng. Cô ấy không bị cuốn theo vẻ hào nhoáng mà để ý đến sự chân thành và cách sống của đối phương.",
+                "Khi đã yêu, cô ấy chăm sóc tận tâm và bền bỉ. Xử Nữ nữ cần một người kiên nhẫn, đáng tin và biết ghi nhận những điều nhỏ cô ấy làm."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Xử Nữ nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Giúp bạn những việc cụ thể mà không cần nhờ",
+                "Nhớ thói quen và sở thích của bạn",
+                "Góp ý nhẹ nhàng về chuyện của bạn",
+                "Dành thời gian cho bạn trong lịch kín",
+                "Chia sẻ những lo lắng mà ít khi kể với ai"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Xử Nữ nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Xử Nữ nữ hơn:"
+              ],
+              "bullets": [
+                "Chân thành, chỉn chu và giữ lời",
+                "Trò chuyện có chiều sâu",
+                "Rủ những buổi hẹn nhẹ nhàng, có nội dung",
+                "Khen và ghi nhận sự cố gắng của cô ấy",
+                "Giúp cô ấy thư giãn và bớt lo nghĩ"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Xử Nữ nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Xử Nữ nữ phát huy tốt ở những lĩnh vực cần sự tỉ mỉ và chính xác: y tế, dinh dưỡng, tài chính, biên tập, nghiên cứu, quản trị vận hành.",
+                "Xử Nữ nữ quản lý tiền cẩn thận, ít mua sắm bốc đồng. Cô ấy nên dành một khoản cho niềm vui để cân bằng cuộc sống."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Xử Nữ nữ có kén chọn không?",
+              "a": "Xử Nữ nữ có tiêu chuẩn cao nên có vẻ kén chọn. Nhưng khi đã chọn ai, cô ấy rất tận tâm và gắn bó lâu dài."
+            },
+            {
+              "q": "Làm sao để Xử Nữ nữ bớt lo lắng?",
+              "a": "Sự nhất quán, những lời trấn an cụ thể và giúp cô ấy nghỉ ngơi là cách tốt nhất. Đừng nói kiểu \"nghĩ nhiều quá\", hãy cùng cô ấy tìm giải pháp."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "8": {
+          "summary": "Xử Nữ tháng 8 là những người sinh từ 23/08 đến 31/08, thuộc thập độ đầu tiên. Đây là những Xử Nữ thuần chất nhất: tỉ mỉ, thông minh và chu đáo.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Xử Nữ tháng 8 khác gì Xử Nữ tháng 9",
+                "paragraphs": [
+                  "Người sinh cuối tháng 8 thuộc thập độ đầu của Xử Nữ, nơi năng lượng Sao Thủy mang tính phân tích đậm đặc nhất. Nếu Xử Nữ tháng 9 pha thêm tham vọng của Ma Kết hay sự điềm tĩnh của Kim Ngưu, thì Xử Nữ tháng 8 mang trọn vẹn sự tỉ mỉ, cầu toàn và tận tuỵ của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 23 đến 24/08, đứng sát ranh giới với Sư Tử, nên đôi khi tự tin và thích thể hiện hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Xử Nữ tháng 8",
+                "paragraphs": [
+                  "Xử Nữ tháng 8 có con mắt tinh tường, để ý mọi chi tiết và luôn muốn mọi thứ được làm đúng cách.",
+                  "Họ là những Xử Nữ cầu toàn nhất, rất có trách nhiệm nhưng cũng dễ lo âu khi mọi thứ chưa hoàn hảo."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Xử Nữ tháng 8 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Xử Nữ tháng 8 thận trọng và tận tâm. Họ thể hiện tình cảm qua sự chăm sóc chu đáo.",
+                  "Họ cần một người kiên nhẫn, chân thành và biết trân trọng những điều nhỏ nhặt."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Xử Nữ tháng 8",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Xử Nữ tháng 8:"
+                ],
+                "bullets": [
+                  "Tỉ mỉ, chính xác",
+                  "Thông minh, có óc phân tích",
+                  "Tận tâm giúp đỡ người khác",
+                  "Đáng tin cậy"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Xử Nữ tháng 8 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Xử Nữ tháng 8 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Chấp nhận \"đủ tốt\"",
+                  "Khen nhiều hơn góp ý",
+                  "Nghỉ ngơi không thấy có lỗi",
+                  "Tha thứ cho sai sót nhỏ"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 23/08 là Sư Tử hay Xử Nữ?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 23/08 thuộc cung Xử Nữ. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Xử Nữ tháng 8 khác tháng 9 thế nào?",
+                "a": "Xử Nữ tháng 8 thuộc thập độ đầu nên thuần chất, tỉ mỉ và cầu toàn. Xử Nữ tháng 9 pha thêm nét của Ma Kết và Kim Ngưu nên tham vọng, điềm tĩnh và thực tế hơn."
+              }
+            ]
+          }
+        },
+        "9": {
+          "summary": "Xử Nữ tháng 9 là những người sinh từ 01/09 đến 22/09, chủ yếu thuộc thập độ hai và ba. Họ vẫn chu đáo như mọi Xử Nữ, nhưng pha thêm tham vọng của Ma Kết và sự điềm tĩnh của Kim Ngưu.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Xử Nữ tháng 9 khác gì Xử Nữ tháng 8",
+                "paragraphs": [
+                  "Khác với Xử Nữ tháng 8 thuần chất, Xử Nữ tháng 9 mang thêm màu sắc của hai cung Đất khác. Người sinh đầu tháng 9 chịu ảnh hưởng của Ma Kết, nên có tham vọng, kỷ luật và định hướng rõ ràng. Người sinh giữa tháng 9 trở đi chịu ảnh hưởng của Kim Ngưu, nên điềm tĩnh, biết tận hưởng và có gu thẩm mỹ.",
+                  "Những người sinh vào những ngày cuối, khoảng 21 đến 22/09, đứng sát ranh giới với Thiên Bình, nên đôi khi khéo léo và coi trọng sự hài hoà hơn Xử Nữ điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Xử Nữ tháng 9",
+                "paragraphs": [
+                  "Xử Nữ tháng 9 vẫn tỉ mỉ và chăm chỉ, nhưng người sinh đầu tháng 9 thường nghiêm túc, có mục tiêu dài hạn và giỏi quản lý.",
+                  "Người sinh giữa và cuối tháng 9 thì thư thái hơn, biết tận hưởng và bớt lo âu so với Xử Nữ tháng 8."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Xử Nữ tháng 9 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Xử Nữ tháng 9 chung thuỷ và có trách nhiệm. Họ muốn một mối quan hệ ổn định, có kế hoạch cho tương lai.",
+                  "Họ cần một người đáng tin, chân thành và cùng chung giá trị sống."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Xử Nữ tháng 9",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Xử Nữ tháng 9:"
+                ],
+                "bullets": [
+                  "Có tham vọng và định hướng rõ ràng",
+                  "Điềm tĩnh, biết tận hưởng",
+                  "Chu đáo và đáng tin",
+                  "Giỏi tổ chức và quản lý"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Xử Nữ tháng 9 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Xử Nữ tháng 9 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Thể hiện cảm xúc nhiều hơn",
+                  "Tránh quá tập trung vào công việc",
+                  "Cởi mở với thay đổi",
+                  "Bớt khắt khe với bản thân"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/09 là Xử Nữ hay Thiên Bình?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/09 thuộc cung Xử Nữ, còn Thiên Bình bắt đầu từ 23/09. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Xử Nữ tháng 9 điềm tĩnh hơn?",
+                "a": "Người sinh giữa và cuối tháng 9 thuộc thập độ ba, chịu thêm ảnh hưởng của Kim Ngưu, cung của sự điềm tĩnh và hưởng thụ. Vì vậy họ thường thư thái và ít lo âu hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "thien-binh": {
+      "nam": {
+        "summary": "Thiên Bình nam là kiểu người đàn ông lịch thiệp, tinh tế và có gu. Anh ấy ghét xung đột và luôn muốn mọi thứ hài hoà, đẹp đẽ.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Thiên Bình nam",
+              "paragraphs": [
+                "Thiên Bình nam có phong thái lịch sự, dễ mến và biết cách làm người khác thấy thoải mái. Anh ấy thường là người hoà giải khi nhóm có mâu thuẫn.",
+                "Anh ấy có gu thẩm mỹ tốt, để ý cách ăn mặc, không gian sống và yêu nghệ thuật. Thiên Bình nam coi trọng sự công bằng trong mọi mối quan hệ.",
+                "Mặt trái là sự thiếu quyết đoán và né tránh xung đột. Thiên Bình nam có thể cân nhắc mãi không chọn, hoặc nói \"sao cũng được\" rồi lại không vui."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Thiên Bình nam khi yêu",
+              "paragraphs": [
+                "Thiên Bình nam lãng mạn và biết cách làm người yêu thấy được trân trọng: những buổi hẹn đẹp, những món quà tinh tế, những lời khen đúng lúc.",
+                "Anh ấy tìm kiếm một mối quan hệ cân bằng, nơi cả hai cùng cho và nhận. Thiên Bình nam cần học cách nói thật cảm xúc thay vì giữ hoà khí bằng mọi giá."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Thiên Bình nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chăm chút trang phục kỹ hơn khi gặp bạn",
+                "Rủ bạn đến những nơi đẹp: quán cà phê xinh, triển lãm",
+                "Hỏi ý kiến bạn về nhiều chuyện",
+                "Khen bạn một cách tinh tế",
+                "Cố tránh mọi xích mích với bạn"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Thiên Bình nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Thiên Bình nam hơn:"
+              ],
+              "bullets": [
+                "Chú ý phong thái và cách cư xử",
+                "Rủ những buổi hẹn đẹp và có không khí",
+                "Giúp anh ấy quyết định bằng hai lựa chọn cụ thể",
+                "Tránh gây gổ nơi đông người",
+                "Thể hiện sự công bằng trong mối quan hệ"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Thiên Bình nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Thiên Bình nam phát huy tốt ở những lĩnh vực cần thẩm mỹ và giao tiếp: luật, ngoại giao, thiết kế, quan hệ công chúng, tư vấn, nghệ thuật.",
+                "Thiên Bình nam dễ chi tiêu cho cái đẹp và khó từ chối bạn bè. Ngân sách rõ ràng giúp anh ấy cân bằng tài chính."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Thiên Bình nam có đào hoa không?",
+              "a": "Thiên Bình nam lịch thiệp, dễ mến và có gu nên thường thu hút nhiều người. Người yêu anh ấy cần sự tin tưởng, và anh ấy cần minh bạch để người kia yên tâm."
+            },
+            {
+              "q": "Vì sao Thiên Bình nam hay do dự?",
+              "a": "Thiên Bình nam muốn cân nhắc mọi phía để có lựa chọn công bằng nhất. Đưa ra hai lựa chọn cụ thể hoặc cho anh ấy thời gian thường giúp mọi chuyện nhanh hơn."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Thiên Bình nữ là kiểu người con gái duyên dáng, tinh tế và hoà nhã. Cô ấy yêu cái đẹp và mang lại cảm giác dễ chịu cho mọi người xung quanh.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Thiên Bình nữ",
+              "paragraphs": [
+                "Thiên Bình nữ có sự duyên dáng tự nhiên, biết cách cư xử khéo léo và được nhiều người yêu mến. Cô ấy thích giao lưu và có nhiều mối quan hệ.",
+                "Cô ấy có gu thẩm mỹ tinh tế, yêu nghệ thuật, thời trang và những không gian đẹp. Thiên Bình nữ coi trọng sự công bằng và hài hoà.",
+                "Mặt trái là sự do dự và ngại xung đột. Thiên Bình nữ có thể nhường nhịn quá nhiều để giữ hoà khí, rồi tự thấy mình thiệt."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Thiên Bình nữ khi yêu",
+              "paragraphs": [
+                "Thiên Bình nữ lãng mạn và coi trọng tình yêu. Cô ấy thích những buổi hẹn đẹp, những lời nói ngọt ngào và một người biết trân trọng mình.",
+                "Cô ấy cần một mối quan hệ cân bằng, nơi mình không phải luôn là người nhường. Thiên Bình nữ cần học cách nói ra mong muốn thật của mình."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Thiên Bình nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chăm chút ngoại hình khi gặp bạn",
+                "Rủ bạn đi những nơi đẹp và lãng mạn",
+                "Hỏi ý kiến bạn, kể cả chuyện nhỏ",
+                "Khen bạn tinh tế và chân thành",
+                "Muốn giới thiệu bạn với bạn bè"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Thiên Bình nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Thiên Bình nữ hơn:"
+              ],
+              "bullets": [
+                "Lịch sự, tinh tế trong cách cư xử",
+                "Rủ những buổi hẹn đẹp: triển lãm, quán cà phê xinh, nhạc acoustic",
+                "Khen gu thẩm mỹ của cô ấy",
+                "Giúp cô ấy quyết định nhẹ nhàng",
+                "Công bằng, cho và nhận trong mối quan hệ"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Thiên Bình nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Thiên Bình nữ phát huy tốt ở những vị trí cần giao tiếp và thẩm mỹ: làm đẹp, thời trang, thiết kế, quan hệ công chúng, nhân sự, tư vấn.",
+                "Thiên Bình nữ dễ chi tiêu cho những điều đẹp. Lập ngân sách và tập nói \"không\" lịch sự giúp cô ấy giữ cân bằng tài chính."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Thiên Bình nữ có khó hiểu không?",
+              "a": "Thiên Bình nữ ngại xung đột nên đôi khi không nói thật cảm xúc, khiến người khác khó đoán. Tạo cho cô ấy cảm giác an toàn để nói thẳng sẽ giúp hai người hiểu nhau hơn."
+            },
+            {
+              "q": "Thiên Bình nữ thích mẫu người thế nào?",
+              "a": "Thiên Bình nữ thường thích người lịch thiệp, tinh tế, có gu và biết đối xử công bằng trong tình yêu."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "9": {
+          "summary": "Thiên Bình tháng 9 là những người sinh từ 23/09 đến 30/09, thuộc thập độ đầu tiên. Đây là những Thiên Bình thuần chất nhất: duyên dáng, hoà nhã và yêu cái đẹp.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Thiên Bình tháng 9 khác gì Thiên Bình tháng 10",
+                "paragraphs": [
+                  "Người sinh cuối tháng 9 thuộc thập độ đầu của Thiên Bình, nơi năng lượng Sao Kim đậm đặc nhất. Nếu Thiên Bình tháng 10 pha thêm sự độc đáo của Bảo Bình hay sự nhanh nhạy của Song Tử, thì Thiên Bình tháng 9 mang trọn vẹn sự duyên dáng, lãng mạn và cân bằng của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 23 đến 24/09, đứng sát ranh giới với Xử Nữ, nên đôi khi tỉ mỉ và thực tế hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Thiên Bình tháng 9",
+                "paragraphs": [
+                  "Thiên Bình tháng 9 duyên dáng, lịch thiệp và rất coi trọng sự hài hoà trong các mối quan hệ.",
+                  "Họ là những Thiên Bình lãng mạn nhất, nhưng cũng hay do dự nhất khi phải chọn lựa."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Thiên Bình tháng 9 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Thiên Bình tháng 9 tinh tế và lãng mạn. Họ muốn một mối quan hệ đẹp và cân bằng.",
+                  "Họ cần một người biết trân trọng sự duyên dáng của họ và giúp họ tự tin nói ra mong muốn."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Thiên Bình tháng 9",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Thiên Bình tháng 9:"
+                ],
+                "bullets": [
+                  "Duyên dáng, khéo léo",
+                  "Gu thẩm mỹ tinh tế",
+                  "Công bằng, biết hoà giải",
+                  "Lãng mạn trong tình yêu"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Thiên Bình tháng 9 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Thiên Bình tháng 9 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tập ra quyết định nhanh hơn",
+                  "Dám nói \"không\" khi cần",
+                  "Không nhường nhịn đến mức thiệt thòi",
+                  "Đối mặt với xung đột thay vì né tránh"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 23/09 là Xử Nữ hay Thiên Bình?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 23/09 thuộc cung Thiên Bình. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Thiên Bình tháng 9 khác tháng 10 thế nào?",
+                "a": "Thiên Bình tháng 9 thuộc thập độ đầu nên thuần chất, lãng mạn và hoà nhã. Thiên Bình tháng 10 pha thêm nét của Bảo Bình và Song Tử nên độc lập, sáng tạo và hoạt bát hơn."
+              }
+            ]
+          }
+        },
+        "10": {
+          "summary": "Thiên Bình tháng 10 là những người sinh từ 01/10 đến 22/10, chủ yếu thuộc thập độ hai và ba. Họ vẫn duyên dáng như mọi Thiên Bình, nhưng pha thêm sự độc đáo của Bảo Bình và sự nhanh nhạy của Song Tử.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Thiên Bình tháng 10 khác gì Thiên Bình tháng 9",
+                "paragraphs": [
+                  "Khác với Thiên Bình tháng 9 thuần chất, Thiên Bình tháng 10 mang thêm màu sắc của hai cung Khí khác. Người sinh đầu tháng 10 chịu ảnh hưởng của Bảo Bình, nên độc lập, lý tưởng và có tư duy khác biệt. Người sinh giữa tháng 10 trở đi chịu ảnh hưởng của Song Tử, nên hoạt bát, giao tiếp giỏi và đa tài.",
+                  "Những người sinh vào những ngày cuối, khoảng 21 đến 22/10, đứng sát ranh giới với Bọ Cạp, nên đôi khi sâu sắc và mãnh liệt hơn Thiên Bình điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Thiên Bình tháng 10",
+                "paragraphs": [
+                  "Thiên Bình tháng 10 vẫn hoà nhã và yêu cái đẹp, nhưng người sinh đầu tháng 10 thường có chính kiến rõ ràng hơn và quan tâm đến các vấn đề xã hội.",
+                  "Người sinh giữa và cuối tháng 10 thì nhanh nhạy, hài hước và rất giỏi giao tiếp."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Thiên Bình tháng 10 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Thiên Bình tháng 10 cần sự kết nối về trí tuệ. Người sinh đầu tháng 10 cần nhiều tự do, người sinh giữa và cuối tháng 10 cần những cuộc trò chuyện thú vị.",
+                  "Họ cần một người vừa tinh tế vừa thông minh, tôn trọng không gian riêng của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Thiên Bình tháng 10",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Thiên Bình tháng 10:"
+                ],
+                "bullets": [
+                  "Có chính kiến và tư duy độc lập",
+                  "Giao tiếp giỏi, hài hước",
+                  "Sáng tạo, nhiều ý tưởng",
+                  "Công bằng và biết lắng nghe"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Thiên Bình tháng 10 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Thiên Bình tháng 10 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Thể hiện cảm xúc rõ ràng hơn",
+                  "Tránh phân tán vào quá nhiều việc",
+                  "Cân bằng giữa tự do và cam kết",
+                  "Giữ lời hứa với người thân"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/10 là Thiên Bình hay Bọ Cạp?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/10 thuộc cung Thiên Bình, còn Bọ Cạp bắt đầu từ 23/10. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Thiên Bình tháng 10 độc lập hơn?",
+                "a": "Người sinh đầu tháng 10 thuộc thập độ hai, chịu thêm ảnh hưởng của Bảo Bình, cung của sự độc lập và lý tưởng. Vì vậy họ thường có chính kiến rõ ràng hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bo-cap": {
+      "nam": {
+        "summary": "Bọ Cạp nam là kiểu người đàn ông bí ẩn, sâu sắc và mãnh liệt. Anh ấy ít nói nhưng quan sát rất kỹ, và khi đã yêu thì yêu hết lòng.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bọ Cạp nam",
+              "paragraphs": [
+                "Bọ Cạp nam có sức hút khó giải thích. Anh ấy kín đáo, không dễ bộc lộ suy nghĩ, nhưng ánh mắt thường như nhìn thấu người đối diện.",
+                "Anh ấy có ý chí mạnh, quyết tâm theo đuổi mục tiêu đến cùng và rất trung thành với những người mình tin tưởng.",
+                "Mặt trái là tính đa nghi và khó tha thứ. Bọ Cạp nam nhớ rất lâu những lần bị phản bội và có thể cắt đứt hoàn toàn khi niềm tin bị tổn hại."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bọ Cạp nam khi yêu",
+              "paragraphs": [
+                "Bọ Cạp nam yêu sâu đậm và mãnh liệt. Anh ấy muốn một mối quan hệ nơi hai người thật sự hiểu nhau từ những điều thầm kín nhất.",
+                "Anh ấy cần sự chung thuỷ tuyệt đối và có thể ghen. Bọ Cạp nam cần học cách nói ra cảm xúc thay vì kiểm tra hay thử thách người yêu."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bọ Cạp nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Nhìn bạn lâu và chăm chú",
+                "Hỏi những câu sâu về quá khứ và suy nghĩ của bạn",
+                "Nhớ chính xác những điều bạn từng nói",
+                "Có chút sở hữu khi bạn thân với người khác",
+                "Dần kể cho bạn những bí mật ít ai biết"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bọ Cạp nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bọ Cạp nam hơn:"
+              ],
+              "bullets": [
+                "Thành thật tuyệt đối",
+                "Trò chuyện sâu thay vì chuyện phiếm",
+                "Giữ kín những điều anh ấy tâm sự",
+                "Giữ lại chút bí ẩn, đừng kể hết ngay",
+                "Kiên nhẫn chờ anh ấy tin tưởng"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bọ Cạp nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bọ Cạp nam phát huy tốt ở những lĩnh vực cần đào sâu và bản lĩnh: tâm lý, điều tra, nghiên cứu, tài chính, đầu tư, an ninh mạng, y khoa.",
+                "Bọ Cạp nam kín đáo và có chiến lược với tiền bạc. Anh ấy nên tránh những quyết định \"tất tay\" theo cảm xúc."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bọ Cạp nam có ghen không?",
+              "a": "Bọ Cạp nam yêu sâu và coi trọng sự chung thuỷ nên dễ ghen hơn nhiều cung khác. Minh bạch và cho anh ấy cảm giác an toàn giúp giảm sự nghi ngờ."
+            },
+            {
+              "q": "Bọ Cạp nam có lạnh lùng không?",
+              "a": "Bọ Cạp nam kín đáo nên bề ngoài có vẻ lạnh lùng. Nhưng bên trong anh ấy rất giàu cảm xúc, chỉ bộc lộ với người mình thật sự tin tưởng."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Bọ Cạp nữ là kiểu người con gái bí ẩn, bản lĩnh và cuốn hút. Cô ấy có chiều sâu cảm xúc mà không phải ai cũng chạm tới được.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bọ Cạp nữ",
+              "paragraphs": [
+                "Bọ Cạp nữ có sức hút mạnh mẽ và một vẻ bí ẩn khiến người khác tò mò. Cô ấy quan sát tinh tế và có trực giác rất nhạy.",
+                "Cô ấy kiên định, có ý chí mạnh và không dễ bỏ cuộc. Bọ Cạp nữ trung thành tuyệt đối với những người mình yêu thương.",
+                "Mặt trái là sự đa nghi và nhớ dai. Bọ Cạp nữ khó tha thứ khi bị phản bội và có thể giữ khoảng cách rất lâu."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bọ Cạp nữ khi yêu",
+              "paragraphs": [
+                "Bọ Cạp nữ yêu hết mình, không có chuyện nửa vời. Cô ấy tìm kiếm một kết nối sâu sắc, chân thành và trọn vẹn.",
+                "Cô ấy cần sự chung thuỷ và minh bạch. Bọ Cạp nữ cần học cách tin tưởng và buông bỏ những tổn thương cũ."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bọ Cạp nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Để ý bạn rất kỹ dù ít nói",
+                "Hỏi những câu sâu về cuộc sống của bạn",
+                "Chia sẻ những suy nghĩ riêng tư",
+                "Có chút sở hữu, để ý bạn thân với ai",
+                "Bảo vệ bạn một cách quyết liệt"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bọ Cạp nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bọ Cạp nữ hơn:"
+              ],
+              "bullets": [
+                "Chân thành và minh bạch",
+                "Tôn trọng sự riêng tư của cô ấy",
+                "Trò chuyện có chiều sâu",
+                "Giữ lời hứa và giữ bí mật",
+                "Kiên nhẫn, đừng ép cô ấy mở lòng"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bọ Cạp nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bọ Cạp nữ phát huy tốt ở những lĩnh vực cần sự sâu sắc và bản lĩnh: tâm lý, nghiên cứu, y khoa, tài chính, luật, quản trị khủng hoảng.",
+                "Bọ Cạp nữ thích tự chủ tài chính và có chiến lược dài hạn. Cô ấy thường kín đáo về chuyện tiền bạc."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bọ Cạp nữ có khó gần không?",
+              "a": "Bọ Cạp nữ kín đáo và cần thời gian để tin tưởng, nên ban đầu có vẻ khó gần. Khi đã mở lòng, cô ấy là người bạn và người yêu trung thành hiếm có."
+            },
+            {
+              "q": "Bọ Cạp nữ thích mẫu người nào?",
+              "a": "Bọ Cạp nữ thường thích người chân thành, có chiều sâu, bản lĩnh và không giả tạo."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "10": {
+          "summary": "Bọ Cạp tháng 10 là những người sinh từ 23/10 đến 31/10, thuộc thập độ đầu tiên. Đây là những Bọ Cạp thuần chất nhất: bí ẩn, mãnh liệt và kiên định.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bọ Cạp tháng 10 khác gì Bọ Cạp tháng 11",
+                "paragraphs": [
+                  "Người sinh cuối tháng 10 thuộc thập độ đầu của Bọ Cạp, nơi năng lượng biến đổi của cung này đậm đặc nhất. Nếu Bọ Cạp tháng 11 pha thêm sự mơ mộng của Song Ngư hay sự chăm sóc của Cự Giải, thì Bọ Cạp tháng 10 mang trọn vẹn sự sâu sắc, bí ẩn và quyết liệt của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 23 đến 24/10, đứng sát ranh giới với Thiên Bình, nên đôi khi khéo léo và hoà nhã hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bọ Cạp tháng 10",
+                "paragraphs": [
+                  "Bọ Cạp tháng 10 có ý chí mạnh, trực giác nhạy và sức hút bí ẩn. Họ không thích sự hời hợt và luôn muốn hiểu bản chất mọi thứ.",
+                  "Họ là những Bọ Cạp mãnh liệt nhất, yêu ghét rõ ràng và rất khó quên."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bọ Cạp tháng 10 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bọ Cạp tháng 10 sâu đậm và chung thuỷ tuyệt đối. Họ cần một kết nối trọn vẹn cả về cảm xúc lẫn tinh thần.",
+                  "Họ cần một người minh bạch, chân thành và đủ bản lĩnh để đi cùng họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bọ Cạp tháng 10",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bọ Cạp tháng 10:"
+                ],
+                "bullets": [
+                  "Ý chí mạnh, kiên định",
+                  "Trực giác nhạy bén",
+                  "Trung thành tuyệt đối",
+                  "Sâu sắc, không hời hợt"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bọ Cạp tháng 10 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bọ Cạp tháng 10 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Học cách tin tưởng",
+                  "Buông bỏ tổn thương cũ",
+                  "Nói thẳng thay vì im lặng",
+                  "Tránh kiểm soát người khác"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 23/10 là Thiên Bình hay Bọ Cạp?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 23/10 thuộc cung Bọ Cạp. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Bọ Cạp tháng 10 khác tháng 11 thế nào?",
+                "a": "Bọ Cạp tháng 10 thuộc thập độ đầu nên thuần chất, bí ẩn và mãnh liệt. Bọ Cạp tháng 11 pha thêm nét của Song Ngư và Cự Giải nên dịu dàng, giàu lòng trắc ẩn và trọng gia đình hơn."
+              }
+            ]
+          }
+        },
+        "11": {
+          "summary": "Bọ Cạp tháng 11 là những người sinh từ 01/11 đến 21/11, chủ yếu thuộc thập độ hai và ba. Họ vẫn sâu sắc như mọi Bọ Cạp, nhưng pha thêm sự mơ mộng của Song Ngư và sự chăm sóc của Cự Giải.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bọ Cạp tháng 11 khác gì Bọ Cạp tháng 10",
+                "paragraphs": [
+                  "Khác với Bọ Cạp tháng 10 thuần chất, Bọ Cạp tháng 11 mang thêm màu sắc của hai cung Nước khác. Người sinh đầu tháng 11 chịu ảnh hưởng của Song Ngư, nên giàu trí tưởng tượng, nhân hậu và có trực giác tâm linh. Người sinh giữa tháng 11 trở đi chịu ảnh hưởng của Cự Giải, nên ấm áp, trọng gia đình và giỏi chăm sóc.",
+                  "Những người sinh vào những ngày cuối, khoảng 20 đến 21/11, đứng sát ranh giới với Nhân Mã, nên đôi khi cởi mở và lạc quan hơn Bọ Cạp điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bọ Cạp tháng 11",
+                "paragraphs": [
+                  "Bọ Cạp tháng 11 vẫn sâu sắc và bản lĩnh, nhưng người sinh đầu tháng 11 thường mềm mại hơn, có lòng trắc ẩn và thiên hướng nghệ thuật.",
+                  "Người sinh giữa và cuối tháng 11 thì ấm áp, bảo vệ người thân và rất trọng tổ ấm."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bọ Cạp tháng 11 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bọ Cạp tháng 11 vừa mãnh liệt vừa dịu dàng. Họ yêu sâu, chăm sóc chu đáo và muốn gắn bó lâu dài.",
+                  "Họ cần một người chân thành, tinh tế và cho họ cảm giác an toàn."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bọ Cạp tháng 11",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bọ Cạp tháng 11:"
+                ],
+                "bullets": [
+                  "Sâu sắc mà dịu dàng",
+                  "Giàu lòng trắc ẩn",
+                  "Giỏi chăm sóc và bảo vệ",
+                  "Trực giác mạnh"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bọ Cạp tháng 11 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bọ Cạp tháng 11 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh ôm giữ cảm xúc tiêu cực",
+                  "Nói rõ nhu cầu thay vì chờ đoán",
+                  "Đặt ranh giới lành mạnh",
+                  "Tin tưởng người mình yêu"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 21/11 là Bọ Cạp hay Nhân Mã?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 21/11 thuộc cung Bọ Cạp, còn Nhân Mã bắt đầu từ 22/11. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Bọ Cạp tháng 11 dịu dàng hơn?",
+                "a": "Người sinh tháng 11 chủ yếu thuộc thập độ hai và ba, chịu thêm ảnh hưởng của Song Ngư và Cự Giải, hai cung giàu lòng trắc ẩn. Vì vậy họ thường mềm mại và ấm áp hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "nhan-ma": {
+      "nam": {
+        "summary": "Nhân Mã nam là kiểu người đàn ông vui vẻ, lạc quan và yêu tự do. Anh ấy luôn sẵn sàng cho chuyến đi tiếp theo và khiến cuộc sống trở nên rộng lớn hơn.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Nhân Mã nam",
+              "paragraphs": [
+                "Nhân Mã nam lạc quan, hài hước và rất dễ kết bạn. Anh ấy thích đi đây đi đó, thử những điều mới và học hỏi từ mọi trải nghiệm.",
+                "Anh ấy thẳng thắn, nói điều mình nghĩ và có tinh thần triết lý. Nhân Mã nam thường có những suy nghĩ lớn về cuộc sống.",
+                "Mặt trái là sự thiếu cam kết và đôi khi vô tâm. Nhân Mã nam có thể hứa nhiều mà quên làm, và lời nói thẳng đôi khi làm người khác tổn thương."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Nhân Mã nam khi yêu",
+              "paragraphs": [
+                "Nhân Mã nam yêu vui vẻ và cởi mở. Anh ấy muốn người yêu là bạn đồng hành: cùng đi, cùng khám phá, cùng cười thật to.",
+                "Anh ấy cần tự do và không thích bị kiểm soát. Nhân Mã nam cần học rằng cam kết không phải là mất tự do, và để ý hơn đến cảm xúc của người kia."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Nhân Mã nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Rủ bạn đi chơi, du lịch hoặc thử điều mới",
+                "Chia sẻ ước mơ và triết lý sống",
+                "Trêu đùa và làm bạn cười rất nhiều",
+                "Nói thẳng những gì anh ấy nghĩ về bạn",
+                "Dành thời gian cho bạn dù rất bận"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Nhân Mã nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Nhân Mã nam hơn:"
+              ],
+              "bullets": [
+                "Có tinh thần phiêu lưu, sẵn sàng thử điều mới",
+                "Có cuộc sống và sở thích riêng",
+                "Trò chuyện về du lịch, văn hoá, triết lý",
+                "Đừng kiểm soát hay hỏi dồn",
+                "Cười với sự thẳng thắn của anh ấy thay vì để bụng"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Nhân Mã nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Nhân Mã nam phát huy tốt ở những lĩnh vực có tự do và học hỏi: du lịch, giáo dục, xuất bản, truyền thông, thương mại quốc tế, huấn luyện thể thao, khởi nghiệp.",
+                "Nhân Mã nam chi tiêu hào phóng cho trải nghiệm và có thể mạo hiểm với đầu tư. Quỹ dự phòng giúp anh ấy yên tâm phiêu lưu."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Nhân Mã nam có sợ cam kết không?",
+              "a": "Nhân Mã nam coi trọng tự do nên thận trọng với những cam kết khiến mình thấy bó buộc. Khi gặp người tôn trọng không gian riêng, anh ấy có thể gắn bó rất lâu dài."
+            },
+            {
+              "q": "Nhân Mã nam thích mẫu người nào?",
+              "a": "Nhân Mã nam thường thích người vui vẻ, độc lập, thích khám phá và có suy nghĩ riêng."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Nhân Mã nữ là kiểu người con gái phóng khoáng, lạc quan và đầy năng lượng. Cô ấy yêu tự do và sống hết mình với từng trải nghiệm.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Nhân Mã nữ",
+              "paragraphs": [
+                "Nhân Mã nữ vui vẻ, thẳng thắn và rất dễ gần. Cô ấy thích du lịch, học hỏi và có nhiều bạn bè ở khắp nơi.",
+                "Cô ấy độc lập, không thích bị ràng buộc và có tinh thần lạc quan giúp vượt qua khó khăn nhẹ nhàng.",
+                "Mặt trái là sự thiếu kiên nhẫn với chi tiết và đôi khi nói thẳng quá mức. Nhân Mã nữ cũng dễ chán khi cuộc sống trở nên đều đều."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Nhân Mã nữ khi yêu",
+              "paragraphs": [
+                "Nhân Mã nữ yêu cởi mở và vui vẻ. Cô ấy cần một người bạn đồng hành, cùng mình khám phá thế giới và cười thật nhiều.",
+                "Cô ấy không thích sự ghen tuông hay kiểm soát. Nhân Mã nữ cần học cách tế nhị hơn và dành sự cam kết cho người xứng đáng."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Nhân Mã nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Rủ bạn đi những nơi mới",
+                "Kể cho bạn nghe những dự định lớn",
+                "Đùa vui và trêu bạn nhiều",
+                "Nói thẳng cảm xúc của mình",
+                "Muốn bạn tham gia vào cuộc phiêu lưu của cô ấy"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Nhân Mã nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Nhân Mã nữ hơn:"
+              ],
+              "bullets": [
+                "Rủ đi du lịch, cắm trại, thử món lạ",
+                "Tôn trọng tự do của cô ấy",
+                "Có chính kiến và cuộc sống riêng",
+                "Hài hước và lạc quan",
+                "Không ghen tuông vô cớ"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Nhân Mã nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Nhân Mã nữ phát huy tốt ở những lĩnh vực cần sự linh hoạt và di chuyển: du lịch, giáo dục, truyền thông, ngoại giao, thể thao, sáng tạo nội dung.",
+                "Nhân Mã nữ thích chi tiêu cho trải nghiệm. Kế hoạch tài chính đơn giản giúp cô ấy tự do đi xa mà không lo."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Nhân Mã nữ có dễ thay lòng không?",
+              "a": "Nhân Mã nữ yêu tự do nhưng không có nghĩa là thiếu chung thuỷ. Khi được tôn trọng và cùng khám phá cuộc sống, cô ấy gắn bó rất chân thành."
+            },
+            {
+              "q": "Làm sao để Nhân Mã nữ chú ý?",
+              "a": "Hãy là người thú vị, có câu chuyện để kể và sẵn sàng cho những trải nghiệm mới. Nhân Mã nữ bị cuốn hút bởi người mở rộng thế giới của cô ấy."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "11": {
+          "summary": "Nhân Mã tháng 11 là những người sinh từ 22/11 đến 30/11, thuộc thập độ đầu tiên. Đây là những Nhân Mã thuần chất nhất: lạc quan, phóng khoáng và ham khám phá.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Nhân Mã tháng 11 khác gì Nhân Mã tháng 12",
+                "paragraphs": [
+                  "Người sinh cuối tháng 11 thuộc thập độ đầu của Nhân Mã, nơi năng lượng Sao Mộc đậm đặc nhất. Nếu Nhân Mã tháng 12 pha thêm sự quyết liệt của Bạch Dương hay sự tự tin của Sư Tử, thì Nhân Mã tháng 11 mang trọn vẹn sự lạc quan, yêu tự do và tinh thần triết lý của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 22 đến 23/11, đứng sát ranh giới với Bọ Cạp, nên đôi khi sâu sắc và kín đáo hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Nhân Mã tháng 11",
+                "paragraphs": [
+                  "Nhân Mã tháng 11 yêu tự do, thích du lịch và luôn tìm kiếm ý nghĩa trong mọi trải nghiệm.",
+                  "Họ là những Nhân Mã triết lý nhất, thích học hỏi và bàn luận về những câu hỏi lớn của cuộc sống."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Nhân Mã tháng 11 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Nhân Mã tháng 11 cởi mở và vui vẻ. Họ cần một người bạn đồng hành cùng khám phá.",
+                  "Họ cần một người tôn trọng tự do và cùng chia sẻ những ước mơ lớn."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Nhân Mã tháng 11",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Nhân Mã tháng 11:"
+                ],
+                "bullets": [
+                  "Lạc quan, vui vẻ",
+                  "Ham học hỏi và khám phá",
+                  "Thẳng thắn, chân thành",
+                  "Có tầm nhìn rộng"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Nhân Mã tháng 11 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Nhân Mã tháng 11 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Giữ lời hứa",
+                  "Tế nhị hơn khi nói thẳng",
+                  "Chú ý đến chi tiết",
+                  "Kiên nhẫn đi đến cùng"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/11 là Bọ Cạp hay Nhân Mã?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/11 thuộc cung Nhân Mã. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Nhân Mã tháng 11 khác tháng 12 thế nào?",
+                "a": "Nhân Mã tháng 11 thuộc thập độ đầu nên thuần chất, triết lý và yêu tự do. Nhân Mã tháng 12 pha thêm nét của Bạch Dương và Sư Tử nên quyết đoán, tự tin và thích dẫn đầu hơn."
+              }
+            ]
+          }
+        },
+        "12": {
+          "summary": "Nhân Mã tháng 12 là những người sinh từ 01/12 đến 21/12, chủ yếu thuộc thập độ hai và ba. Họ vẫn lạc quan như mọi Nhân Mã, nhưng pha thêm sự quyết liệt của Bạch Dương và sự tự tin của Sư Tử.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Nhân Mã tháng 12 khác gì Nhân Mã tháng 11",
+                "paragraphs": [
+                  "Khác với Nhân Mã tháng 11 thuần chất, Nhân Mã tháng 12 mang thêm màu sắc của hai cung Lửa khác. Người sinh đầu tháng 12 chịu ảnh hưởng của Bạch Dương, nên quyết đoán, dám làm và nhiều năng lượng. Người sinh giữa tháng 12 trở đi chịu ảnh hưởng của Sư Tử, nên tự tin, hào phóng và có sức hút lãnh đạo.",
+                  "Những người sinh vào những ngày cuối, khoảng 20 đến 21/12, đứng sát ranh giới với Ma Kết, nên đôi khi nghiêm túc và có kế hoạch hơn Nhân Mã điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Nhân Mã tháng 12",
+                "paragraphs": [
+                  "Nhân Mã tháng 12 vẫn yêu tự do, nhưng người sinh đầu tháng 12 thường hành động nhanh, thích thử thách và cạnh tranh.",
+                  "Người sinh giữa và cuối tháng 12 thì tự tin, hào phóng và thích được công nhận."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Nhân Mã tháng 12 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Nhân Mã tháng 12 nồng nhiệt và chủ động. Họ thích chinh phục và mang lại nhiều niềm vui cho người mình yêu.",
+                  "Họ cần một người đủ năng động để theo kịp và đủ tự tin để đứng ngang hàng."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Nhân Mã tháng 12",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Nhân Mã tháng 12:"
+                ],
+                "bullets": [
+                  "Quyết đoán, dám làm",
+                  "Tự tin, có sức hút",
+                  "Nhiệt huyết và lạc quan",
+                  "Hào phóng với mọi người"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Nhân Mã tháng 12 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Nhân Mã tháng 12 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh bốc đồng trong quyết định",
+                  "Để ý cảm xúc của người khác",
+                  "Cân bằng giữa cái tôi và sự hợp tác",
+                  "Cam kết với những gì đã chọn"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 21/12 là Nhân Mã hay Ma Kết?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 21/12 thuộc cung Nhân Mã, còn Ma Kết bắt đầu từ 22/12. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Nhân Mã tháng 12 tự tin hơn?",
+                "a": "Người sinh giữa và cuối tháng 12 thuộc thập độ ba, chịu thêm ảnh hưởng của Sư Tử, cung của sự tự tin và toả sáng. Vì vậy họ thường nổi bật và thích dẫn dắt hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ma-ket": {
+      "nam": {
+        "summary": "Ma Kết nam là kiểu người đàn ông nghiêm túc, có trách nhiệm và đầy tham vọng. Anh ấy xây dựng cuộc sống từng bước chắc chắn và rất đáng tin cậy.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Ma Kết nam",
+              "paragraphs": [
+                "Ma Kết nam biết mình muốn đi đâu và kiên trì leo từng bước để đến đó. Anh ấy có tinh thần trách nhiệm cao, làm việc đến nơi đến chốn.",
+                "Bề ngoài có thể nghiêm túc, hơi lạnh lùng, nhưng người thân của anh ấy biết Ma Kết nam có khiếu hài hước khô khan rất riêng.",
+                "Mặt trái là xu hướng quá tập trung vào công việc và khó bộc lộ cảm xúc. Ma Kết nam có thể quên nghỉ ngơi và tự đánh giá mình chỉ qua thành tích."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Ma Kết nam khi yêu",
+              "paragraphs": [
+                "Ma Kết nam yêu nghiêm túc và có trách nhiệm. Anh ấy không thích những mối quan hệ chơi chơi, mà muốn xây dựng một tình yêu có tương lai.",
+                "Anh ấy thể hiện tình cảm qua hành động: hỗ trợ người yêu, lo cho tương lai chung. Ma Kết nam cần học cách nói lời yêu thương và dành thời gian cho tình yêu giữa bộn bề công việc."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Ma Kết nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Dành thời gian cho bạn dù lịch làm việc rất bận",
+                "Giúp bạn những việc thiết thực như học hành, công việc",
+                "Kể với bạn về kế hoạch và mục tiêu tương lai",
+                "Để lộ khiếu hài hước mà ít người được thấy",
+                "Luôn đúng hẹn và nhắn tin đều đặn"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Ma Kết nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Ma Kết nam hơn:"
+              ],
+              "bullets": [
+                "Thể hiện sự nghiêm túc và có mục tiêu",
+                "Tôn trọng thời gian và công việc của anh ấy",
+                "Rủ những buổi hẹn chỉn chu ở nơi yên tĩnh",
+                "Giúp anh ấy thư giãn và cười nhiều hơn",
+                "Kiên nhẫn, đừng ép anh ấy thể hiện cảm xúc quá sớm"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Ma Kết nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Ma Kết nam phát huy tốt ở những lĩnh vực có lộ trình rõ ràng và cần trách nhiệm: quản lý, tài chính, ngân hàng, luật, kỹ thuật, xây dựng, kinh doanh.",
+                "Ma Kết nam rất giỏi quản lý tiền, tiết kiệm có kế hoạch và đầu tư thận trọng. Anh ấy nên cho phép mình tận hưởng thành quả đã làm ra."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Ma Kết nam có lạnh lùng không?",
+              "a": "Ma Kết nam dè dặt khi mới quen nên dễ bị nhìn là lạnh lùng. Thực tế anh ấy ấm áp và hài hước với người thân, chỉ cần thời gian để tin tưởng."
+            },
+            {
+              "q": "Ma Kết nam có chung thuỷ không?",
+              "a": "Ma Kết nam yêu nghiêm túc và coi trọng cam kết, nên thường rất chung thuỷ khi đã chọn ai đó để gắn bó lâu dài."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Ma Kết nữ là kiểu người con gái trưởng thành, độc lập và có mục tiêu rõ ràng. Cô ấy mạnh mẽ, đáng tin và luôn nỗ lực vì tương lai.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Ma Kết nữ",
+              "paragraphs": [
+                "Ma Kết nữ chững chạc, có kỷ luật và thường trưởng thành sớm hơn bạn bè cùng tuổi. Cô ấy biết mình muốn gì và kiên trì theo đuổi.",
+                "Cô ấy có trách nhiệm, làm việc chăm chỉ và được mọi người tin tưởng. Ma Kết nữ tôn trọng những người làm được việc.",
+                "Mặt trái là xu hướng quá khắt khe với bản thân và khó bộc lộ cảm xúc. Ma Kết nữ có thể gánh vác quá nhiều mà không nói ra."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Ma Kết nữ khi yêu",
+              "paragraphs": [
+                "Ma Kết nữ yêu thận trọng và nghiêm túc. Cô ấy không vội vàng, mà muốn chắc chắn người kia đáng tin và có định hướng.",
+                "Khi đã yêu, cô ấy chung thuỷ và hỗ trợ người yêu hết mình. Ma Kết nữ cần học cách cho phép mình yếu đuối và được chăm sóc."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Ma Kết nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Dành thời gian cho bạn trong lịch trình bận rộn",
+                "Hỏi về kế hoạch và mục tiêu của bạn",
+                "Giúp bạn những việc thực tế",
+                "Để lộ phía hài hước, dịu dàng ít ai thấy",
+                "Giới thiệu bạn với những người quan trọng"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Ma Kết nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Ma Kết nữ hơn:"
+              ],
+              "bullets": [
+                "Có mục tiêu và nghiêm túc với cuộc sống",
+                "Đúng hẹn, giữ lời",
+                "Trân trọng nỗ lực và thành quả của cô ấy",
+                "Giúp cô ấy nghỉ ngơi và tận hưởng",
+                "Kiên nhẫn chờ cô ấy mở lòng"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Ma Kết nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Ma Kết nữ phát huy tốt ở những vị trí cần kỷ luật và tầm nhìn: quản lý, tài chính, luật, hành chính, kinh doanh, tư vấn chiến lược.",
+                "Ma Kết nữ độc lập tài chính và rất giỏi tích luỹ. Cô ấy nên dành một khoản để tự thưởng cho bản thân."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Ma Kết nữ có khó tính không?",
+              "a": "Ma Kết nữ có tiêu chuẩn cao và nghiêm túc nên có vẻ khó tính. Nhưng cô ấy rất công bằng và tận tâm với những người mình quý."
+            },
+            {
+              "q": "Ma Kết nữ thích mẫu người thế nào?",
+              "a": "Ma Kết nữ thường thích người trưởng thành, có trách nhiệm, có mục tiêu rõ ràng và biết tôn trọng sự độc lập của cô ấy."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "1": {
+          "summary": "Ma Kết tháng 1 là những người sinh từ 01/01 đến 19/01, thuộc thập độ hai và ba. Họ vẫn kỷ luật như mọi Ma Kết, nhưng pha thêm sự điềm tĩnh của Kim Ngưu và sự tỉ mỉ của Xử Nữ.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Ma Kết tháng 1 khác gì Ma Kết tháng 12",
+                "paragraphs": [
+                  "Khác với Ma Kết tháng 12 thuần chất, Ma Kết tháng 1 mang thêm màu sắc của hai cung Đất khác. Người sinh đầu tháng 1 chịu ảnh hưởng của Kim Ngưu, nên điềm tĩnh, biết tận hưởng và có gu thẩm mỹ. Người sinh giữa tháng 1 trở đi chịu ảnh hưởng của Xử Nữ, nên tỉ mỉ, chu đáo và có óc phân tích.",
+                  "Những người sinh vào những ngày cuối, khoảng 18 đến 19/01, đứng sát ranh giới với Bảo Bình, nên đôi khi độc đáo và cởi mở hơn Ma Kết điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Ma Kết tháng 1",
+                "paragraphs": [
+                  "Ma Kết tháng 1 vẫn có tham vọng và trách nhiệm, nhưng người sinh đầu tháng 1 thường thư thái hơn, biết tận hưởng thành quả và yêu cái đẹp.",
+                  "Người sinh giữa tháng 1 thì chu đáo, tỉ mỉ và rất giỏi hoàn thiện mọi việc."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Ma Kết tháng 1 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Ma Kết tháng 1 chung thuỷ và chu đáo. Người sinh đầu tháng 1 lãng mạn theo kiểu giác quan, người sinh giữa tháng 1 chăm sóc bằng những việc làm thiết thực.",
+                  "Họ cần một người ổn định, chân thành và trân trọng những nỗ lực của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Ma Kết tháng 1",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Ma Kết tháng 1:"
+                ],
+                "bullets": [
+                  "Điềm tĩnh và bền bỉ",
+                  "Tỉ mỉ, chu đáo",
+                  "Biết tận hưởng thành quả",
+                  "Chung thuỷ, đáng tin"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Ma Kết tháng 1 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Ma Kết tháng 1 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Cởi mở với thay đổi",
+                  "Bớt khắt khe với bản thân",
+                  "Nói ra cảm xúc thay vì giữ trong lòng",
+                  "Thử những trải nghiệm mới"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 19/01 là Ma Kết hay Bảo Bình?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 19/01 thuộc cung Ma Kết, còn Bảo Bình bắt đầu từ 20/01. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Vì sao Ma Kết tháng 1 điềm tĩnh hơn?",
+                "a": "Người sinh đầu tháng 1 thuộc thập độ hai, chịu thêm ảnh hưởng của Kim Ngưu, cung của sự điềm tĩnh và hưởng thụ. Vì vậy họ thường thư thái và biết tận hưởng hơn."
+              }
+            ]
+          }
+        },
+        "12": {
+          "summary": "Ma Kết tháng 12 là những người sinh từ 22/12 đến 31/12, thuộc thập độ đầu tiên. Đây là những Ma Kết thuần chất nhất: kỷ luật, tham vọng và đáng tin cậy.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Ma Kết tháng 12 khác gì Ma Kết tháng 1",
+                "paragraphs": [
+                  "Người sinh cuối tháng 12 thuộc thập độ đầu của Ma Kết, nơi năng lượng Sao Thổ đậm đặc nhất. Nếu Ma Kết tháng 1 pha thêm sự điềm tĩnh của Kim Ngưu hay sự tỉ mỉ của Xử Nữ, thì Ma Kết tháng 12 mang trọn vẹn tinh thần trách nhiệm, kỷ luật và tham vọng của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 22 đến 23/12, đứng sát ranh giới với Nhân Mã, nên đôi khi lạc quan và phóng khoáng hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Ma Kết tháng 12",
+                "paragraphs": [
+                  "Ma Kết tháng 12 có tham vọng rõ ràng, làm việc bền bỉ và luôn có kế hoạch cho tương lai.",
+                  "Họ là những Ma Kết nghiêm túc nhất, trưởng thành sớm và thường gánh vác nhiều trách nhiệm."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Ma Kết tháng 12 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Ma Kết tháng 12 nghiêm túc và có trách nhiệm. Họ muốn xây dựng một mối quan hệ vững chắc.",
+                  "Họ cần một người đáng tin, có mục tiêu và giúp họ cân bằng giữa công việc và cuộc sống."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Ma Kết tháng 12",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Ma Kết tháng 12:"
+                ],
+                "bullets": [
+                  "Kỷ luật, bền bỉ",
+                  "Có tham vọng và tầm nhìn",
+                  "Trách nhiệm, đáng tin",
+                  "Giỏi quản lý tài chính"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Ma Kết tháng 12 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Ma Kết tháng 12 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Dành thời gian nghỉ ngơi",
+                  "Bày tỏ cảm xúc nhiều hơn",
+                  "Không đánh giá bản thân chỉ qua thành tích",
+                  "Tận hưởng những niềm vui nhỏ"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 22/12 là Nhân Mã hay Ma Kết?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 22/12 thuộc cung Ma Kết. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Ma Kết tháng 12 khác tháng 1 thế nào?",
+                "a": "Ma Kết tháng 12 thuộc thập độ đầu nên thuần chất, nghiêm túc và tham vọng. Ma Kết tháng 1 pha thêm nét của Kim Ngưu và Xử Nữ nên điềm tĩnh, biết tận hưởng và tỉ mỉ hơn."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "bao-binh": {
+      "nam": {
+        "summary": "Bảo Bình nam là kiểu người đàn ông độc đáo, thông minh và có lý tưởng. Anh ấy nghĩ khác đám đông và luôn mang lại những góc nhìn mới lạ.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bảo Bình nam",
+              "paragraphs": [
+                "Bảo Bình nam không ngại khác biệt. Anh ấy có những ý tưởng đi trước thời đại, thích công nghệ, khoa học và những vấn đề lớn của xã hội.",
+                "Anh ấy thân thiện với mọi người, có nhiều bạn bè nhưng giữ khoảng cách riêng. Bảo Bình nam coi trọng tự do và sự độc lập cá nhân.",
+                "Mặt trái là xu hướng lý trí, xa cách về cảm xúc và cứng đầu với quan điểm. Bảo Bình nam đôi khi phân tích cảm xúc thay vì cảm nhận nó."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bảo Bình nam khi yêu",
+              "paragraphs": [
+                "Với Bảo Bình nam, tình yêu thường bắt đầu từ tình bạn. Anh ấy bị cuốn hút bởi trí tuệ và cách nghĩ độc đáo.",
+                "Anh ấy cần một mối quan hệ tôn trọng tự do, không quá nhiều quy tắc. Bảo Bình nam cần học cách thể hiện tình cảm rõ ràng và ấm áp hơn."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bảo Bình nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Trò chuyện với bạn về những chủ đề lạ và sâu",
+                "Giới thiệu bạn với nhóm bạn của mình",
+                "Tò mò về cách suy nghĩ của bạn",
+                "Làm những điều bất ngờ, khác thường",
+                "Dành cho bạn nhiều thời gian hơn người khác"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bảo Bình nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bảo Bình nam hơn:"
+              ],
+              "bullets": [
+                "Trở thành bạn trước khi thành người yêu",
+                "Chia sẻ ý tưởng và sở thích độc đáo",
+                "Rủ những buổi hẹn lạ: xem chiếu sao, triển lãm công nghệ",
+                "Tôn trọng không gian riêng của anh ấy",
+                "Tránh ghen tuông và kiểm soát"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bảo Bình nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bảo Bình nam phát huy tốt ở những lĩnh vực đổi mới và sáng tạo: công nghệ, khoa học, nghiên cứu, khởi nghiệp, phát triển sản phẩm, hoạt động xã hội.",
+                "Bảo Bình nam không quá đặt nặng vật chất nhưng hay chi cho công nghệ và dự án cá nhân. Kế hoạch tài chính đơn giản giúp anh ấy theo đuổi lý tưởng lâu dài."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bảo Bình nam có lạnh lùng không?",
+              "a": "Bảo Bình nam lý trí và cần không gian riêng nên có vẻ lạnh lùng. Anh ấy thể hiện tình cảm qua sự đồng hành, tôn trọng và những cuộc trò chuyện sâu sắc."
+            },
+            {
+              "q": "Bảo Bình nam thích mẫu người nào?",
+              "a": "Bảo Bình nam thường thích người thông minh, độc lập, có cá tính riêng và tôn trọng sự tự do của anh ấy."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Bảo Bình nữ là kiểu người con gái cá tính, độc lập và đầy ý tưởng. Cô ấy sống theo cách của mình và không ngại khác biệt.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Bảo Bình nữ",
+              "paragraphs": [
+                "Bảo Bình nữ có tư duy độc đáo, thích những điều mới lạ và thường có quan điểm riêng về mọi thứ. Cô ấy thân thiện và có nhiều bạn bè.",
+                "Cô ấy quan tâm đến cộng đồng, công bằng và những vấn đề lớn. Bảo Bình nữ thường tham gia các hoạt động xã hội hoặc tình nguyện.",
+                "Mặt trái là xu hướng giữ khoảng cách cảm xúc và cứng đầu với quan điểm. Bảo Bình nữ có thể khó mở lòng hoàn toàn."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Bảo Bình nữ khi yêu",
+              "paragraphs": [
+                "Bảo Bình nữ yêu một cách tự do và tôn trọng. Cô ấy cần một người vừa là bạn thân, vừa là người đồng hành trí tuệ.",
+                "Cô ấy không thích sự ràng buộc hay ghen tuông. Bảo Bình nữ cần học cách thể hiện cảm xúc và cho phép mình gần gũi hơn."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Bảo Bình nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Chia sẻ với bạn những ý tưởng kỳ lạ",
+                "Rủ bạn tham gia dự án hoặc hoạt động của mình",
+                "Tò mò về quan điểm của bạn",
+                "Trò chuyện với bạn đến khuya về đủ chủ đề",
+                "Giới thiệu bạn với những người bạn quan trọng"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Bảo Bình nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Bảo Bình nữ hơn:"
+              ],
+              "bullets": [
+                "Có cá tính và suy nghĩ riêng",
+                "Trò chuyện thông minh, cởi mở",
+                "Tôn trọng tự do và không gian riêng",
+                "Rủ những buổi hẹn mới lạ, có ý nghĩa",
+                "Không áp đặt khuôn mẫu lên cô ấy"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Bảo Bình nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Bảo Bình nữ phát huy tốt ở những lĩnh vực sáng tạo và đổi mới: công nghệ, thiết kế, nghiên cứu, truyền thông, tổ chức phi lợi nhuận, khởi nghiệp.",
+                "Bảo Bình nữ thường ủng hộ những việc mình tin, kể cả bằng tiền. Một kế hoạch tài chính rõ ràng giúp cô ấy yên tâm theo đuổi lý tưởng."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Bảo Bình nữ có khó hiểu không?",
+              "a": "Bảo Bình nữ có tư duy khác biệt và cần không gian riêng nên đôi khi khó đoán. Tôn trọng cá tính và trò chuyện cởi mở là cách tốt nhất để hiểu cô ấy."
+            },
+            {
+              "q": "Bảo Bình nữ có lãng mạn không?",
+              "a": "Bảo Bình nữ lãng mạn theo kiểu riêng: những trải nghiệm độc đáo, những cuộc trò chuyện sâu và sự đồng hành, hơn là những cử chỉ lãng mạn truyền thống."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "1": {
+          "summary": "Bảo Bình tháng 1 là những người sinh từ 20/01 đến 31/01, phần lớn thuộc thập độ đầu tiên. Đây là những Bảo Bình thuần chất nhất: độc đáo, lý tưởng và yêu tự do.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bảo Bình tháng 1 khác gì Bảo Bình tháng 2",
+                "paragraphs": [
+                  "Người sinh cuối tháng 1 phần lớn thuộc thập độ đầu của Bảo Bình, nơi tinh thần đổi mới của cung này đậm đặc nhất. Nếu Bảo Bình tháng 2 pha thêm sự hoạt bát của Song Tử hay sự duyên dáng của Thiên Bình, thì Bảo Bình tháng 1 mang trọn vẹn sự độc lập, cấp tiến và lý tưởng của cung này.",
+                  "Những người sinh vài ngày đầu, khoảng 20 đến 21/01, đứng sát ranh giới với Ma Kết, nên đôi khi nghiêm túc và có kỷ luật hơn."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bảo Bình tháng 1",
+                "paragraphs": [
+                  "Bảo Bình tháng 1 có tư duy độc lập, không ngại đi ngược đám đông và quan tâm đến những vấn đề của cộng đồng.",
+                  "Họ là những Bảo Bình cứng đầu nhất với quan điểm, nhưng cũng trung thành nhất với lý tưởng của mình."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bảo Bình tháng 1 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bảo Bình tháng 1 cần tự do và sự tôn trọng. Tình yêu của họ thường bắt đầu từ tình bạn.",
+                  "Họ cần một người thông minh, độc lập và chấp nhận cá tính khác biệt của họ."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bảo Bình tháng 1",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bảo Bình tháng 1:"
+                ],
+                "bullets": [
+                  "Tư duy độc đáo, đi trước thời đại",
+                  "Trung thành với lý tưởng",
+                  "Quan tâm đến cộng đồng",
+                  "Tôn trọng sự khác biệt"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bảo Bình tháng 1 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bảo Bình tháng 1 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Thể hiện cảm xúc nhiều hơn",
+                  "Lắng nghe quan điểm trái chiều",
+                  "Cho phép mình gần gũi với người khác",
+                  "Biến ý tưởng thành hành động cụ thể"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 20/01 là Ma Kết hay Bảo Bình?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 20/01 thuộc cung Bảo Bình. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Bảo Bình tháng 1 khác tháng 2 thế nào?",
+                "a": "Bảo Bình tháng 1 phần lớn thuộc thập độ đầu nên thuần chất, độc lập và lý tưởng. Bảo Bình tháng 2 pha thêm nét của Song Tử và Thiên Bình nên hoạt bát, giao tiếp giỏi và duyên dáng hơn."
+              }
+            ]
+          }
+        },
+        "2": {
+          "summary": "Bảo Bình tháng 2 là những người sinh từ 01/02 đến 18/02, thuộc thập độ hai và ba. Họ vẫn độc đáo như mọi Bảo Bình, nhưng pha thêm sự hoạt bát của Song Tử và sự duyên dáng của Thiên Bình.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Bảo Bình tháng 2 khác gì Bảo Bình tháng 1",
+                "paragraphs": [
+                  "Khác với Bảo Bình tháng 1 thuần chất, Bảo Bình tháng 2 mang thêm màu sắc của hai cung Khí khác. Người sinh đầu tháng 2 chịu ảnh hưởng của Song Tử, nên nhanh trí, hài hước và giao tiếp giỏi. Người sinh giữa tháng 2 trở đi chịu ảnh hưởng của Thiên Bình, nên duyên dáng, coi trọng các mối quan hệ và yêu cái đẹp.",
+                  "Những người sinh vào những ngày cuối, khoảng 17 đến 18/02, đứng sát ranh giới với Song Ngư, nên đôi khi giàu cảm xúc và mơ mộng hơn Bảo Bình điển hình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Bảo Bình tháng 2",
+                "paragraphs": [
+                  "Bảo Bình tháng 2 vẫn độc lập và sáng tạo, nhưng người sinh đầu tháng 2 thường hoạt bát, tò mò và có nhiều sở thích.",
+                  "Người sinh giữa tháng 2 trở đi thì tinh tế, lịch thiệp và giỏi kết nối mọi người."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Bảo Bình tháng 2 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Bảo Bình tháng 2 thân thiện và lãng mạn hơn Bảo Bình tháng 1. Người sinh gần ngày Valentine thường coi trọng sự hài hoà và những cử chỉ đẹp.",
+                  "Họ cần một người vừa hợp về trí tuệ, vừa biết tôn trọng không gian riêng."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Bảo Bình tháng 2",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Bảo Bình tháng 2:"
+                ],
+                "bullets": [
+                  "Hoạt bát, giao tiếp giỏi",
+                  "Duyên dáng và tinh tế",
+                  "Sáng tạo, nhiều ý tưởng",
+                  "Giỏi kết nối mọi người"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Bảo Bình tháng 2 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Bảo Bình tháng 2 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh phân tán vào quá nhiều việc",
+                  "Thể hiện cảm xúc rõ ràng",
+                  "Ra quyết định dứt khoát hơn",
+                  "Giữ cam kết trong các mối quan hệ"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 18/02 là Bảo Bình hay Song Ngư?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 18/02 thuộc cung Bảo Bình, còn Song Ngư bắt đầu từ 19/02. Người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Người sinh ngày Valentine 14/02 thuộc cung gì?",
+                "a": "Người sinh ngày 14/02 thuộc cung Bảo Bình, nằm trong thập độ ba chịu thêm ảnh hưởng của Thiên Bình, cung của tình yêu và sự hài hoà."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "song-ngu": {
+      "nam": {
+        "summary": "Song Ngư nam là kiểu người đàn ông dịu dàng, lãng mạn và rất tinh tế với cảm xúc của người khác. Bên ngoài có thể trầm lặng, nhưng bên trong là cả một thế giới giàu tưởng tượng.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Song Ngư nam",
+              "paragraphs": [
+                "Song Ngư nam thường không phải kiểu ồn ào hay thích thể hiện. Anh ấy quan sát nhiều, cảm nhận nhiều và hay có những suy nghĩ rất riêng mà ít khi nói ra. Nhiều người thấy Song Ngư nam có phần mơ màng, như đang sống một nửa ở thế giới của mình.",
+                "Điểm nổi bật nhất là sự thấu cảm. Song Ngư nam dễ nhận ra khi người khác buồn, và thường là người lắng nghe không phán xét trong nhóm bạn. Nhiều Song Ngư nam có năng khiếu nghệ thuật: âm nhạc, vẽ, viết, nhiếp ảnh hay đơn giản là một gu thẩm mỹ rất riêng.",
+                "Mặt trái là sự thiếu quyết đoán và dễ né tránh. Khi áp lực lớn, Song Ngư nam có thể thu mình, trì hoãn hoặc tìm cách thoát khỏi vấn đề thay vì đối mặt. Anh ấy cũng dễ bị ảnh hưởng bởi tâm trạng của những người xung quanh."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Song Ngư nam khi yêu",
+              "paragraphs": [
+                "Khi yêu, Song Ngư nam là người lãng mạn bậc nhất. Anh ấy nhớ những chi tiết nhỏ, viết những tin nhắn dài, chọn một bài hát chỉ vì nó làm anh ấy nghĩ đến bạn. Tình yêu với Song Ngư nam giống một bộ phim nhẹ nhàng, nhiều cảm xúc.",
+                "Song Ngư nam yêu hết lòng và sẵn sàng hy sinh cho người mình thương. Nhưng anh ấy cũng cần được hiểu và được an ủi, không chỉ luôn là người cho đi. Những lời nói nặng hay sự lạnh nhạt có thể khiến Song Ngư nam tổn thương mà không nói ra.",
+                "Điều Song Ngư nam cần luyện trong tình yêu là nói rõ cảm xúc và mong muốn của mình, thay vì hy vọng người kia tự hiểu hoặc lặng lẽ rút lui khi không vui."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Song Ngư nam thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Để ý và nhớ tâm trạng của bạn trong từng câu chuyện",
+                "Gửi cho bạn bài hát, bộ phim hay câu thơ mà anh ấy thấy \"giống bạn\"",
+                "Ngượng ngùng, hơi lúng túng khi chỉ có hai người",
+                "Sẵn sàng thức khuya nghe bạn tâm sự",
+                "Tặng những món quà nhỏ nhưng rất có ý nghĩa"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Song Ngư nam",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Song Ngư nam hơn:"
+              ],
+              "bullets": [
+                "Chủ động một chút, vì Song Ngư nam thường ngại bước trước",
+                "Lắng nghe những ước mơ của anh ấy mà không chê viển vông",
+                "Rủ những buổi hẹn lãng mạn, yên tĩnh: ngắm hoàng hôn, nghe nhạc, xem phim",
+                "Nói năng nhẹ nhàng, tránh chỉ trích gay gắt",
+                "Giúp anh ấy biến ý tưởng thành kế hoạch cụ thể một cách tế nhị"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Song Ngư nam trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Song Ngư nam làm tốt ở những môi trường cần sự sáng tạo, trực giác và lòng trắc ẩn: nghệ thuật, âm nhạc, thiết kế, tâm lý, y tế, giáo dục. Anh ấy không thích bị gò bó quá chặt, nhưng khi tìm được công việc có ý nghĩa thì rất tận tâm.",
+                "Với tiền bạc, Song Ngư nam dễ chi tiêu theo cảm xúc hoặc khó từ chối khi bạn bè cần giúp. Một người bạn đời giỏi quản lý tài chính, hoặc thói quen tiết kiệm tự động, sẽ giúp anh ấy yên tâm theo đuổi đam mê."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Song Ngư nam có chung thuỷ không?",
+              "a": "Song Ngư nam thường yêu sâu và gắn bó khi đã tìm được người hiểu mình. Điều cần chú ý là anh ấy dễ né tránh khi có vấn đề, nên những cuộc nói chuyện thẳng thắn và nhẹ nhàng sẽ giúp mối quan hệ bền hơn."
+            },
+            {
+              "q": "Làm sao biết Song Ngư nam đang buồn?",
+              "a": "Song Ngư nam ít khi nói thẳng, mà thường trầm lặng hơn, trả lời tin nhắn ngắn hơn hoặc muốn ở một mình. Một lời hỏi han nhẹ nhàng, không ép buộc, thường giúp anh ấy mở lòng."
+            }
+          ]
+        }
+      },
+      "nu": {
+        "summary": "Song Ngư nữ là kiểu người con gái dịu dàng, mơ mộng và giàu lòng trắc ẩn. Cô ấy cảm nhận thế giới bằng trái tim và có một trực giác nhạy bén đến bất ngờ.",
+        "deep": {
+          "sections": [
+            {
+              "id": "tinh-cach",
+              "heading": "Tính cách Song Ngư nữ",
+              "paragraphs": [
+                "Song Ngư nữ thường toát ra vẻ nhẹ nhàng, dễ gần và có chút bí ẩn. Cô ấy sống bằng cảm xúc, dễ xúc động trước một bộ phim hay một câu chuyện, và thường có một thế giới nội tâm rất phong phú.",
+                "Trực giác là điểm mạnh nổi bật. Song Ngư nữ hay \"cảm\" được điều gì đó không ổn trước khi nó xảy ra, và thường đọc được cảm xúc của người khác rất chính xác. Nhiều Song Ngư nữ có năng khiếu nghệ thuật, viết lách hoặc những công việc cần sự thấu cảm.",
+                "Mặt trái là sự nhạy cảm dễ biến thành tổn thương. Song Ngư nữ có thể suy nghĩ nhiều về một câu nói vô tình, dễ lo lắng và đôi khi hy sinh quá mức cho người khác mà quên mất bản thân."
+              ]
+            },
+            {
+              "id": "khi-yeu",
+              "heading": "Song Ngư nữ khi yêu",
+              "paragraphs": [
+                "Khi yêu, Song Ngư nữ yêu bằng cả tâm hồn. Cô ấy lãng mạn, tận tâm và luôn muốn làm người mình thương hạnh phúc. Những cử chỉ nhỏ như một lời chúc ngủ ngon, một món quà tự làm là cách cô ấy thể hiện tình cảm.",
+                "Song Ngư nữ cần cảm giác an toàn về mặt cảm xúc. Cô ấy mong người yêu hiểu mình mà không cần giải thích quá nhiều, và dễ buồn khi cảm thấy không được lắng nghe.",
+                "Điều Song Ngư nữ cần để ý là đừng lý tưởng hoá người yêu quá mức, và đừng hy sinh nhu cầu của chính mình. Một tình yêu lành mạnh là khi cả hai cùng chăm sóc nhau."
+              ]
+            },
+            {
+              "id": "dau-hieu-thich",
+              "heading": "Dấu hiệu Song Ngư nữ thích bạn",
+              "paragraphs": [
+                "Mỗi người mỗi khác, nhưng đây là vài dấu hiệu thường gặp:"
+              ],
+              "bullets": [
+                "Lắng nghe bạn rất chăm chú và nhớ cảm xúc của bạn",
+                "Lo lắng, hỏi han khi bạn mệt hay gặp chuyện buồn",
+                "Chia sẻ với bạn những ước mơ và suy nghĩ riêng tư",
+                "Hay mỉm cười ngượng ngùng khi bị bạn bắt gặp đang nhìn",
+                "Tặng những món quà nhỏ, tự tay làm hoặc chọn rất kỹ"
+              ]
+            },
+            {
+              "id": "chinh-phuc",
+              "heading": "Cách chinh phục Song Ngư nữ",
+              "paragraphs": [
+                "Vài cách giúp bạn đến gần Song Ngư nữ hơn:"
+              ],
+              "bullets": [
+                "Chân thành và nhất quán, Song Ngư nữ nhận ra sự giả tạo rất nhanh",
+                "Lắng nghe mà không vội đưa lời khuyên hay phán xét",
+                "Rủ những buổi hẹn lãng mạn: đi biển, nghe nhạc, xem phim nghệ thuật",
+                "Trân trọng sự sáng tạo và những giấc mơ của cô ấy",
+                "Cho cô ấy cảm giác an toàn bằng sự dịu dàng và đáng tin"
+              ]
+            },
+            {
+              "id": "cuoc-song",
+              "heading": "Song Ngư nữ trong công việc và cuộc sống",
+              "paragraphs": [
+                "Trong công việc, Song Ngư nữ phát huy tốt ở những lĩnh vực cần sự sáng tạo và thấu cảm: nghệ thuật, thiết kế, viết lách, tâm lý, chăm sóc sức khoẻ, giáo dục hay công tác xã hội. Cô ấy làm việc tốt nhất khi thấy việc mình làm có ý nghĩa với người khác.",
+                "Song Ngư nữ thường rộng lượng và dễ cho đi, kể cả tiền bạc. Đặt ra giới hạn rõ ràng và giữ một khoản tiết kiệm riêng sẽ giúp cô ấy vừa giúp đỡ người khác vừa bảo vệ được chính mình."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Song Ngư nữ có dễ tổn thương không?",
+              "a": "Song Ngư nữ rất nhạy cảm nên dễ bị ảnh hưởng bởi lời nói và thái độ của người khác. Tuy vậy, sự nhạy cảm ấy cũng giúp cô ấy thấu hiểu và yêu thương sâu sắc. Sự dịu dàng và chân thành là cách tốt nhất để ở bên cô ấy."
+            },
+            {
+              "q": "Song Ngư nữ thích được tặng gì?",
+              "a": "Song Ngư nữ thường trân trọng những món quà mang ý nghĩa hơn là giá trị: một lá thư tay, một bài hát, một cuốn sách hay món đồ gợi nhớ kỷ niệm chung. Điều quan trọng là cô ấy cảm nhận được bạn đã nghĩ về mình khi chọn quà."
+            }
+          ]
+        }
+      },
+      "thang": {
+        "2": {
+          "summary": "Song Ngư tháng 2 là những người sinh từ 19/02 đến hết tháng 2, rơi vào thập độ đầu tiên. Đây được xem là những Song Ngư \"thuần\" nhất: mơ mộng, giàu trực giác và nghệ sĩ nhất.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Song Ngư tháng 2 khác gì Song Ngư tháng 3",
+                "paragraphs": [
+                  "Người sinh cuối tháng 2 thuộc thập độ đầu của Song Ngư, nơi năng lượng của chính cung này đậm đặc nhất. Nếu Song Ngư tháng 3 pha thêm sự chăm sóc của Cự Giải hay chiều sâu của Bọ Cạp, thì Song Ngư tháng 2 mang trọn vẹn tinh thần của sao chủ quản Hải Vương: mơ mộng, nghệ sĩ và rất nhạy với những điều vô hình.",
+                  "Vì đứng ngay sau Bảo Bình trên vòng hoàng đạo, những người sinh những ngày đầu của Song Ngư (khoảng 19 đến 21/02) đôi khi còn mang chút độc lập, lý tưởng của Bảo Bình."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Song Ngư tháng 2",
+                "paragraphs": [
+                  "Song Ngư tháng 2 có trí tưởng tượng phong phú và thường sống nhiều trong thế giới nội tâm. Họ dễ bị cuốn vào âm nhạc, phim ảnh, sách truyện, và có khả năng sáng tạo rất tự nhiên.",
+                  "Họ cũng có trực giác mạnh, cảm nhận được những điều người khác chưa nói ra. Nhưng chính vì nhạy cảm, Song Ngư tháng 2 dễ mệt mỏi ở những môi trường ồn ào, căng thẳng, và cần thời gian yên tĩnh để nạp lại năng lượng."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Song Ngư tháng 2 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Song Ngư tháng 2 là những người lãng mạn và lý tưởng. Họ mơ về một tình yêu đẹp như phim, nơi hai tâm hồn hiểu nhau không cần lời. Họ cho đi rất nhiều và yêu thương vô điều kiện.",
+                  "Điều họ cần là một người vừa trân trọng sự mơ mộng ấy, vừa đủ vững vàng để giúp họ đặt chân trên mặt đất."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Song Ngư tháng 2",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Song Ngư tháng 2:"
+                ],
+                "bullets": [
+                  "Trí tưởng tượng và năng khiếu nghệ thuật nổi bật",
+                  "Trực giác nhạy bén, hiểu người khác rất nhanh",
+                  "Bao dung, dễ tha thứ",
+                  "Lãng mạn và tận tâm trong tình yêu"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Song Ngư tháng 2 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Song Ngư tháng 2 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tập biến ý tưởng thành những bước làm cụ thể",
+                  "Đặt ranh giới để không bị cuốn vào cảm xúc của người khác",
+                  "Đối mặt với vấn đề thay vì trốn vào thế giới riêng",
+                  "Chăm sóc giấc ngủ và giữ nhịp sinh hoạt đều đặn"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 29/02 thuộc cung gì?",
+                "a": "Người sinh ngày 29/02 thuộc cung Song Ngư, nằm trong thập độ đầu tiên của cung này, giống như những người sinh cuối tháng 2 khác."
+              },
+              {
+                "q": "Song Ngư tháng 2 có phải Song Ngư điển hình nhất?",
+                "a": "Theo cách chia thập độ, người sinh từ 19/02 đến hết tháng 2 thuộc thập độ đầu, nơi tính chất của Song Ngư thể hiện rõ nhất. Vì vậy họ thường được xem là những Song Ngư điển hình: mơ mộng, nhạy cảm và nghệ sĩ."
+              }
+            ]
+          }
+        },
+        "3": {
+          "summary": "Song Ngư tháng 3 là những người sinh từ 01/03 đến 20/03, trải qua thập độ thứ hai và thứ ba. Họ vẫn dịu dàng như mọi Song Ngư, nhưng pha thêm sự chăm sóc của Cự Giải và chiều sâu của Bọ Cạp.",
+          "deep": {
+            "sections": [
+              {
+                "id": "diem-rieng",
+                "heading": "Song Ngư tháng 3 khác gì Song Ngư tháng 2",
+                "paragraphs": [
+                  "Khác với Song Ngư tháng 2 mơ mộng và thuần chất, Song Ngư tháng 3 mang thêm màu sắc của hai cung Nước khác. Người sinh khoảng 01 đến 10/03 thuộc thập độ hai, chịu ảnh hưởng của Cự Giải, nên thường ấm áp, trọng gia đình và giỏi chăm sóc. Người sinh khoảng 11 đến 20/03 thuộc thập độ ba, chịu ảnh hưởng của Bọ Cạp, nên sâu sắc, bản lĩnh và quyết đoán hơn.",
+                  "Những người sinh vào những ngày cuối, khoảng 19 đến 20/03, đứng sát ranh giới với Bạch Dương. Họ thường có thêm chút năng lượng hành động, dám nghĩ dám làm mà Song Ngư điển hình ít có."
+                ]
+              },
+              {
+                "id": "tinh-cach",
+                "heading": "Tính cách Song Ngư tháng 3",
+                "paragraphs": [
+                  "Song Ngư tháng 3 vẫn giàu cảm xúc và trực giác, nhưng thường thực tế và vững vàng hơn Song Ngư tháng 2. Những người sinh đầu tháng 3 có xu hướng hướng về gia đình, bạn bè thân thiết và thích tạo ra không gian ấm cúng cho mọi người.",
+                  "Những người sinh giữa và cuối tháng 3 thì có chiều sâu tâm lý, khả năng nhìn thấu người khác và một ý chí mạnh mẽ ẩn sau vẻ ngoài dịu dàng. Khi đã quyết tâm, họ bền bỉ hơn nhiều người nghĩ."
+                ]
+              },
+              {
+                "id": "khi-yeu",
+                "heading": "Song Ngư tháng 3 khi yêu",
+                "paragraphs": [
+                  "Trong tình yêu, Song Ngư tháng 3 vừa lãng mạn vừa gắn bó. Người sinh đầu tháng 3 yêu theo kiểu chăm sóc, muốn xây dựng một tổ ấm. Người sinh giữa và cuối tháng 3 yêu sâu đậm, mãnh liệt và cần sự chung thuỷ tuyệt đối.",
+                  "Họ cần một người chân thành, nhất quán, và đủ tinh tế để hiểu những cảm xúc không phải lúc nào cũng được nói ra."
+                ]
+              },
+              {
+                "id": "diem-manh",
+                "heading": "Điểm mạnh của Song Ngư tháng 3",
+                "paragraphs": [
+                  "Những điểm mạnh thường thấy ở Song Ngư tháng 3:"
+                ],
+                "bullets": [
+                  "Kết hợp được sự dịu dàng với sự vững vàng",
+                  "Giỏi chăm sóc và gắn kết mọi người",
+                  "Trực giác sâu, nhìn thấu tâm lý người khác",
+                  "Bền bỉ và có ý chí khi đã quyết tâm"
+                ]
+              },
+              {
+                "id": "luu-y",
+                "heading": "Điều Song Ngư tháng 3 nên lưu ý",
+                "paragraphs": [
+                  "Những điều giúp Song Ngư tháng 3 phát triển tốt hơn:"
+                ],
+                "bullets": [
+                  "Tránh ôm giữ những tổn thương cũ quá lâu",
+                  "Học cách buông bỏ khi một điều không còn phù hợp",
+                  "Nói rõ cảm xúc thay vì chờ người khác đoán",
+                  "Cân bằng giữa chăm lo cho người khác và cho bản thân"
+                ]
+              }
+            ],
+            "faq": [
+              {
+                "q": "Sinh ngày 20/03 là Song Ngư hay Bạch Dương?",
+                "a": "Theo cách tính phổ biến, người sinh ngày 20/03 thuộc cung Song Ngư, còn Bạch Dương bắt đầu từ 21/03. Tuy vậy thời điểm Mặt Trời chuyển cung xê dịch nhẹ theo từng năm, nên người sinh sát ranh giới có thể kiểm tra thêm năm và giờ sinh."
+              },
+              {
+                "q": "Song Ngư tháng 3 khác Song Ngư tháng 2 ở điểm nào?",
+                "a": "Song Ngư tháng 2 thuộc thập độ đầu nên mơ mộng và thuần chất hơn. Song Ngư tháng 3 thuộc thập độ hai và ba, pha thêm nét của Cự Giải và Bọ Cạp, nên thường thực tế, biết chăm sóc và có chiều sâu hơn."
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@
 import { z } from "zod";
 import lifePathJson from "@/content/life-path.json";
 import zodiacPairsJson from "@/content/zodiac-pairs.json";
+import zodiacVariantsJson from "@/content/zodiac-variants.json";
 import zodiacJson from "@/content/zodiac.json";
 import { numberCompat, zodiacAspect } from "@/lib/engines/compatibility";
 import { LIFE_PATH_NUMBERS, lifePathNumber } from "@/lib/engines/numerology";
@@ -236,4 +237,146 @@ export function lifePathExample(n: number): LifePathExample | null {
 
 export function getLifePath(n: number) {
   return lifePathContent.entries.find((e) => e.number === n) ?? null;
+}
+
+// ---- Biến thể của cung: theo giới tính và theo tháng sinh ----
+
+export interface DayMonth {
+  day: number;
+  month: number;
+}
+
+export interface SignMonthRange {
+  month: number;
+  from: number;
+  to: number;
+}
+
+const daysInMonth = (month: number, year: number) => new Date(Date.UTC(year, month, 0)).getUTCDate();
+
+/** Hai tháng mà một cung trải qua, kèm khoảng ngày trong từng tháng (tính cả 29/02). */
+export function zodiacMonths(sign: ZodiacSign): [SignMonthRange, SignMonthRange] {
+  const next = ZODIAC_SIGNS[(sign.index + 1) % 12];
+  const [m1, d1] = sign.start;
+  const [m2, d2] = next.start;
+  return [
+    { month: m1, from: d1, to: daysInMonth(m1, 2000) },
+    { month: m2, from: 1, to: d2 - 1 },
+  ];
+}
+
+export interface ZodiacDecan {
+  index: 1 | 2 | 3;
+  /** Cung cùng nguyên tố đồng chủ quản thập độ này (thập độ 1 là chính cung đó). */
+  coSign: ZodiacSign;
+  from: DayMonth;
+  to: DayMonth;
+}
+
+/**
+ * Ba thập độ (decan) của cung, mỗi thập độ khoảng 10 ngày (10 độ hoàng đạo), theo hệ tam hợp:
+ * thập độ 1 thuộc chính cung, thập độ 2 và 3 thuộc hai cung cùng nguyên tố kế tiếp.
+ */
+export function zodiacDecans(sign: ZodiacSign): ZodiacDecan[] {
+  const next = ZODIAC_SIGNS[(sign.index + 1) % 12];
+  const start = Date.UTC(2001, sign.start[0] - 1, sign.start[1]);
+  const endYear = next.start[0] < sign.start[0] ? 2002 : 2001;
+  const end = Date.UTC(endYear, next.start[0] - 1, next.start[1] - 1);
+  const DAY = 86_400_000;
+  const dm = (t: number): DayMonth => {
+    const d = new Date(t);
+    return { day: d.getUTCDate(), month: d.getUTCMonth() + 1 };
+  };
+  return ([1, 2, 3] as const).map((index) => ({
+    index,
+    coSign: ZODIAC_SIGNS[(sign.index + 4 * (index - 1)) % 12],
+    from: dm(start + 10 * (index - 1) * DAY),
+    to: dm(index === 3 ? end : start + (10 * index - 1) * DAY),
+  }));
+}
+
+/** Các thập độ rơi vào một tháng, với ngày đã cắt theo tháng đó (29/02 thuộc thập độ cuối tháng 2). */
+export function zodiacDecansInMonth(sign: ZodiacSign, month: number) {
+  const range = zodiacMonths(sign).find((r) => r.month === month);
+  if (!range) return [];
+  return zodiacDecans(sign)
+    .filter((d) => d.from.month === month || d.to.month === month)
+    .map((d) => ({
+      ...d,
+      from: d.from.month === month ? d.from.day : 1,
+      to: d.to.month === month ? (d.to.day === daysInMonth(month, 2001) ? range.to : d.to.day) : range.to,
+    }));
+}
+
+export type ZodiacVariantKind = "nam" | "nu" | "thang";
+
+const variantArticleSchema = z.object({ summary: text, deep: deepSchema });
+
+export const zodiacVariantsContent = z
+  .object({
+    meta: metaSchema,
+    signs: z.record(
+      z.string(),
+      z.object({
+        nam: variantArticleSchema,
+        nu: variantArticleSchema,
+        thang: z.record(z.string(), variantArticleSchema),
+      }),
+    ),
+  })
+  .superRefine((c, ctx) => {
+    for (const [slug, v] of Object.entries(c.signs)) {
+      const sign = zodiacBySlug(slug);
+      if (!sign) {
+        ctx.addIssue({ code: "custom", message: `Không có cung ${slug}` });
+        continue;
+      }
+      const months = zodiacMonths(sign).map((r) => String(r.month)).sort();
+      if (Object.keys(v.thang).sort().join() !== months.join()) {
+        ctx.addIssue({ code: "custom", message: `${slug} cần đúng các tháng ${months.join(", ")}` });
+      }
+    }
+  })
+  .parse(zodiacVariantsJson);
+
+/** Nhãn hiển thị của một biến thể: "Song Ngư nam", "Song Ngư nữ", "Song Ngư tháng 3". */
+export function zodiacVariantLabel(sign: ZodiacSign, kind: ZodiacVariantKind, month?: number) {
+  return kind === "thang" ? `${sign.name} tháng ${month}` : `${sign.name} ${kind === "nam" ? "nam" : "nữ"}`;
+}
+
+export function parseZodiacVariant(variant: string): { kind: ZodiacVariantKind; month?: number } | null {
+  if (variant === "nam" || variant === "nu") return { kind: variant };
+  const m = /^thang-(\d{1,2})$/.exec(variant);
+  return m ? { kind: "thang", month: Number(m[1]) } : null;
+}
+
+/** Các trang biến thể đã có nội dung của một cung, theo thứ tự nam, nữ, tháng đầu, tháng sau. */
+export function zodiacVariantLinks(sign: ZodiacSign) {
+  const v = zodiacVariantsContent.signs[sign.slug];
+  if (!v) return [];
+  return [
+    { variant: "nam", kind: "nam" as const, label: zodiacVariantLabel(sign, "nam") },
+    { variant: "nu", kind: "nu" as const, label: zodiacVariantLabel(sign, "nu") },
+    ...zodiacMonths(sign).map((r) => ({ variant: `thang-${r.month}`, kind: "thang" as const, month: r.month, label: zodiacVariantLabel(sign, "thang", r.month) })),
+  ].map((l) => ({ ...l, href: `/cung-hoang-dao/${sign.slug}/${l.variant}` }));
+}
+
+export function getZodiacVariant(slug: string, variant: string) {
+  const base = getZodiac(slug);
+  const parsed = parseZodiacVariant(variant);
+  const v = zodiacVariantsContent.signs[slug];
+  if (!base || !parsed || !v) return null;
+  const article = parsed.kind === "thang" ? v.thang[String(parsed.month)] : v[parsed.kind];
+  if (!article) return null;
+  const monthRange = parsed.kind === "thang" ? zodiacMonths(base.sign).find((r) => r.month === parsed.month) ?? null : null;
+  return {
+    ...base,
+    ...parsed,
+    variant,
+    label: zodiacVariantLabel(base.sign, parsed.kind, parsed.month),
+    article,
+    monthRange,
+    /** Thập độ rơi vào tháng sinh (chỉ có ở trang theo tháng). */
+    decans: parsed.kind === "thang" ? zodiacDecansInMonth(base.sign, parsed.month!) : [],
+  };
 }
