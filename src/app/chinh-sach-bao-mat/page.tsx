@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/kb-blocks";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chính sách bảo mật",
   description: `Cách ${SITE_NAME} xử lý ngày sinh, tên và dữ liệu truy cập của bạn.`,
-  alternates: { canonical: "/chinh-sach-bao-mat" },
+  ...pageSeo("/chinh-sach-bao-mat"),
 };
 
 // Cập nhật ngày này mỗi khi sửa nội dung. Cần người phụ trách pháp lý rà soát trước khi mở tài khoản trả phí.

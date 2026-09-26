@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { Breadcrumb, CrushCta, DeepSection, Faq, Highlight, Toc, TraitColumns } from "@/components/kb-blocks";
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
-import { getZodiac, zodiacContent, zodiacMatches, zodiacPairSlug, type ZodiacMatch } from "@/lib/kb";
+import { getZodiac, zodiacContent, zodiacMatches, zodiacPairSlug, zodiacVariantLinks, type ZodiacMatch } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 /** Nhóm các cung hợp nhất theo quan hệ góc chiếu: "Sư Tử và Nhân Mã (tam hợp...)" */
 function matchGroups(matches: ZodiacMatch[]) {
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: PageProps<"/cung-hoang-dao/[s
   return {
     title: `Cung ${sign.name} (${dateRange}): tính cách, tình yêu, hợp với cung nào`,
     description: entry.summary,
-    alternates: { canonical: `/cung-hoang-dao/${sign.slug}` },
+    ...pageSeo(`/cung-hoang-dao/${sign.slug}`, { ownImage: true }),
     robots: { index: zodiacContent.meta.reviewed },
   };
 }
@@ -42,6 +43,7 @@ export default async function ZodiacPage({ params }: PageProps<"/cung-hoang-dao/
   const prev = ZODIAC_SIGNS[(sign.index + 11) % 12];
   const next = ZODIAC_SIGNS[(sign.index + 1) % 12];
   const deep = entry.deep;
+  const variants = zodiacVariantLinks(sign);
   const [from, to] = dateRange.split(" - ");
   const [firstGroup, ...otherGroups] = matchGroups(best);
   const faq = [
@@ -95,6 +97,27 @@ export default async function ZodiacPage({ params }: PageProps<"/cung-hoang-dao/
       </header>
 
       <TraitColumns good={entry.strengths} watch={entry.weaknesses} />
+
+      {variants.length > 0 && (
+        <nav aria-labelledby="bien-the" className="space-y-3">
+          <h2 id="bien-the" className="font-display text-xl font-semibold">
+            {sign.name} theo giới tính và tháng sinh
+          </h2>
+          <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
+            {variants.map((v) => (
+              <li key={v.variant}>
+                <Link
+                  href={v.href}
+                  className="panel flex h-full items-center justify-between gap-2 p-4 font-semibold transition-colors hover:border-accent"
+                >
+                  {v.label}
+                  <IconArrowRight size={16} className="shrink-0 text-accent" aria-hidden />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       {deep ? (
         <>

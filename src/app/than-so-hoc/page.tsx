@@ -3,12 +3,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/kb-blocks";
 import { lifePathContent, lifePathSlug } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Thần số học: ý nghĩa 12 số chủ đạo và cách tính",
   description:
     "Cách tính số chủ đạo theo ngày sinh và ý nghĩa từng số từ 2 đến 11, 22, 33: tính cách, tình yêu, sự nghiệp và số hợp nhau.",
-  alternates: { canonical: "/than-so-hoc" },
+  ...pageSeo("/than-so-hoc"),
   robots: { index: lifePathContent.meta.reviewed },
 };
 

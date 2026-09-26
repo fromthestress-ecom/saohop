@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb, CrushCta, DeepSection, Faq, Highlight, Toc, TraitColumns } from "@/components/kb-blocks";
 import { LIFE_PATH_NUMBERS } from "@/lib/engines/numerology";
 import { getLifePath, lifePathContent, lifePathExample, lifePathMatches, lifePathSlug, parseLifePathSlug, type LifePathExample } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 const pad = (x: number) => String(x).padStart(2, "0");
 const formatDate = ({ day, month, year }: LifePathExample["date"]) => `${pad(day)}/${pad(month)}/${year}`;
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: PageProps<"/than-so-hoc/[slug
   return {
     title: `Số chủ đạo ${data.n}: ${data.entry.title}, tình yêu, sự nghiệp, hợp số nào`,
     description: data.entry.summary,
-    alternates: { canonical: `/than-so-hoc/${lifePathSlug(data.n)}` },
+    ...pageSeo(`/than-so-hoc/${lifePathSlug(data.n)}`, { ownImage: true }),
     robots: { index: lifePathContent.meta.reviewed },
   };
 }

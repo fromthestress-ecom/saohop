@@ -6,6 +6,7 @@ import { Breadcrumb, CrushCta, DeepSection, Faq, Highlight, Toc } from "@/compon
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { verdictOf } from "@/lib/engines/compatibility";
 import { getZodiacPair, ZODIAC_PAIRS, zodiacContent, zodiacMatches, zodiacPairSlug, zodiacPairsContent } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: PageProps<"/cung-hoang-dao/ca
     description:
       data.override?.summary ??
       `${data.aspectText.headline}. ${data.elementText}${same ? "" : ` Xem thêm ${b.sign.name} và ${a.sign.name} khi yêu, điểm dễ va chạm và gợi ý hẹn hò.`}`,
-    alternates: { canonical: `/cung-hoang-dao/cap-doi/${data.slug}` },
+    ...pageSeo(`/cung-hoang-dao/cap-doi/${data.slug}`, { ownImage: true }),
     robots: { index: zodiacContent.meta.reviewed && zodiacPairsContent.meta.reviewed },
   };
 }

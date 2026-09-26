@@ -1,55 +1,10 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { DIA_CHI } from "@/lib/engines/can-chi";
 import { verdictOf } from "@/lib/engines/compatibility";
 import { zodiacBySlug } from "@/lib/engines/zodiac";
 import { parseShareCard } from "@/lib/share";
+import { OG_BACKGROUND, OG_BRAND_FONT, OG_COLORS as C, OG_FONT, OG_GRADIENT_TEXT, OG_STARS, ogFonts, ogLogo } from "@/lib/og/assets";
 import { SITE_NAME } from "@/lib/site";
-
-// Be Vietnam Pro (OFL). Cần cả subset latin và vietnamese để hiển thị đủ dấu.
-const fontFiles = ["latin-400", "vietnamese-400", "latin-800", "vietnamese-800"];
-const fontsPromise = Promise.all(
-  fontFiles.map(async (f) => ({
-    name: "Be Vietnam Pro",
-    data: await readFile(join(process.cwd(), `assets/fonts/be-vietnam-pro-${f}-normal.woff`)),
-    weight: (f.endsWith("800") ? 800 : 400) as 400 | 800,
-    style: "normal" as const,
-  })),
-);
-
-// Josefin Sans 600 cho chữ thương hiệu "SAO HỢP".
-const brandFontsPromise = Promise.all(
-  ["latin", "vietnamese"].map(async (subset) => ({
-    name: "Josefin Sans",
-    data: await readFile(join(process.cwd(), `assets/fonts/josefin-sans-${subset}-600-normal.woff`)),
-    weight: 600 as const,
-    style: "normal" as const,
-  })),
-);
-
-// Logo dạng data URL (Satori vẽ được SVG không có filter, nên dùng bản gọn logo-mark).
-const logoPromise = readFile(join(process.cwd(), "public/brand/logo-mark.svg")).then(
-  (buf) => `data:image/svg+xml;base64,${buf.toString("base64")}`,
-);
-
-// Cùng token với chế độ tối của site.
-const C = {
-  bg: "#08070f",
-  line: "#2c2a3b",
-  ink: "#f3f1f8",
-  muted: "#a7a4ba",
-  accent: "#f06a94",
-  accent2: "#9d8cff",
-  accent3: "#f7b267",
-};
-
-// Sao cố định (toạ độ %, bán kính px) để ảnh luôn giống nhau với cùng tham số.
-const STARS: Array<[number, number, number]> = [
-  // Tránh vùng logo (góc trên trái), con số và các dòng chữ bên trái.
-  [4, 16, 1.5], [50, 4, 1], [58, 10, 2.5], [71, 15, 1.5], [88, 7, 2], [93, 28, 1],
-  [90, 46, 1.5], [96, 58, 1], [3, 67, 2], [82, 64, 1], [90, 72, 2.5], [96, 90, 1.5], [74, 95, 1],
-];
 
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;
@@ -85,16 +40,12 @@ export async function GET(request: Request) {
           justifyContent: "space-between",
           padding: `${64 * s}px ${72 * s}px`,
           color: C.ink,
-          fontFamily: "Be Vietnam Pro",
+          fontFamily: OG_FONT,
           background: C.bg,
-          backgroundImage: [
-            "radial-gradient(circle at 90% 5%, rgba(157,140,255,0.45) 0%, rgba(8,7,15,0) 45%)",
-            "radial-gradient(circle at 5% 60%, rgba(240,106,148,0.35) 0%, rgba(8,7,15,0) 45%)",
-            "radial-gradient(circle at 70% 100%, rgba(247,178,103,0.18) 0%, rgba(8,7,15,0) 40%)",
-          ].join(", "),
+          backgroundImage: OG_BACKGROUND,
         }}
       >
-        {STARS.map(([x, y, r]) => (
+        {OG_STARS.map(([x, y, r]) => (
           <div
             key={`${x}-${y}`}
             style={{
@@ -113,7 +64,7 @@ export async function GET(request: Request) {
             display: "flex",
             alignItems: "center",
             gap: 16 * s,
-            fontFamily: "Josefin Sans",
+            fontFamily: OG_BRAND_FONT,
             fontSize: 26 * s,
             fontWeight: 600,
             letterSpacing: 0.22 * 26 * s,
@@ -121,7 +72,7 @@ export async function GET(request: Request) {
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element -- Satori chỉ nhận thẻ img */}
-          <img src={await logoPromise} alt="" width={58 * s} height={58 * s} />
+          <img src={await ogLogo} alt="" width={58 * s} height={58 * s} />
           {SITE_NAME}
         </div>
 
@@ -133,7 +84,7 @@ export async function GET(request: Request) {
               fontWeight: 800,
               lineHeight: 1.05,
               letterSpacing: -6 * s,
-              backgroundImage: `linear-gradient(100deg, ${C.accent}, ${C.accent2} 60%, ${C.accent3})`,
+              backgroundImage: OG_GRADIENT_TEXT,
               backgroundClip: "text",
               color: "transparent",
             }}
@@ -160,7 +111,7 @@ export async function GET(request: Request) {
     {
       width,
       height,
-      fonts: [...(await fontsPromise), ...(await brandFontsPromise)],
+      fonts: await ogFonts(),
       headers: { "Cache-Control": "public, max-age=86400, immutable" },
     },
   );

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { BanDoClient } from "./ban-do-client";
+import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
+  ...pageSeo("/ban-do"),
   title: "Bản đồ bản thân: thần số học, cung hoàng đạo, con giáp",
   description:
     "Nhập tên và ngày sinh để xem số chủ đạo, biểu đồ ngày sinh, cung hoàng đạo, con giáp, mệnh ngũ hành và luận giải AI dành riêng cho bạn.",

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { CrushClient } from "./crush-client";
+import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
+  ...pageSeo("/crush"),
   title: "Check crush: bạn và crush hợp nhau bao nhiêu phần trăm?",
   description:
     "So độ hợp giữa bạn và crush qua thần số học, cung hoàng đạo, con giáp và ngũ hành. Có điểm theo 5 chiều và luận giải AI.",

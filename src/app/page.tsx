@@ -8,6 +8,7 @@ import {
   IconUserHeart,
   IconYinYang,
 } from "@tabler/icons-react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HeroCards } from "@/components/hero-cards";
 import { NumerologyPlayground } from "@/components/numerology-playground";
@@ -15,6 +16,9 @@ import { Reveal } from "@/components/reveal";
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { DIA_CHI } from "@/lib/engines/can-chi";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
+import { pageSeo } from "@/lib/site";
+
+export const metadata: Metadata = pageSeo("/");
 
 const FLOW = [
   { icon: IconUserHeart, title: "Nhập", body: "Ngày sinh của bạn và crush. Thêm họ tên nếu muốn xem sâu hơn." },
@@ -98,11 +102,17 @@ export default function Home() {
           <Reveal delay={0.06} className="panel p-6 md:col-span-3">
             <h3 className="font-display text-2xl font-semibold">Cung hoàng đạo</h3>
             <p className="mt-2 text-ink-muted">Nguyên tố, tính chất và góc hợp giữa hai cung.</p>
-            <ul className="mt-6 grid grid-cols-6 gap-3 text-ink-muted" aria-label="12 cung hoàng đạo">
+            <ul className="mt-6 grid grid-cols-6 gap-1 text-ink-muted" aria-label="12 cung hoàng đạo">
               {ZODIAC_SIGNS.map((s) => (
-                <li key={s.slug} title={s.name} className="flex justify-center transition-colors duration-300 hover:text-accent">
-                  <ZodiacIcon slug={s.slug} size={28} />
-                  <span className="sr-only">{s.name}</span>
+                <li key={s.slug}>
+                  <Link
+                    href={`/cung-hoang-dao/${s.slug}`}
+                    title={s.name}
+                    className="flex justify-center rounded-xl py-2 transition-colors duration-300 hover:bg-accent/10 hover:text-accent focus-visible:text-accent active:scale-95"
+                  >
+                    <ZodiacIcon slug={s.slug} size={28} />
+                    <span className="sr-only">Cung {s.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>

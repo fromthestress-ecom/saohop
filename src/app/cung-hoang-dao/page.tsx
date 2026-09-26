@@ -5,12 +5,13 @@ import { ZodiacIcon } from "@/components/zodiac-icon";
 import { ELEMENT_KEYWORDS } from "@/lib/content/keywords";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
 import { zodiacContent, zodiacDateRange } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "12 cung hoàng đạo: tính cách, tình yêu và cung hợp nhau",
   description:
     "Tra cứu 12 cung hoàng đạo theo ngày sinh: tính cách, điểm mạnh, cách yêu, cung hợp nhất và gợi ý hẹn hò cho từng cung.",
-  alternates: { canonical: "/cung-hoang-dao" },
+  ...pageSeo("/cung-hoang-dao"),
   robots: { index: zodiacContent.meta.reviewed },
 };
 

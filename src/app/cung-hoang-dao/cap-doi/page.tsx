@@ -5,12 +5,13 @@ import { ZodiacIcon } from "@/components/zodiac-icon";
 import { ZodiacPairPicker } from "@/components/zodiac-pair-picker";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
 import { zodiacContent, zodiacMatches, zodiacPairSlug, zodiacPairsContent } from "@/lib/kb";
+import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cặp đôi cung hoàng đạo: 78 cặp, cung nào hợp cung nào",
   description:
     "Xem độ hợp của mọi cặp cung hoàng đạo: góc chiếu, nguyên tố, điểm mạnh yếu khi yêu và gợi ý hẹn hò cho từng cặp.",
-  alternates: { canonical: "/cung-hoang-dao/cap-doi" },
+  ...pageSeo("/cung-hoang-dao/cap-doi"),
   robots: { index: zodiacContent.meta.reviewed && zodiacPairsContent.meta.reviewed },
 };
 
