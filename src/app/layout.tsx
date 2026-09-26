@@ -93,6 +93,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <p>Ngày sinh của crush ở chế độ xem nhanh không được lưu lại.</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+            <Link href="/gioi-thieu" className="hover:text-accent">
+              Giới thiệu
+            </Link>
             <Link href="/chinh-sach-bao-mat" className="hover:text-accent">
               Chính sách bảo mật
             </Link>

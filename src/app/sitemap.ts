@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE}/crush`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE}/ban-do`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/gioi-thieu`, changeFrequency: "monthly", priority: 0.5 },
   ];
   // Chỉ đưa trang tra cứu vào sitemap khi nội dung đã được duyệt (reviewed: true).
   if (zodiacContent.meta.reviewed) {
