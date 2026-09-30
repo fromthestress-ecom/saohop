@@ -3,7 +3,7 @@
 import { IconArrowRight, IconPencil } from "@tabler/icons-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { useId, useRef, useState } from "react";
+import { useId, useRef, useState, useSyncExternalStore } from "react";
 import { track } from "@/lib/analytics";
 import { LIFE_PATH_KEYWORDS } from "@/lib/content/keywords";
 import { birthChart, lifePathNumber } from "@/lib/engines/numerology";
@@ -11,24 +11,42 @@ import { isValidSolarDate, type SolarDate } from "@/lib/engines/types";
 import { BirthDateSelect } from "./birth-date-select";
 import { BirthChartGrid } from "./profile-cards";
 
-const DEFAULT_DATE: SolarDate = { day: 16, month: 11, year: 2002 };
-
 const pad = (n: number) => String(n).padStart(2, "0");
 
+/** Ngày hôm nay theo giờ Việt Nam, dạng "2026-09-30" (chuỗi để so sánh ổn định giữa các lần render). */
+const todayInVietnam = () =>
+  new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Ho_Chi_Minh", year: "numeric", month: "2-digit", day: "2-digit" }).format(
+    new Date(),
+  );
+const parseIsoDate = (iso: string): SolarDate => {
+  const [year, month, day] = iso.split("-").map(Number);
+  return { day, month, year };
+};
+const subscribeNothing = () => () => {};
+
+// Chỉ dùng để giữ khung lúc render phía server, nội dung được ẩn cho tới khi biết ngày hôm nay.
+const PLACEHOLDER_DATE: SolarDate = { day: 1, month: 1, year: 2000 };
+
 /**
- * Ô thử thần số học ở trang chủ: mặc định 16/11/2002, bấm vào để nhập ngày sinh của mình,
+ * Ô thử thần số học ở trang chủ: mặc định lấy ngày hôm nay làm ví dụ, bấm vào để nhập ngày sinh của mình,
  * biểu đồ và số chủ đạo cập nhật ngay (tính trên máy, không gửi đi đâu).
+ * Trang chủ được tạo sẵn lúc build nên ngày hôm nay chỉ được đọc trên trình duyệt (server trả về null).
  */
 export function NumerologyPlayground() {
   const reduce = useReducedMotion();
   const id = useId();
-  const [date, setDate] = useState<SolarDate>(DEFAULT_DATE);
+  const todayIso = useSyncExternalStore(subscribeNothing, todayInVietnam, () => null);
+  const today = todayIso ? parseIsoDate(todayIso) : null;
+  // Ngày người dùng tự nhập; null nghĩa là đang dùng ngày hôm nay làm ví dụ.
+  const [custom, setCustom] = useState<SolarDate | null>(null);
   const [editing, setEditing] = useState(false);
 
+  const date = custom ?? today ?? PLACEHOLDER_DATE;
+  const ready = custom !== null || today !== null;
   const valid = isValidSolarDate(date);
   // Ngày không hợp lệ (vd. 31/2) thì giữ nguyên kết quả của ngày gần nhất hợp lệ.
-  const [lastValid, setLastValid] = useState<SolarDate>(DEFAULT_DATE);
-  const shown = valid ? date : lastValid;
+  const [lastValid, setLastValid] = useState<SolarDate | null>(null);
+  const shown = valid ? date : (lastValid ?? today ?? PLACEHOLDER_DATE);
   const lifePath = lifePathNumber(shown);
   const chart = birthChart(shown);
 
@@ -41,7 +59,7 @@ export function NumerologyPlayground() {
       track("numerology_try");
     }
     const next = { ...date, ...patch };
-    setDate(next);
+    setCustom(next);
     if (isValidSolarDate(next)) setLastValid(next);
   };
 
@@ -52,7 +70,7 @@ export function NumerologyPlayground() {
         onClick={() => setEditing(true)}
         aria-expanded={editing}
         aria-controls={`${id}-editor`}
-        className="group flex w-full items-end gap-6 rounded-2xl text-left outline-offset-4"
+        className={`group flex w-full items-end gap-6 rounded-2xl text-left outline-offset-4 transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}
       >
         <BirthChartGrid counts={chart.counts} />
         <span className="min-w-0">
@@ -69,7 +87,7 @@ export function NumerologyPlayground() {
             </motion.span>
           </AnimatePresence>
           <span className="mt-1 block text-sm text-ink-muted">
-            Số chủ đạo của người sinh{" "}
+            Số chủ đạo của người sinh{custom ? "" : " hôm nay"}{" "}
             <span className="inline-flex items-center gap-1 rounded-full border border-dashed border-line px-2 py-0.5 font-semibold text-ink tabular-nums transition-colors group-hover:border-accent">
               {pad(shown.day)}/{pad(shown.month)}/{shown.year}
               <IconPencil size={13} stroke={1.75} className="text-accent" aria-hidden />

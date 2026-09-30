@@ -73,7 +73,7 @@ export function CrushClient() {
       <form onSubmit={onSubmit} noValidate className="space-y-5">
         <div className="grid gap-4 md:grid-cols-2">
           <PersonFields id="me" title="Bạn" value={me} onChange={setMe} invalid={invalid?.a} />
-          <PersonFields id="crush" title="Crush" value={crush} onChange={setCrush} invalid={invalid?.b} />
+          <PersonFields id="crush" title="Crush" value={crush} onChange={setCrush} namePlaceholder="Nhập tên crush" invalid={invalid?.b} />
         </div>
         <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
           <button type="submit" className="btn-primary w-full sm:w-auto">

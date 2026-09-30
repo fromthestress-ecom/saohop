@@ -27,11 +27,13 @@ interface Props {
   value: PersonDraft;
   onChange: (next: PersonDraft) => void;
   nameHint?: string;
+  /** Gợi ý trong ô họ tên, mặc định cho chính người dùng. */
+  namePlaceholder?: string;
   /** Hiện viền lỗi cho phần ngày sinh */
   invalid?: boolean;
 }
 
-export function PersonFields({ id, title, value, onChange, nameHint, invalid }: Props) {
+export function PersonFields({ id, title, value, onChange, nameHint, namePlaceholder = "Nhập tên bạn", invalid }: Props) {
   const set = (patch: Partial<PersonDraft>) => onChange({ ...value, ...patch });
   return (
     <fieldset className="panel space-y-4 p-5 sm:p-6">
@@ -43,7 +45,7 @@ export function PersonFields({ id, title, value, onChange, nameHint, invalid }: 
         <input
           id={`${id}-name`}
           className="field"
-          placeholder="Trần Minh Anh"
+          placeholder={namePlaceholder}
           autoComplete="off"
           maxLength={80}
           value={value.fullName}
