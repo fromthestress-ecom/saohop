@@ -3,7 +3,7 @@
  * Điểm ở đây là "dữ liệu" để AI diễn giải, không phải do AI tự nghĩ ra.
  */
 
-import { NGU_HANH, type NguHanh } from "./can-chi";
+import { CHI_RELATION_SCORE, chiRelation, NGU_HANH, type NguHanh } from "./can-chi";
 import { baseNumber } from "./numerology";
 import type { PersonProfile } from "./profile";
 import type { ZodiacSign } from "./zodiac";
@@ -38,13 +38,13 @@ export interface CompatibilityResult {
 
 // ---- Thần số học: nhóm tương hợp của Phillips ----
 
-const NUMBER_GROUPS: Record<number, "tu-do" | "thuc-te" | "sang-tao"> = {
+export const NUMBER_GROUPS: Record<number, "tu-do" | "thuc-te" | "sang-tao"> = {
   1: "tu-do", 5: "tu-do", 7: "tu-do",
   2: "thuc-te", 4: "thuc-te", 8: "thuc-te",
   3: "sang-tao", 6: "sang-tao", 9: "sang-tao",
 };
 
-const GROUP_LABEL = { "tu-do": "tự do và độc lập", "thuc-te": "thực tế và vun đắp", "sang-tao": "sáng tạo và cảm xúc" };
+export const GROUP_LABEL = { "tu-do": "tự do và độc lập", "thuc-te": "thực tế và vun đắp", "sang-tao": "sáng tạo và cảm xúc" };
 
 export function numberCompat(a: number, b: number, system: "so-chu-dao" | "so-linh-hon" = "so-chu-dao"): CompatFactor {
   const x = baseNumber(a);
@@ -109,14 +109,8 @@ function conGiapCompat(a: PersonProfile, b: PersonProfile): CompatFactor {
   const i = a.canChi.chiIndex;
   const j = b.canChi.chiIndex;
   const detail = `Tuổi ${a.canChi.chi} (${a.canChi.animal}) & tuổi ${b.canChi.chi} (${b.canChi.animal})`;
-  const make = (relation: string, score: number): CompatFactor => ({ system: "con-giap", relation, detail, score });
-  if (i === j) return make("Cùng tuổi", 70);
-  if ((i + j) % 12 === 1) return make("Lục hợp", 92);
-  if (i % 4 === j % 4) return make("Tam hợp", 88);
-  if (Math.abs(i - j) === 6) return make("Lục xung", 35);
-  if ((i + j) % 12 === 7) return make("Lục hại", 45);
-  if (i % 3 === j % 3) return make("Tứ hành xung", 52);
-  return make("Bình hoà", 64);
+  const relation = chiRelation(i, j);
+  return { system: "con-giap", relation, detail, score: CHI_RELATION_SCORE[relation] };
 }
 
 // ---- Ngũ hành nạp âm: sinh – khắc ----

@@ -11,6 +11,14 @@ import {
   zodiacVariantLinks,
   zodiacVariantsContent,
 } from "@/lib/kb";
+import {
+  birthYearsWithContent,
+  conGiapContent,
+  conGiapPairSlugsWithContent,
+  conGiapSlugsWithContent,
+  elementSlugsWithContent,
+  nguHanhContent,
+} from "@/lib/kb/con-giap";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -36,6 +44,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   if (lifePathContent.meta.reviewed) {
     pages.push({ url: `${SITE}/than-so-hoc`, priority: 0.8 });
     for (const n of LIFE_PATH_NUMBERS) pages.push({ url: `${SITE}/than-so-hoc/${lifePathSlug(n)}`, priority: 0.7 });
+  }
+  if (conGiapContent.meta.reviewed) {
+    pages.push({ url: `${SITE}/con-giap`, priority: 0.8 });
+    for (const s of conGiapSlugsWithContent()) pages.push({ url: `${SITE}/con-giap/${s}`, priority: 0.7 });
+    pages.push({ url: `${SITE}/con-giap/cap-doi`, priority: 0.8 });
+    for (const s of conGiapPairSlugsWithContent()) pages.push({ url: `${SITE}/con-giap/cap-doi/${s}`, priority: 0.6 });
+  }
+  if (nguHanhContent.meta.reviewed) {
+    pages.push({ url: `${SITE}/ngu-hanh`, priority: 0.8 });
+    for (const s of elementSlugsWithContent()) pages.push({ url: `${SITE}/ngu-hanh/${s}`, priority: 0.7 });
+    pages.push({ url: `${SITE}/nam-sinh`, priority: 0.8 });
+    for (const y of birthYearsWithContent()) pages.push({ url: `${SITE}/nam-sinh/${y}`, priority: 0.6 });
   }
   return pages;
 }

@@ -1,14 +1,16 @@
 "use client";
 
-import { IconDownload, IconHeart, IconShare } from "@tabler/icons-react";
-import { motion, useReducedMotion } from "motion/react";
+import { IconChevronDown, IconDownload, IconHeart, IconShare } from "@tabler/icons-react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useMemo, useState } from "react";
 import { AiReading } from "@/components/ai-reading";
 import { RadarChart, ScoreRing } from "@/components/compat-visuals";
+import { FactorDetails } from "@/components/factor-details";
 import { draftToPerson, emptyDraft, PersonFields, type PersonDraft } from "@/components/person-fields";
 import { compatibility, type FactorSystem } from "@/lib/engines/compatibility";
 import { buildProfile } from "@/lib/engines/profile";
 import type { PersonInput } from "@/lib/engines/types";
+import type { CrushGlossary } from "@/lib/kb/crush-glossary";
 import { track } from "@/lib/analytics";
 import { shareCardOf, shareQuery } from "@/lib/share";
 
@@ -20,20 +22,21 @@ const SYSTEM_LABELS: Record<FactorSystem, string> = {
   "ngu-hanh": "Ngũ hành",
 };
 
-export function CrushClient() {
+export function CrushClient({ glossary }: { glossary: CrushGlossary }) {
   const reduce = useReducedMotion();
   const [me, setMe] = useState<PersonDraft>(emptyDraft);
   const [crush, setCrush] = useState<PersonDraft>(emptyDraft);
   const [pair, setPair] = useState<{ a: PersonInput; b: PersonInput } | null>(null);
   const [invalid, setInvalid] = useState<{ a: boolean; b: boolean } | null>(null);
   const [copied, setCopied] = useState(false);
+  const [openFactor, setOpenFactor] = useState<FactorSystem | null>(null);
 
   const view = useMemo(() => {
     if (!pair) return null;
     const pa = buildProfile(pair.a);
     const pb = buildProfile(pair.b);
     const result = compatibility(pa, pb);
-    return { result, query: shareQuery(shareCardOf(pa, pb, result)) };
+    return { pa, pb, result, query: shareQuery(shareCardOf(pa, pb, result)) };
   }, [pair]);
 
   const onSubmit = (e: React.FormEvent) => {
@@ -46,6 +49,7 @@ export function CrushClient() {
     }
     setInvalid(null);
     setCopied(false);
+    setOpenFactor(null);
     setPair({ a, b });
     track("crush_check", { score: compatibility(buildProfile(a), buildProfile(b)).overall, with_names: Boolean(a.fullName || b.fullName) });
     requestAnimationFrame(() => document.getElementById("ket-qua")?.scrollIntoView({ behavior: reduce ? "auto" : "smooth" }));
@@ -112,19 +116,52 @@ export function CrushClient() {
             <h2 id="vi-sao" className="font-display mb-4 text-2xl font-semibold">
               Vì sao ra con số này?
             </h2>
-            <ul className="grid gap-x-10 gap-y-6 md:grid-cols-2">
-              {view.result.factors.map((f) => (
-                <li key={f.system} className="flex items-start justify-between gap-4 border-t border-line pt-4">
-                  <div>
-                    <p className="text-sm text-ink-muted">{SYSTEM_LABELS[f.system]}</p>
-                    <p className="font-semibold">{f.relation}</p>
-                    <p className="mt-0.5 text-sm text-ink-muted">{f.detail}</p>
-                  </div>
-                  <p className={`font-display shrink-0 text-3xl font-bold tabular-nums ${f.score >= 75 ? "text-accent" : ""}`}>
-                    {f.score}
-                  </p>
-                </li>
-              ))}
+            <ul className="grid items-start gap-x-10 gap-y-6 md:grid-cols-2">
+              {view.result.factors.map((f) => {
+                const open = openFactor === f.system;
+                return (
+                  <li key={f.system} className="border-t border-line pt-4">
+                    <button
+                      type="button"
+                      aria-expanded={open}
+                      aria-controls={`chi-tiet-${f.system}`}
+                      onClick={() => {
+                        setOpenFactor(open ? null : f.system);
+                        if (!open) track("factor_detail_open", { system: f.system });
+                      }}
+                      className="group flex w-full cursor-pointer items-start justify-between gap-4 rounded-lg text-left"
+                    >
+                      <div>
+                        <p className="text-sm text-ink-muted">{SYSTEM_LABELS[f.system]}</p>
+                        <p className="font-semibold transition-colors group-hover:text-accent">{f.relation}</p>
+                        <p className="mt-0.5 text-sm text-ink-muted">{f.detail}</p>
+                        <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent">
+                          {open ? "Thu gọn" : "Xem chi tiết"}
+                          <IconChevronDown size={14} stroke={2} aria-hidden className={`transition-transform ${open ? "rotate-180" : ""}`} />
+                        </span>
+                      </div>
+                      <p className={`font-display shrink-0 text-3xl font-bold tabular-nums ${f.score >= 75 ? "text-accent" : ""}`}>
+                        {f.score}
+                      </p>
+                    </button>
+                    <AnimatePresence initial={false}>
+                      {open && (
+                        <motion.div
+                          id={`chi-tiet-${f.system}`}
+                          key="chi-tiet"
+                          className="overflow-hidden"
+                          initial={reduce ? false : { height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={reduce ? { opacity: 0 } : { height: 0, opacity: 0 }}
+                          transition={{ duration: reduce ? 0 : 0.3, ease: [0.16, 1, 0.3, 1] }}
+                        >
+                          <FactorDetails factor={f} a={view.pa} b={view.pb} nameA={nameA} nameB={nameB} glossary={glossary} />
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
+                );
+              })}
             </ul>
           </section>
 

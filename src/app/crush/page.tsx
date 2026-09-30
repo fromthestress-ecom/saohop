@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CrushClient } from "./crush-client";
+import { crushGlossary } from "@/lib/kb/crush-glossary";
 import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function CrushPage() {
         <h1 className="font-display text-4xl font-bold tracking-tighter md:text-5xl">Check crush</h1>
         <p className="mt-3 text-lg text-ink-muted">Chỉ cần ngày sinh của hai người. Thêm họ tên để kết quả chi tiết hơn.</p>
       </div>
-      <CrushClient />
+      <CrushClient glossary={crushGlossary()} />
     </div>
   );
 }

@@ -16,9 +16,12 @@ import { Reveal } from "@/components/reveal";
 import { ZodiacIcon } from "@/components/zodiac-icon";
 import { DIA_CHI } from "@/lib/engines/can-chi";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
+import { conGiapSlugsWithContent } from "@/lib/kb/con-giap";
 import { pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = pageSeo("/");
+
+const CON_GIAP_WITH_CONTENT = new Set(conGiapSlugsWithContent());
 
 const FLOW = [
   { icon: IconUserHeart, title: "Nhập", body: "Ngày sinh của bạn và crush. Thêm họ tên nếu muốn xem sâu hơn." },
@@ -119,11 +122,27 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={0.12} className="rounded-2xl p-6 md:col-span-3" style={{ background: "linear-gradient(135deg, var(--nebula-1), var(--nebula-2))" }}>
-            <h3 className="font-display text-2xl font-semibold">Con giáp và ngũ hành</h3>
+            <h3 className="font-display text-2xl font-semibold">
+              <Link href="/con-giap" className="hover:text-accent">
+                Con giáp
+              </Link>{" "}
+              và{" "}
+              <Link href="/ngu-hanh" className="hover:text-accent">
+                ngũ hành
+              </Link>
+            </h3>
             <p className="mt-2 text-ink-muted">Can chi theo âm lịch Việt Nam, mệnh nạp âm, tam hợp và tứ hành xung.</p>
-            <ul className="font-display mt-6 grid grid-cols-6 gap-y-2 text-center text-lg font-semibold text-accent">
+            <ul className="font-display mt-6 grid grid-cols-6 gap-y-2 text-center text-lg font-semibold text-accent" aria-label="12 con giáp">
               {DIA_CHI.map((c) => (
-                <li key={c.slug}>{c.name}</li>
+                <li key={c.slug}>
+                  {CON_GIAP_WITH_CONTENT.has(c.slug) ? (
+                    <Link href={`/con-giap/${c.slug}`} title={`Tuổi ${c.name}`} className="block rounded-xl py-1 transition-colors hover:bg-accent/10 active:scale-95">
+                      {c.name}
+                    </Link>
+                  ) : (
+                    <span className="block py-1">{c.name}</span>
+                  )}
+                </li>
               ))}
             </ul>
           </Reveal>

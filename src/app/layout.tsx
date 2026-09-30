@@ -86,6 +86,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/cung-hoang-dao" className="hover:text-accent">Cung hoàng đạo</Link>
             <Link href="/cung-hoang-dao/cap-doi" className="hover:text-accent">Cặp đôi hoàng đạo</Link>
             <Link href="/than-so-hoc" className="hover:text-accent">Thần số học</Link>
+            <Link href="/con-giap" className="hover:text-accent">Con giáp</Link>
+            <Link href="/ngu-hanh" className="hover:text-accent">Ngũ hành</Link>
+            <Link href="/nam-sinh" className="hover:text-accent">Năm sinh</Link>
             <Link href="/crush" className="hover:text-accent">Check crush</Link>
           </nav>
           <div className="flex flex-col justify-between gap-2 sm:flex-row">

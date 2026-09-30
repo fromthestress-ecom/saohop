@@ -28,7 +28,7 @@ export const NGU_HANH = ["Kim", "Thủy", "Mộc", "Hỏa", "Thổ"] as const;
 export type NguHanh = (typeof NGU_HANH)[number];
 
 /** 30 nạp âm, mỗi cái ứng với một cặp năm trong vòng Lục thập hoa giáp (bắt đầu Giáp Tý). */
-const NAP_AM: ReadonlyArray<readonly [string, NguHanh]> = [
+export const NAP_AM: ReadonlyArray<readonly [string, NguHanh]> = [
   ["Hải Trung Kim", "Kim"],
   ["Lư Trung Hỏa", "Hỏa"],
   ["Đại Lâm Mộc", "Mộc"],
@@ -97,3 +97,51 @@ export function canChiOfLunarYear(lunarYear: number): YearCanChi {
 export function canChiOfBirthDate(date: SolarDate): YearCanChi {
   return canChiOfLunarYear(solarToLunar(date).year);
 }
+
+// ---- Quan hệ giữa hai tuổi và giữa hai hành ----
+
+export type ChiRelation = "Cùng tuổi" | "Lục hợp" | "Tam hợp" | "Lục xung" | "Lục hại" | "Tứ hành xung" | "Bình hoà";
+
+/** Điểm hợp của từng quan hệ con giáp, dùng chung cho check crush và trang tra cứu. */
+export const CHI_RELATION_SCORE: Record<ChiRelation, number> = {
+  "Cùng tuổi": 70,
+  "Lục hợp": 92,
+  "Tam hợp": 88,
+  "Lục xung": 35,
+  "Lục hại": 45,
+  "Tứ hành xung": 52,
+  "Bình hoà": 64,
+};
+
+/** Quan hệ giữa hai địa chi theo chỉ số 0..11 (Tý..Hợi). Thứ tự kiểm tra quyết định quan hệ nổi bật nhất. */
+export function chiRelation(i: number, j: number): ChiRelation {
+  if (i === j) return "Cùng tuổi";
+  if ((i + j) % 12 === 1) return "Lục hợp";
+  if (i % 4 === j % 4) return "Tam hợp";
+  if (Math.abs(i - j) === 6) return "Lục xung";
+  if ((i + j) % 12 === 7) return "Lục hại";
+  if (i % 3 === j % 3) return "Tứ hành xung";
+  return "Bình hoà";
+}
+
+export type ElementRelation = "Bình hoà" | "Sinh ra" | "Được sinh" | "Khắc" | "Bị khắc";
+
+/** Quan hệ của hành a với hành b: a sinh ra b, a được b sinh, a khắc b, a bị b khắc, hoặc cùng hành. */
+export function elementRelation(a: NguHanh, b: NguHanh): ElementRelation {
+  const x = NGU_HANH.indexOf(a);
+  const y = NGU_HANH.indexOf(b);
+  if (x === y) return "Bình hoà";
+  if ((x + 1) % 5 === y) return "Sinh ra";
+  if ((y + 1) % 5 === x) return "Được sinh";
+  if ((x + 2) % 5 === y) return "Khắc";
+  return "Bị khắc";
+}
+
+/** Hành của 12 địa chi (theo thứ tự Tý..Hợi). */
+export const CHI_ELEMENT: readonly NguHanh[] = ["Thủy", "Thổ", "Mộc", "Mộc", "Thổ", "Hỏa", "Hỏa", "Thổ", "Kim", "Kim", "Thổ", "Thủy"];
+
+/** Hành và âm dương của 10 thiên can (theo thứ tự Giáp..Quý). */
+export const CAN_INFO: ReadonlyArray<{ element: NguHanh; yang: boolean }> = THIEN_CAN.map((_, i) => ({
+  element: (["Mộc", "Mộc", "Hỏa", "Hỏa", "Thổ", "Thổ", "Kim", "Kim", "Thủy", "Thủy"] as const)[i],
+  yang: i % 2 === 0,
+}));

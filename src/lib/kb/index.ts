@@ -6,6 +6,8 @@
  */
 
 import { z } from "zod";
+import { deepSchema, list, metaSchema, text } from "./schema";
+import { ELEMENT_ORDER, lifePathSlug, unorderedKey, zodiacPairSlug } from "./slugs";
 import lifePathJson from "@/content/life-path.json";
 import zodiacPairsJson from "@/content/zodiac-pairs.json";
 import zodiacVariantsJson from "@/content/zodiac-variants.json";
@@ -14,32 +16,6 @@ import { numberCompat, zodiacAspect } from "@/lib/engines/compatibility";
 import { LIFE_PATH_NUMBERS, lifePathNumber } from "@/lib/engines/numerology";
 import type { SolarDate } from "@/lib/engines/types";
 import { ZODIAC_SIGNS, zodiacBySlug, type ZodiacSign } from "@/lib/engines/zodiac";
-
-const text = z.string().trim().min(1);
-const list = z.array(text).min(2);
-
-const metaSchema = z.object({
-  system: z.string(),
-  version: z.number().int(),
-  reviewed: z.boolean(),
-  note: z.string(),
-});
-
-/** Bài viết chuyên sâu: các mục có tiêu đề (đoạn văn, có thể kèm gạch đầu dòng) và hỏi đáp. */
-const deepSchema = z.object({
-  sections: z
-    .array(
-      z.object({
-        id: z.string().regex(/^[a-z0-9-]+$/),
-        heading: text,
-        paragraphs: z.array(text).min(1),
-        bullets: z.array(text).min(2).optional(),
-      }),
-    )
-    .min(3)
-    .refine((s) => new Set(s.map((x) => x.id)).size === s.length, "id các mục phải khác nhau"),
-  faq: z.array(z.object({ q: text, a: text })).default([]),
-});
 
 const zodiacEntrySchema = z.object({
   slug: z.string(),
@@ -69,7 +45,8 @@ export const zodiacContent = z.object({ meta: metaSchema, entries: z.array(zodia
 export const lifePathContent = z.object({ meta: metaSchema, entries: z.array(lifePathEntrySchema) }).parse(lifePathJson);
 
 export type ZodiacEntry = z.infer<typeof zodiacEntrySchema>;
-export type DeepContent = z.infer<typeof deepSchema>;
+export type { DeepContent } from "./schema";
+export { lifePathSlug, zodiacPairSlug };
 export type LifePathEntry = z.infer<typeof lifePathEntrySchema>;
 
 // ---- Cung hoàng đạo ----
@@ -108,13 +85,7 @@ export function getZodiac(slug: string) {
 
 // ---- Cặp đôi cung hoàng đạo (78 cặp) ----
 
-const ELEMENT_ORDER = ["Lửa", "Đất", "Khí", "Nước"] as const;
 const MODALITY_ORDER = ["Tiên phong", "Kiên định", "Linh hoạt"] as const;
-
-/** Khoá không phân biệt thứ tự, theo thứ tự chuẩn: "Lửa+Nước", "Tiên phong+Linh hoạt". */
-function unorderedKey<T extends string>(order: readonly T[], a: T, b: T) {
-  return [a, b].sort((x, y) => order.indexOf(x) - order.indexOf(y)).join("+");
-}
 
 const ELEMENT_KEYS = ELEMENT_ORDER.flatMap((a, i) => ELEMENT_ORDER.slice(i).map((b) => `${a}+${b}`));
 const MODALITY_KEYS = MODALITY_ORDER.flatMap((a, i) => MODALITY_ORDER.slice(i).map((b) => `${a}+${b}`));
@@ -122,12 +93,6 @@ const MODALITY_KEYS = MODALITY_ORDER.flatMap((a, i) => MODALITY_ORDER.slice(i).m
 const aspectBlockSchema = z.object({ headline: text, body: text, tip: text });
 const exactKeys = (keys: string[]) => (o: Record<string, unknown>) =>
   Object.keys(o).length === keys.length && keys.every((k) => k in o);
-
-/** Slug chuẩn của một cặp: cung đứng trước trên vòng hoàng đạo viết trước, vd. "bach-duong-va-su-tu". */
-export function zodiacPairSlug(a: ZodiacSign, b: ZodiacSign): string {
-  const [x, y] = a.index <= b.index ? [a, b] : [b, a];
-  return `${x.slug}-va-${y.slug}`;
-}
 
 /** Mọi cặp theo thứ tự chuẩn: 66 cặp khác cung + 12 cặp cùng cung = 78. */
 export const ZODIAC_PAIRS: ReadonlyArray<readonly [ZodiacSign, ZodiacSign]> = ZODIAC_SIGNS.flatMap((a) =>
@@ -177,8 +142,6 @@ export function getZodiacPair(slug: string) {
 }
 
 // ---- Số chủ đạo ----
-
-export const lifePathSlug = (n: number) => `so-${n}`;
 
 export function parseLifePathSlug(slug: string): number | null {
   const match = /^so-(\d+)$/.exec(slug);

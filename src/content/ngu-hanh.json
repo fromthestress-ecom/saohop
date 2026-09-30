@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "system": "ngu-hanh",
+    "version": 1,
+    "reviewed": true,
+    "note": "Nội dung ngũ hành (5 mệnh), thiên can và nạp âm, do AI soạn, chủ dự án duyệt cho index ngày 30/09/2026. Sinh khắc, nạp âm theo năm, màu hợp và màu nên hạn chế được suy ra từ engine và bảng màu bản mệnh bên dưới."
+  },
+  "colors": {
+    "Kim": [
+      "trắng",
+      "xám",
+      "bạc",
+      "vàng ánh kim"
+    ],
+    "Thủy": [
+      "đen",
+      "xanh dương",
+      "xanh nước biển"
+    ],
+    "Mộc": [
+      "xanh lá",
+      "xanh lục"
+    ],
+    "Hỏa": [
+      "đỏ",
+      "hồng",
+      "cam",
+      "tím"
+    ],
+    "Thổ": [
+      "vàng",
+      "nâu đất",
+      "vàng đất"
+    ]
+  },
+  "elements": {
+    "kim": {
+      "summary": "Mệnh Kim mang hình ảnh của kim loại: cứng cáp, sắc bén và tinh khiết. Người mệnh Kim thường quyết đoán, có nguyên tắc, trọng lẽ phải và làm việc có kỷ luật.",
+      "strengths": [
+        "Quyết đoán, dứt khoát",
+        "Có nguyên tắc, trọng lẽ phải",
+        "Kỷ luật và đáng tin",
+        "Tư duy mạch lạc, rõ ràng"
+      ],
+      "weaknesses": [
+        "Cứng nhắc, khó thoả hiệp",
+        "Đôi khi lời nói sắc lạnh",
+        "Dễ tự ái khi bị phản bác"
+      ],
+      "deep": {
+        "sections": [
+          {
+            "id": "y-nghia",
+            "heading": "Mệnh Kim là gì",
+            "paragraphs": [
+              "Trong ngũ hành, Kim là hành của kim loại, của mùa thu và phương Tây. Kim tượng trưng cho sự thu hoạch, gọt giũa và tinh luyện: loại bỏ cái thừa để giữ lại cái tinh túy.",
+              "Người \"mệnh Kim\" trong cách nói phổ biến ở Việt Nam là người có nạp âm năm sinh thuộc hành Kim, như Hải Trung Kim hay Kiếm Phong Kim. Mỗi nạp âm là một dạng kim loại khác nhau, từ vàng trong biển đến trang sức tinh xảo."
+            ]
+          },
+          {
+            "id": "tinh-cach",
+            "heading": "Tính cách người mệnh Kim",
+            "paragraphs": [
+              "Người mệnh Kim có tinh thần kỷ luật và nguyên tắc rõ ràng. Họ quyết đoán, nói là làm và ít khi thay đổi ý định khi đã cân nhắc kỹ. Trong tập thể, người mệnh Kim thường được tin tưởng giao những việc cần sự nghiêm túc.",
+              "Như kim loại có thể rèn thành gươm hay thành trang sức, người mệnh Kim vừa mạnh mẽ vừa có gu thẩm mỹ tinh tế. Mặt trái là sự cứng nhắc: họ có thể nói thẳng đến mức sắc lạnh, và khó chấp nhận khi bị phản bác."
+            ]
+          },
+          {
+            "id": "tinh-yeu",
+            "heading": "Mệnh Kim trong tình yêu",
+            "paragraphs": [
+              "Người mệnh Kim yêu nghiêm túc, chung thuỷ và có trách nhiệm. Họ không giỏi nói lời ngọt ngào nhưng luôn giữ lời hứa và bảo vệ người mình thương.",
+              "Theo vòng tương sinh, Thổ sinh Kim, nên người mệnh Kim thường thấy được nâng đỡ bên người mệnh Thổ. Kim sinh Thủy, nên người mệnh Kim hay là chỗ dựa cho người mệnh Thủy. Hỏa khắc Kim, nên với người mệnh Hỏa, hai bên cần nhiều nhường nhịn."
+            ]
+          },
+          {
+            "id": "cong-viec",
+            "heading": "Công việc hợp với người mệnh Kim",
+            "paragraphs": [
+              "Người mệnh Kim phát huy tốt ở những công việc cần sự chính xác và kỷ luật: tài chính, ngân hàng, luật, kỹ thuật, cơ khí, quản lý, trang sức. Đây chỉ là gợi ý tham khảo, năng lực và đam mê của mỗi người mới là điều quyết định."
+            ]
+          },
+          {
+            "id": "loi-khuyen",
+            "heading": "Lời khuyên cho người mệnh Kim",
+            "paragraphs": [
+              "Vài thói quen nhỏ giúp người mệnh Kim cân bằng hơn:"
+            ],
+            "bullets": [
+              "Mềm mỏng hơn trong lời nói, nhất là khi góp ý",
+              "Lắng nghe quan điểm khác trước khi kết luận",
+              "Dành thời gian thư giãn, không chỉ làm việc",
+              "Cho phép mình linh hoạt khi hoàn cảnh thay đổi"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Mệnh Kim có phải người sinh mùa thu không?",
+            "a": "Không hẳn. Mệnh trong cách nói phổ biến ở Việt Nam được tính theo nạp âm của năm sinh âm lịch, không theo mùa sinh. Kim chỉ gắn với mùa thu về mặt biểu tượng."
+          }
+        ]
+      }
+    },
+    "thuy": {
+      "summary": "Mệnh Thủy mang hình ảnh của nước: mềm mại, linh hoạt và sâu lắng. Người mệnh Thủy thông minh, giỏi giao tiếp, giàu cảm xúc và dễ thích nghi với mọi hoàn cảnh.",
+      "strengths": [
+        "Thông minh, linh hoạt",
+        "Giao tiếp khéo léo",
+        "Giàu cảm xúc và trực giác",
+        "Dễ thích nghi"
+      ],
+      "weaknesses": [
+        "Hay thay đổi, thiếu kiên định",
+        "Dễ bị cảm xúc chi phối",
+        "Đôi khi khó đoán"
+      ],
+      "deep": {
+        "sections": [
+          {
+            "id": "y-nghia",
+            "heading": "Mệnh Thủy là gì",
+            "paragraphs": [
+              "Trong ngũ hành, Thủy là hành của nước, của mùa đông và phương Bắc. Thủy tượng trưng cho sự lưu thông, trí tuệ và khả năng len lỏi, thích nghi với mọi hình dạng.",
+              "Người \"mệnh Thủy\" là người có nạp âm năm sinh thuộc hành Thủy, như Giản Hạ Thủy (nước dưới khe) hay Đại Hải Thủy (nước biển lớn). Mỗi dạng nước mang một sắc thái riêng, từ dòng suối nhỏ đến đại dương bao la."
+            ]
+          },
+          {
+            "id": "tinh-cach",
+            "heading": "Tính cách người mệnh Thủy",
+            "paragraphs": [
+              "Người mệnh Thủy thông minh, nhanh nhạy và giỏi giao tiếp. Như nước chảy tìm đường qua mọi khe đá, họ khéo léo xoay xở trong nhiều hoàn cảnh và dễ kết nối với người khác.",
+              "Người mệnh Thủy giàu cảm xúc và có trực giác tốt. Mặt trái là tâm trạng dễ thay đổi, đôi khi thiếu kiên định hoặc bị cảm xúc cuốn đi."
+            ]
+          },
+          {
+            "id": "tinh-yeu",
+            "heading": "Mệnh Thủy trong tình yêu",
+            "paragraphs": [
+              "Người mệnh Thủy yêu sâu sắc, lãng mạn và tinh tế. Họ đọc được cảm xúc của người kia và biết cách an ủi đúng lúc.",
+              "Theo vòng tương sinh, Kim sinh Thủy, nên người mệnh Thủy thường thấy vững vàng bên người mệnh Kim. Thủy sinh Mộc, nên họ hay nuôi dưỡng, truyền cảm hứng cho người mệnh Mộc. Thổ khắc Thủy, nên với người mệnh Thổ, hai bên cần thấu hiểu nhiều hơn."
+            ]
+          },
+          {
+            "id": "cong-viec",
+            "heading": "Công việc hợp với người mệnh Thủy",
+            "paragraphs": [
+              "Người mệnh Thủy phát huy tốt ở những công việc cần giao tiếp và linh hoạt: truyền thông, ngoại giao, du lịch, vận tải, thương mại, tư vấn, nghệ thuật. Đây chỉ là gợi ý tham khảo."
+            ]
+          },
+          {
+            "id": "loi-khuyen",
+            "heading": "Lời khuyên cho người mệnh Thủy",
+            "paragraphs": [
+              "Vài thói quen nhỏ giúp người mệnh Thủy cân bằng hơn:"
+            ],
+            "bullets": [
+              "Đặt mục tiêu rõ ràng và theo đuổi đến cùng",
+              "Viết ra cảm xúc khi chúng quá mạnh",
+              "Giữ nhịp sinh hoạt đều đặn",
+              "Chọn những người đồng hành vững vàng, đáng tin"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Mệnh Thủy hợp với mệnh nào nhất?",
+            "a": "Theo ngũ hành tương sinh, mệnh Thủy hợp với mệnh Kim (Kim sinh Thủy) và mệnh Mộc (Thủy sinh Mộc). Đây chỉ là một yếu tố tham khảo trong chuyện hợp nhau."
+          }
+        ]
+      }
+    },
+    "moc": {
+      "summary": "Mệnh Mộc mang hình ảnh của cây cối: sinh sôi, vươn lên và bền bỉ. Người mệnh Mộc thường nhân hậu, giàu lòng trắc ẩn và luôn muốn phát triển bản thân.",
+      "strengths": [
+        "Nhân hậu, biết quan tâm",
+        "Kiên trì, luôn muốn vươn lên",
+        "Giàu ý tưởng và sức sáng tạo",
+        "Dễ thích nghi như cây uốn theo gió"
+      ],
+      "weaknesses": [
+        "Dễ mềm lòng, khó từ chối",
+        "Đôi khi cố chấp khi đã bén rễ vào một quan điểm",
+        "Dễ nản khi môi trường thiếu nuôi dưỡng"
+      ],
+      "deep": {
+        "sections": [
+          {
+            "id": "y-nghia",
+            "heading": "Mệnh Mộc là gì",
+            "paragraphs": [
+              "Trong ngũ hành, Mộc là hành của cây cối, của mùa xuân và phương Đông, nơi mặt trời mọc. Mộc tượng trưng cho sự sinh trưởng: hạt nảy mầm, cây vươn cành, mọi thứ bắt đầu một chu kỳ mới.",
+              "Người \"mệnh Mộc\" trong cách nói phổ biến ở Việt Nam là người có nạp âm năm sinh thuộc hành Mộc, ví dụ Dương Liễu Mộc hay Tùng Bách Mộc. Mỗi nạp âm là một hình ảnh cây cối khác nhau, nên người mệnh Mộc cũng có nhiều sắc thái riêng."
+            ]
+          },
+          {
+            "id": "tinh-cach",
+            "heading": "Tính cách người mệnh Mộc",
+            "paragraphs": [
+              "Người mệnh Mộc thường ôn hoà, nhân hậu và có lòng trắc ẩn. Như cây xanh cho bóng mát, họ thích che chở và giúp đỡ người xung quanh. Họ cũng giàu ý tưởng, luôn muốn học thêm và phát triển bản thân.",
+              "Cây cần thời gian để lớn, nên người mệnh Mộc thường kiên trì với mục tiêu dài hạn. Mặt trái là họ có thể cố chấp khi đã bén rễ vào một quan điểm, và dễ mềm lòng đến mức khó từ chối người khác."
+            ]
+          },
+          {
+            "id": "tinh-yeu",
+            "heading": "Mệnh Mộc trong tình yêu",
+            "paragraphs": [
+              "Người mệnh Mộc yêu dịu dàng và bền bỉ. Họ vun đắp tình cảm từng chút như chăm một cái cây, và mong mối quan hệ lớn lên cùng thời gian. Họ cần một người biết trân trọng sự quan tâm của mình và cùng mình hướng về phía trước.",
+              "Theo vòng tương sinh, Thủy nuôi dưỡng Mộc, nên người mệnh Mộc thường thấy được thấu hiểu bên người mệnh Thủy. Mộc lại sinh ra Hỏa, nên người mệnh Mộc hay là người truyền cảm hứng cho người mệnh Hỏa."
+            ]
+          },
+          {
+            "id": "cong-viec",
+            "heading": "Công việc hợp với người mệnh Mộc",
+            "paragraphs": [
+              "Người mệnh Mộc phát huy tốt ở những công việc liên quan đến sự phát triển và nuôi dưỡng: giáo dục, y tế, tư vấn, thiết kế, nghệ thuật, nông nghiệp, môi trường hay xuất bản. Đây chỉ là gợi ý tham khảo, năng lực và đam mê của mỗi người mới là điều quyết định."
+            ]
+          },
+          {
+            "id": "loi-khuyen",
+            "heading": "Lời khuyên cho người mệnh Mộc",
+            "paragraphs": [
+              "Vài thói quen nhỏ giúp người mệnh Mộc cân bằng hơn:"
+            ],
+            "bullets": [
+              "Dành thời gian cho thiên nhiên, cây xanh để nạp năng lượng",
+              "Tập nói không với những việc vượt quá sức",
+              "Giữ tinh thần học hỏi, nhưng cũng cởi mở với quan điểm khác",
+              "Chọn môi trường sống và làm việc cho mình được phát triển"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Mệnh Mộc có phải người sinh mùa xuân không?",
+            "a": "Không hẳn. Mệnh trong cách nói phổ biến ở Việt Nam được tính theo nạp âm của năm sinh âm lịch, không theo mùa sinh. Mộc chỉ gắn với mùa xuân về mặt biểu tượng."
+          }
+        ]
+      }
+    },
+    "hoa": {
+      "summary": "Mệnh Hỏa mang hình ảnh của lửa: rực rỡ, ấm áp và đầy nhiệt huyết. Người mệnh Hỏa nhiệt tình, đam mê, có sức hút và luôn tràn đầy năng lượng.",
+      "strengths": [
+        "Nhiệt tình, đam mê",
+        "Có sức hút và khả năng dẫn dắt",
+        "Lạc quan, dám nghĩ dám làm",
+        "Ấm áp, hào phóng"
+      ],
+      "weaknesses": [
+        "Nóng nảy, dễ bùng nổ",
+        "Thiếu kiên nhẫn",
+        "Đôi khi bốc đồng"
+      ],
+      "deep": {
+        "sections": [
+          {
+            "id": "y-nghia",
+            "heading": "Mệnh Hỏa là gì",
+            "paragraphs": [
+              "Trong ngũ hành, Hỏa là hành của lửa, của mùa hè và phương Nam. Hỏa tượng trưng cho ánh sáng, sự ấm áp và năng lượng bùng cháy.",
+              "Người \"mệnh Hỏa\" là người có nạp âm năm sinh thuộc hành Hỏa, như Lư Trung Hỏa (lửa trong lò) hay Thiên Thượng Hỏa (lửa trên trời). Mỗi ngọn lửa mang một sắc thái riêng, từ ngọn đèn nhỏ đến ánh mặt trời."
+            ]
+          },
+          {
+            "id": "tinh-cach",
+            "heading": "Tính cách người mệnh Hỏa",
+            "paragraphs": [
+              "Người mệnh Hỏa nhiệt tình, năng động và có sức hút tự nhiên. Họ dám nghĩ dám làm, thích dẫn dắt và thường truyền được năng lượng cho người xung quanh.",
+              "Như ngọn lửa sưởi ấm, người mệnh Hỏa hào phóng và ấm áp. Mặt trái là tính nóng nảy: họ dễ bùng nổ khi bực, thiếu kiên nhẫn và đôi khi quyết định bốc đồng."
+            ]
+          },
+          {
+            "id": "tinh-yeu",
+            "heading": "Mệnh Hỏa trong tình yêu",
+            "paragraphs": [
+              "Người mệnh Hỏa yêu nồng nhiệt, chủ động và đầy đam mê. Họ thích những cử chỉ lãng mạn và muốn tình yêu luôn rực rỡ.",
+              "Theo vòng tương sinh, Mộc sinh Hỏa, nên người mệnh Hỏa thường được người mệnh Mộc truyền cảm hứng. Hỏa sinh Thổ, nên họ hay là nguồn năng lượng cho người mệnh Thổ. Thủy khắc Hỏa, nên với người mệnh Thủy, hai bên cần nhiều nhường nhịn."
+            ]
+          },
+          {
+            "id": "cong-viec",
+            "heading": "Công việc hợp với người mệnh Hỏa",
+            "paragraphs": [
+              "Người mệnh Hỏa phát huy tốt ở những công việc cần nhiệt huyết và sự nổi bật: truyền thông, biểu diễn, marketing, bán hàng, ẩm thực, năng lượng, lãnh đạo. Đây chỉ là gợi ý tham khảo."
+            ]
+          },
+          {
+            "id": "loi-khuyen",
+            "heading": "Lời khuyên cho người mệnh Hỏa",
+            "paragraphs": [
+              "Vài thói quen nhỏ giúp người mệnh Hỏa cân bằng hơn:"
+            ],
+            "bullets": [
+              "Hít thở sâu vài nhịp trước khi phản ứng lúc nóng giận",
+              "Kiên nhẫn đi đến cùng với những gì đã bắt đầu",
+              "Nghỉ ngơi đủ để không cháy hết năng lượng",
+              "Lắng nghe người khác trước khi quyết định"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Mệnh Hỏa kỵ mệnh nào?",
+            "a": "Theo ngũ hành, Thủy khắc Hỏa và Hỏa khắc Kim, nên mệnh Hỏa được xem là tương khắc với mệnh Thủy và mệnh Kim. Tương khắc không có nghĩa là không thể hoà hợp, chỉ là cần nhiều thấu hiểu hơn."
+          }
+        ]
+      }
+    },
+    "tho": {
+      "summary": "Mệnh Thổ mang hình ảnh của đất: vững chãi, bao dung và nuôi dưỡng muôn loài. Người mệnh Thổ đáng tin cậy, kiên nhẫn, thực tế và luôn là chỗ dựa cho người khác.",
+      "strengths": [
+        "Đáng tin cậy, chân thành",
+        "Kiên nhẫn, bền bỉ",
+        "Thực tế, biết lo xa",
+        "Bao dung, biết nuôi dưỡng"
+      ],
+      "weaknesses": [
+        "Bảo thủ, ngại thay đổi",
+        "Đôi khi quá thận trọng",
+        "Ít bộc lộ cảm xúc"
+      ],
+      "deep": {
+        "sections": [
+          {
+            "id": "y-nghia",
+            "heading": "Mệnh Thổ là gì",
+            "paragraphs": [
+              "Trong ngũ hành, Thổ là hành của đất, nằm ở trung tâm và gắn với thời điểm giao mùa. Thổ tượng trưng cho sự ổn định, nuôi dưỡng và bao dung: nơi cây cối mọc lên và mọi thứ quay về.",
+              "Người \"mệnh Thổ\" là người có nạp âm năm sinh thuộc hành Thổ, như Lộ Bàng Thổ (đất ven đường) hay Thành Đầu Thổ (đất trên thành). Mỗi loại đất mang một sắc thái riêng."
+            ]
+          },
+          {
+            "id": "tinh-cach",
+            "heading": "Tính cách người mệnh Thổ",
+            "paragraphs": [
+              "Người mệnh Thổ điềm tĩnh, chân thành và rất đáng tin. Họ làm việc bền bỉ, giữ lời hứa và thường là người mà gia đình, bạn bè tìm đến khi cần một chỗ dựa.",
+              "Như đất nuôi dưỡng cây cối, người mệnh Thổ bao dung và biết chăm lo cho người khác. Mặt trái là sự bảo thủ: họ ngại thay đổi, đôi khi quá thận trọng và ít bộc lộ cảm xúc."
+            ]
+          },
+          {
+            "id": "tinh-yeu",
+            "heading": "Mệnh Thổ trong tình yêu",
+            "paragraphs": [
+              "Người mệnh Thổ yêu chân thành, chung thuỷ và bền bỉ. Họ không cần những màn thể hiện ồn ào, mà vun đắp tình cảm bằng sự ổn định và quan tâm mỗi ngày.",
+              "Theo vòng tương sinh, Hỏa sinh Thổ, nên người mệnh Thổ thường được người mệnh Hỏa tiếp thêm năng lượng. Thổ sinh Kim, nên họ hay là chỗ dựa cho người mệnh Kim. Mộc khắc Thổ, nên với người mệnh Mộc, hai bên cần nhiều thấu hiểu hơn."
+            ]
+          },
+          {
+            "id": "cong-viec",
+            "heading": "Công việc hợp với người mệnh Thổ",
+            "paragraphs": [
+              "Người mệnh Thổ phát huy tốt ở những công việc cần sự ổn định và bền bỉ: bất động sản, xây dựng, nông nghiệp, tài chính, quản lý, giáo dục, dịch vụ. Đây chỉ là gợi ý tham khảo."
+            ]
+          },
+          {
+            "id": "loi-khuyen",
+            "heading": "Lời khuyên cho người mệnh Thổ",
+            "paragraphs": [
+              "Vài thói quen nhỏ giúp người mệnh Thổ cân bằng hơn:"
+            ],
+            "bullets": [
+              "Thử một điều mới mỗi tháng để bớt ngại thay đổi",
+              "Nói ra cảm xúc thay vì giữ trong lòng",
+              "Dành thời gian chăm sóc bản thân",
+              "Cởi mở với những cách làm khác mình"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Mệnh Thổ hợp màu gì nhất?",
+            "a": "Mệnh Thổ hợp màu bản mệnh vàng, nâu đất và màu tương sinh của hành Hỏa như đỏ, hồng, cam, tím. Nên hạn chế màu xanh lá của hành Mộc, vì Mộc khắc Thổ."
+          }
+        ]
+      }
+    }
+  },
+  "thienCan": {
+    "Nhâm": "Nhâm là can thứ chín trong mười thiên can, mang tính dương và thuộc hành Thủy. Nhâm thường được ví như nước sông lớn, biển rộng: bao dung, mạnh mẽ và luôn chuyển động. Người sinh năm có can Nhâm được cho là thông minh, phóng khoáng và giàu nghị lực.",
+    "Giáp": "Giáp là can đầu tiên trong mười thiên can, mang tính dương và thuộc hành Mộc. Giáp thường được ví như cây lớn giữa rừng: thẳng thắn, vững chãi và luôn vươn lên. Người sinh năm có can Giáp được cho là có ý chí, tự lập và thích dẫn đầu.",
+    "Ất": "Ất là can thứ hai, mang tính âm và thuộc hành Mộc. Ất được ví như hoa cỏ, dây leo: mềm mại nhưng dẻo dai, biết uốn mình để vươn lên. Người sinh năm có can Ất được cho là khéo léo, tinh tế và giỏi thích nghi.",
+    "Bính": "Bính là can thứ ba, mang tính dương và thuộc hành Hỏa. Bính được ví như mặt trời rực rỡ, toả sáng và sưởi ấm muôn nơi. Người sinh năm có can Bính được cho là nhiệt tình, hào phóng và có sức hút.",
+    "Đinh": "Đinh là can thứ tư, mang tính âm và thuộc hành Hỏa. Đinh được ví như ngọn đèn, ngọn nến: ánh sáng dịu dàng soi đường trong đêm. Người sinh năm có can Đinh được cho là tinh tế, sâu sắc và ấm áp.",
+    "Mậu": "Mậu là can thứ năm, mang tính dương và thuộc hành Thổ. Mậu được ví như núi cao, đất dày: vững chãi và che chở. Người sinh năm có can Mậu được cho là đáng tin cậy, điềm đạm và bao dung.",
+    "Kỷ": "Kỷ là can thứ sáu, mang tính âm và thuộc hành Thổ. Kỷ được ví như đất ruộng vườn màu mỡ, nuôi dưỡng cây trái. Người sinh năm có can Kỷ được cho là chu đáo, thực tế và biết chăm lo cho người khác.",
+    "Canh": "Canh là can thứ bảy, mang tính dương và thuộc hành Kim. Canh được ví như sắt thép, gươm đao: cứng cỏi và sắc bén. Người sinh năm có can Canh được cho là quyết đoán, mạnh mẽ và trọng nghĩa khí.",
+    "Tân": "Tân là can thứ tám, mang tính âm và thuộc hành Kim. Tân được ví như vàng bạc, trang sức tinh xảo đã qua gọt giũa. Người sinh năm có can Tân được cho là tinh tế, có gu thẩm mỹ và coi trọng hình ảnh.",
+    "Quý": "Quý là can cuối cùng trong mười thiên can, mang tính âm và thuộc hành Thủy. Quý được ví như mưa, sương: nhẹ nhàng thấm vào đất, nuôi dưỡng muôn loài. Người sinh năm có can Quý được cho là nhạy cảm, sâu sắc và giàu trực giác."
+  },
+  "napAm": {
+    "Dương Liễu Mộc": "Dương Liễu Mộc nghĩa là gỗ cây dương liễu, loại cây có cành mềm rủ xuống, đung đưa trong gió. Hình ảnh ấy gợi sự mềm mại, uyển chuyển và tinh tế. Người mang nạp âm Dương Liễu Mộc thường được cho là dịu dàng, giỏi thích nghi, sống tình cảm và có tâm hồn nghệ sĩ.",
+    "Hải Trung Kim": "Hải Trung Kim nghĩa là vàng trong biển, kim loại quý còn ẩn sâu dưới đáy biển chưa được khai phá. Hình ảnh ấy gợi tiềm năng lớn nhưng kín đáo. Người mang nạp âm Hải Trung Kim thường được cho là sâu sắc, bền bỉ và càng về sau càng toả sáng.",
+    "Lư Trung Hỏa": "Lư Trung Hỏa nghĩa là lửa trong lò, ngọn lửa được giữ gìn để rèn đúc và nấu nướng. Hình ảnh ấy gợi sự ấm áp, tận tuỵ và có ích. Người mang nạp âm Lư Trung Hỏa thường được cho là nhiệt tình, chăm chỉ và biết lo cho người khác.",
+    "Đại Lâm Mộc": "Đại Lâm Mộc nghĩa là gỗ của rừng lớn, nơi cây cối mọc thành tầng tầng lớp lớp. Hình ảnh ấy gợi sự rộng lớn, sức sống mạnh mẽ và tinh thần tập thể. Người mang nạp âm Đại Lâm Mộc thường được cho là bao dung, có chí lớn và giỏi kết nối mọi người.",
+    "Lộ Bàng Thổ": "Lộ Bàng Thổ nghĩa là đất ven đường, nơi cỏ cây mọc lên và người qua lại. Hình ảnh ấy gợi sự giản dị, bền bỉ và gần gũi. Người mang nạp âm Lộ Bàng Thổ thường được cho là chân thành, chịu khó và luôn sẵn lòng giúp đỡ.",
+    "Kiếm Phong Kim": "Kiếm Phong Kim nghĩa là vàng ở mũi kiếm, kim loại đã được tôi luyện sắc bén nhất. Hình ảnh ấy gợi sự quyết đoán, mạnh mẽ và cương trực. Người mang nạp âm Kiếm Phong Kim thường được cho là có bản lĩnh, dám nghĩ dám làm và trọng lẽ phải.",
+    "Sơn Đầu Hỏa": "Sơn Đầu Hỏa nghĩa là lửa trên đỉnh núi, ngọn lửa cháy sáng giữa trời đất rộng lớn. Hình ảnh ấy gợi sự nổi bật, nhiệt huyết và tự do. Người mang nạp âm Sơn Đầu Hỏa thường được cho là năng động, có sức hút và thích khám phá.",
+    "Giản Hạ Thủy": "Giản Hạ Thủy nghĩa là nước dưới khe, dòng nước mát lành chảy lặng lẽ giữa khe đá. Hình ảnh ấy gợi sự trong trẻo, khiêm tốn và bền bỉ. Người mang nạp âm Giản Hạ Thủy thường được cho là hiền hoà, tinh tế và sống tình cảm.",
+    "Thành Đầu Thổ": "Thành Đầu Thổ nghĩa là đất trên tường thành, lớp đất đắp nên thành luỹ vững chắc để bảo vệ. Hình ảnh ấy gợi sự kiên cố, trách nhiệm và che chở. Người mang nạp âm Thành Đầu Thổ thường được cho là đáng tin cậy, có ý chí và biết bảo vệ người thân.",
+    "Bạch Lạp Kim": "Bạch Lạp Kim nghĩa là kim loại trong nến trắng, kim loại còn đang được nung chảy, tinh luyện. Hình ảnh ấy gợi sự tinh khiết và quá trình rèn giũa để trưởng thành. Người mang nạp âm Bạch Lạp Kim thường được cho là thông minh, cầu tiến và ngày càng vững vàng.",
+    "Tuyền Trung Thủy": "Tuyền Trung Thủy nghĩa là nước trong giếng, trong suối nguồn, dòng nước trong lành không bao giờ cạn. Hình ảnh ấy gợi sự trong sáng, bền bỉ và nuôi dưỡng. Người mang nạp âm Tuyền Trung Thủy thường được cho là thông minh, chân thành và sống có chiều sâu.",
+    "Ốc Thượng Thổ": "Ốc Thượng Thổ nghĩa là đất trên mái nhà, lớp ngói che nắng che mưa cho cả gia đình. Hình ảnh ấy gợi sự che chở, trách nhiệm và gắn bó với tổ ấm. Người mang nạp âm Ốc Thượng Thổ thường được cho là chu đáo, trọng gia đình và đáng tin.",
+    "Tích Lịch Hỏa": "Tích Lịch Hỏa nghĩa là lửa sấm sét, ánh chớp bất ngờ và mạnh mẽ giữa trời. Hình ảnh ấy gợi sự bùng nổ, quyết liệt và đầy năng lượng. Người mang nạp âm Tích Lịch Hỏa thường được cho là nhanh nhạy, dám làm và có cá tính mạnh.",
+    "Tùng Bách Mộc": "Tùng Bách Mộc nghĩa là gỗ cây tùng, cây bách, những loài cây xanh tốt quanh năm dù sương gió. Hình ảnh ấy gợi sự kiên cường, ngay thẳng và bền bỉ. Người mang nạp âm Tùng Bách Mộc thường được cho là có ý chí, chính trực và vững vàng trước khó khăn.",
+    "Trường Lưu Thủy": "Trường Lưu Thủy nghĩa là nước chảy dài, dòng sông miệt mài chảy ra biển lớn. Hình ảnh ấy gợi sự bền bỉ, rộng mở và tầm nhìn xa. Người mang nạp âm Trường Lưu Thủy thường được cho là kiên trì, bao dung và có chí hướng lâu dài.",
+    "Sa Trung Kim": "Sa Trung Kim nghĩa là vàng trong cát, những hạt vàng quý lẫn trong cát chờ được sàng lọc. Hình ảnh ấy gợi giá trị tiềm ẩn cần thời gian để lộ diện. Người mang nạp âm Sa Trung Kim thường được cho là kiên nhẫn, khiêm tốn và thành công nhờ tích luỹ.",
+    "Sơn Hạ Hỏa": "Sơn Hạ Hỏa nghĩa là lửa dưới chân núi, ngọn lửa ấm áp của những bếp nhà dưới chân núi lúc chiều tà. Hình ảnh ấy gợi sự ấm cúng, gần gũi và bình dị. Người mang nạp âm Sơn Hạ Hỏa thường được cho là ấm áp, tình cảm và biết quan tâm.",
+    "Bình Địa Mộc": "Bình Địa Mộc nghĩa là gỗ ở đồng bằng, cây cối mọc trên đất bằng phẳng, rộng rãi. Hình ảnh ấy gợi sự hiền hoà, cởi mở và dễ gần. Người mang nạp âm Bình Địa Mộc thường được cho là thân thiện, chân thành và sống giản dị.",
+    "Bích Thượng Thổ": "Bích Thượng Thổ nghĩa là đất trên vách, lớp đất trát tường che chắn cho ngôi nhà. Hình ảnh ấy gợi sự bảo vệ, chắc chắn và bền bỉ. Người mang nạp âm Bích Thượng Thổ thường được cho là đáng tin, có trách nhiệm và coi trọng sự ổn định.",
+    "Kim Bạch Kim": "Kim Bạch Kim nghĩa là vàng pha bạc, kim loại quý đã được chế tác tinh xảo. Hình ảnh ấy gợi sự sáng giá, tinh tế và có giá trị. Người mang nạp âm Kim Bạch Kim thường được cho là có năng lực, có gu và coi trọng chất lượng.",
+    "Phú Đăng Hỏa": "Phú Đăng Hỏa nghĩa là lửa ngọn đèn, ánh sáng nhỏ nhưng soi rõ trong đêm tối. Hình ảnh ấy gợi sự tận tuỵ, ấm áp và soi đường cho người khác. Người mang nạp âm Phú Đăng Hỏa thường được cho là thông minh, chăm chỉ và giàu lòng nhân ái.",
+    "Thiên Hà Thủy": "Thiên Hà Thủy nghĩa là nước trên trời, những cơn mưa rơi xuống tưới mát ruộng đồng. Hình ảnh ấy gợi sự bao dung, nuôi dưỡng và mang lại sự sống. Người mang nạp âm Thiên Hà Thủy thường được cho là rộng lượng, lạc quan và hay giúp đỡ người khác.",
+    "Đại Trạch Thổ": "Đại Trạch Thổ nghĩa là đất của vùng đồng lớn, đất rộng bao la nối liền nhiều vùng. Hình ảnh ấy gợi sự rộng mở, bao dung và vững chãi. Người mang nạp âm Đại Trạch Thổ thường được cho là cởi mở, chân thành và có tấm lòng rộng lượng.",
+    "Thoa Xuyến Kim": "Thoa Xuyến Kim nghĩa là vàng làm trâm cài, vòng xuyến, những món trang sức đẹp và quý. Hình ảnh ấy gợi sự tinh tế, duyên dáng và được trân trọng. Người mang nạp âm Thoa Xuyến Kim thường được cho là có gu thẩm mỹ, khéo léo và biết chăm chút bản thân.",
+    "Tang Đố Mộc": "Tang Đố Mộc nghĩa là gỗ cây dâu, loại cây nuôi tằm để dệt nên lụa. Hình ảnh ấy gợi sự cần cù, hữu ích và tận tuỵ. Người mang nạp âm Tang Đố Mộc thường được cho là chăm chỉ, khéo tay và luôn đóng góp cho người khác.",
+    "Đại Khê Thủy": "Đại Khê Thủy nghĩa là nước khe lớn, dòng suối lớn chảy mạnh từ núi xuống. Hình ảnh ấy gợi sức sống mạnh mẽ và không ngừng chuyển động. Người mang nạp âm Đại Khê Thủy thường được cho là năng động, quyết tâm và giàu nghị lực.",
+    "Sa Trung Thổ": "Sa Trung Thổ nghĩa là đất lẫn trong cát, lớp đất pha cát bên bờ sông, bờ biển. Hình ảnh ấy gợi sự linh hoạt, dễ thích nghi và cởi mở. Người mang nạp âm Sa Trung Thổ thường được cho là hiền hoà, giỏi thích nghi và sống tình cảm.",
+    "Thiên Thượng Hỏa": "Thiên Thượng Hỏa nghĩa là lửa trên trời, ánh sáng của mặt trời chiếu rọi muôn nơi. Hình ảnh ấy gợi sự rực rỡ, ấm áp và bao la. Người mang nạp âm Thiên Thượng Hỏa thường được cho là nhiệt tình, hào phóng và có sức lan toả.",
+    "Thạch Lựu Mộc": "Thạch Lựu Mộc nghĩa là gỗ cây thạch lựu, loài cây mọc được cả trên đất đá khô cằn và cho quả ngọt. Hình ảnh ấy gợi sự kiên cường và thành quả từ nỗ lực. Người mang nạp âm Thạch Lựu Mộc thường được cho là bền bỉ, mạnh mẽ và không ngại khó khăn.",
+    "Đại Hải Thủy": "Đại Hải Thủy nghĩa là nước biển lớn, đại dương bao la không bờ bến. Hình ảnh ấy gợi sự rộng lớn, bao dung và sâu thẳm. Người mang nạp âm Đại Hải Thủy thường được cho là có tầm nhìn xa, phóng khoáng và giàu nội lực."
+  }
+}

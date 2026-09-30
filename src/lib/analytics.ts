@@ -20,7 +20,8 @@ export type AnalyticsEvent =
   | "download_story" // tải ảnh story
   | "ban_do_view" // xem bản đồ bản thân
   | "zodiac_pair_pick" // chọn cặp cung ở trang cặp đôi
-  | "numerology_try"; // thử ngày sinh ở ô thần số học trang chủ
+  | "numerology_try" // thử ngày sinh ở ô thần số học trang chủ
+  | "factor_detail_open"; // mở phần chi tiết một ô "Vì sao ra con số này?" (chỉ gửi tên hệ, vd. "con-giap")
 
 export function track(event: AnalyticsEvent, params: EventParams = {}) {
   if (!GA_ID || typeof window === "undefined") return;

@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Satori chỉ nhận thẻ img */
 import { ImageResponse } from "next/og";
+import type React from "react";
+import { conGiapIconSvg } from "@/lib/con-giap-icons";
 import { SITE_NAME } from "@/lib/site";
 import { OG_BACKGROUND, OG_BRAND_FONT, OG_COLORS as C, OG_FONT, OG_GRADIENT_TEXT, OG_SIZE, OG_STARS, ogFonts, ogLogo, zodiacIconDataUrl } from "./assets";
 
@@ -11,12 +13,38 @@ export interface PageCardOptions {
   /** Phần sau tiêu đề tô gradient, vd. "nữ", "tháng 1". */
   accent?: string;
   subtitle?: string;
-  /** Hình bên phải: một hoặc hai biểu tượng cung, hoặc một con số lớn. */
-  visual: { signs: string[]; caption?: string } | { number: string; caption?: string };
+  /** Hình bên phải: một hoặc hai biểu tượng cung, một hoặc hai chữ trong vòng tròn (tên tuổi, tên hành), hoặc một con số lớn. */
+  visual:
+    | { signs: string[]; caption?: string }
+    | { animals: string[]; caption?: string }
+    | { chars: string[]; caption?: string } | { number: string; caption?: string };
 }
 
 // Bỏ các chấm sao rơi vào vùng nhãn bên phải (ngày sinh, điểm hợp) để không đè lên chữ.
 const STARS = OG_STARS.filter(([x, y]) => !(x > 65 && y > 55 && y < 80));
+
+function Bubble({ size, children }: { size: number; children: React.ReactNode }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: size,
+        height: size,
+        borderRadius: 999,
+        backgroundImage: `linear-gradient(135deg, ${C.accent}, ${C.accent2})`,
+        boxShadow: "0 20px 60px rgba(157,140,255,0.35)",
+        color: "#ffffff",
+        fontWeight: 800,
+        fontSize: size * (size > 200 ? 0.3 : 0.28),
+        letterSpacing: -1,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
 
 function SignBubble({ src, size }: { src: string; size: number }) {
   return (
@@ -37,11 +65,20 @@ function SignBubble({ src, size }: { src: string; size: number }) {
   );
 }
 
+const conGiapIconDataUrl = (slug: string) =>
+  `data:image/svg+xml;base64,${Buffer.from(conGiapIconSvg(slug, "#ffffff") ?? "").toString("base64")}`;
+
 /** Ảnh chia sẻ 1200x630 cho các trang tra cứu, cùng phong cách với thẻ kết quả check crush. */
 export async function pageCardImage(o: PageCardOptions) {
   const [logo, fonts] = await Promise.all([ogLogo, ogFonts()]);
-  const icons = "signs" in o.visual ? await Promise.all(o.visual.signs.map((s) => zodiacIconDataUrl(s))) : [];
-  const pair = icons.length === 2;
+  const icons =
+    "signs" in o.visual
+      ? await Promise.all(o.visual.signs.map((s) => zodiacIconDataUrl(s)))
+      : "animals" in o.visual
+        ? o.visual.animals.map(conGiapIconDataUrl)
+        : [];
+  const chars = "chars" in o.visual ? o.visual.chars : [];
+  const pair = icons.length === 2 || chars.length === 2;
   const titleSize = (o.title + (o.accent ?? "")).length > 16 ? 76 : 92;
 
   return new ImageResponse(
@@ -118,7 +155,7 @@ export async function pageCardImage(o: PageCardOptions) {
             {"number" in o.visual ? (
               <div
                 style={{
-                  fontSize: o.visual.number.length > 1 ? 230 : 260,
+                  fontSize: o.visual.number.length > 3 ? 132 : o.visual.number.length > 2 ? 170 : o.visual.number.length > 1 ? 230 : 260,
                   fontWeight: 800,
                   lineHeight: 1,
                   letterSpacing: -8,
@@ -128,6 +165,12 @@ export async function pageCardImage(o: PageCardOptions) {
                 }}
               >
                 {o.visual.number}
+              </div>
+            ) : chars.length > 0 ? (
+              <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                <Bubble size={pair ? 170 : 240}>{chars[0]}</Bubble>
+                {pair && <div style={{ fontSize: 64, fontWeight: 800, color: C.accent }}>&</div>}
+                {pair && <Bubble size={170}>{chars[1]}</Bubble>}
               </div>
             ) : (
               <div style={{ display: "flex", alignItems: "center", gap: 20 }}>

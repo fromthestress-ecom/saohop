@@ -125,3 +125,15 @@ export function solarToLunar({ day, month, year }: SolarDate, timeZone = VN_TIME
   }
   return { day: lunarDay, month: lunarMonth, year: lunarYear, isLeapMonth };
 }
+
+/** Ngày Tết Nguyên đán (mùng 1 tháng Giêng âm lịch) của một năm âm lịch, theo giờ Việt Nam. */
+export function lunarNewYear(lunarYear: number, timeZone = VN_TIMEZONE): SolarDate {
+  // Tết luôn rơi trong khoảng 21/01 đến 20/02 dương lịch.
+  for (let t = Date.UTC(lunarYear, 0, 15); t <= Date.UTC(lunarYear, 1, 25); t += 86_400_000) {
+    const d = new Date(t);
+    const date = { day: d.getUTCDate(), month: d.getUTCMonth() + 1, year: lunarYear };
+    const lunar = solarToLunar(date, timeZone);
+    if (lunar.day === 1 && lunar.month === 1 && !lunar.isLeapMonth && lunar.year === lunarYear) return date;
+  }
+  throw new Error(`Không tìm được ngày Tết năm ${lunarYear}`);
+}
