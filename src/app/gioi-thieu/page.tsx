@@ -22,8 +22,11 @@ import { Breadcrumb, CrushCta } from "@/components/kb-blocks";
 import { Reveal } from "@/components/reveal";
 import { LIFE_PATH_NUMBERS } from "@/lib/engines/numerology";
 import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
-import { ZODIAC_PAIRS, zodiacVariantLinks } from "@/lib/kb";
-import { pageSeo, SITE_NAME } from "@/lib/site";
+import { lifePathContent, ZODIAC_PAIRS, zodiacContent, zodiacPairsContent, zodiacVariantLinks, zodiacVariantsContent } from "@/lib/kb";
+import { conGiapContent, nguHanhContent } from "@/lib/kb/con-giap";
+import { SocialLinks } from "@/components/social-links";
+import { CONTACT_EMAIL, FOUNDER, FOUNDER_LINKS, pageSeo, SITE_NAME, SITE_URL, SOCIAL_LINKS } from "@/lib/site";
+import { founderJsonLd, jsonLdString, organizationJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Giới thiệu: xem độ hợp tình yêu qua thần số học và cung hoàng đạo",
@@ -40,6 +43,36 @@ const STATS = [
   { value: LIFE_PATH_NUMBERS.length, label: "số chủ đạo" },
 ];
 const TOTAL_PAGES = STATS.reduce((n, s) => n + s.value, 0);
+
+/** Ngày nội dung từng nhóm bài được duyệt hoặc cập nhật lần cuối (lấy từ meta.updated của file nội dung). */
+const toVnDate = (iso: string) => iso.split("-").reverse().join("/");
+const CONTENT_UPDATED = [
+  { label: "Cung hoàng đạo", day: zodiacContent.meta.updated },
+  { label: "Cung theo giới tính và tháng sinh", day: zodiacVariantsContent.meta.updated },
+  { label: "Cặp đôi hoàng đạo", day: zodiacPairsContent.meta.updated },
+  { label: "Thần số học", day: lifePathContent.meta.updated },
+  { label: "Con giáp và năm sinh", day: conGiapContent.meta.updated },
+  { label: "Ngũ hành", day: nguHanhContent.meta.updated },
+];
+
+const HOW_WE_WRITE: Array<{ title: string; body: string }> = [
+  {
+    title: "Con số do thuật toán tính, không do AI đoán",
+    body: "Âm lịch Việt Nam (múi giờ UTC+7, theo thuật toán của Hồ Ngọc Đức), can chi, nạp âm, cung hoàng đạo, số chủ đạo theo trường phái Pythagoras và lá số tử vi đều được tính bằng mã có kiểm thử. Cùng một ngày sinh luôn ra cùng một kết quả.",
+  },
+  {
+    title: "Bài tra cứu do AI hỗ trợ soạn, có người duyệt",
+    body: "Các bài về cung hoàng đạo, cặp đôi, thần số học, con giáp và ngũ hành được AI soạn dựa trên số liệu đã tính, sau đó người sáng lập Nghĩa Đặng đọc và duyệt trước khi đăng.",
+  },
+  {
+    title: "Luận giải riêng cho bạn do AI kể lại",
+    body: "Khi bạn bấm xem luận giải, AI (Claude của Anthropic) kể lại đúng các con số đã tính. AI không được tự tính hay thêm số liệu.",
+  },
+  {
+    title: "Tử vi có nhiều trường phái",
+    body: "Lá số được an theo cách phổ biến ở Việt Nam. Các sách và phần mềm tử vi có thể khác nhau ở một số sao phụ và bảng miếu hãm, nên hãy xem đây là một cách đọc để tham khảo.",
+  },
+];
 
 const PRINCIPLES: Array<{ icon: Icon; title: string; body: string }> = [
   {
@@ -95,25 +128,20 @@ const TODAY_LINKS = [
   { href: "/than-so-hoc", label: "Tra cứu thần số học" },
 ];
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://saohop.com";
 const JSON_LD = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   name: `Giới thiệu ${SITE_NAME}`,
   url: `${SITE_URL}/gioi-thieu`,
   inLanguage: "vi",
-  about: {
-    "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: `${SITE_URL}/brand/logo-mark.svg`,
-  },
+  about: organizationJsonLd(),
+  mentions: founderJsonLd(),
 };
 
 export default function AboutPage() {
   return (
     <article className="space-y-20 pt-8 md:space-y-28 md:pt-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(JSON_LD) }} />
 
       <header className="grid gap-10 md:grid-cols-[1.3fr_1fr] md:items-end">
         <div className="space-y-6">
@@ -225,6 +253,62 @@ export default function AboutPage() {
           })}
         </ol>
       </section>
+
+      <section aria-labelledby="nguoi-sang-lap" className="max-w-3xl space-y-4">
+        <h2 id="nguoi-sang-lap" className="font-display text-3xl font-bold tracking-tight md:text-4xl">
+          Ai đứng sau {SITE_NAME}?
+        </h2>
+        <p className="text-lg leading-relaxed text-ink-muted">
+          {SITE_NAME} do <strong className="font-semibold text-ink">{FOUNDER.name}</strong>, {FOUNDER.role.toLowerCase()}, tạo ra. {FOUNDER.name} trực
+          tiếp phụ trách sản phẩm và duyệt nội dung trước khi đăng. Bạn có thể nhắn trực tiếp qua các kênh dưới đây.
+        </p>
+        <SocialLinks links={FOUNDER_LINKS} />
+        <p className="pt-2 text-sm text-ink-muted">Kênh chính thức của {SITE_NAME}:</p>
+        <SocialLinks links={SOCIAL_LINKS} />
+      </section>
+
+      <section aria-labelledby="cach-viet" className="space-y-8">
+        <div className="max-w-[60ch] space-y-3">
+          <h2 id="cach-viet" className="font-display text-3xl font-bold tracking-tight md:text-4xl">
+            Nội dung ở đây được tạo thế nào?
+          </h2>
+          <p className="text-lg text-ink-muted">Chúng tôi nói rõ phần nào do máy tính, phần nào do AI và phần nào do người duyệt.</p>
+        </div>
+        <ul className="grid gap-4 md:grid-cols-2">
+          {HOW_WE_WRITE.map(({ title, body }) => (
+            <li key={title} className="panel p-6">
+              <h3 className="font-display text-xl font-semibold">{title}</h3>
+              <p className="mt-2 leading-relaxed text-ink-muted">{body}</p>
+            </li>
+          ))}
+        </ul>
+        <div className="max-w-3xl">
+          <h3 className="font-display text-lg font-semibold">Ngày duyệt và cập nhật gần nhất</h3>
+          <dl className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
+            {CONTENT_UPDATED.map(({ label, day }) => (
+              <div key={label} className="flex justify-between gap-4 border-b border-line py-1.5">
+                <dt className="text-ink-muted">{label}</dt>
+                <dd className="font-medium tabular-nums">{toVnDate(day)}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {CONTACT_EMAIL && (
+        <section aria-labelledby="lien-he" className="max-w-3xl space-y-3">
+          <h2 id="lien-he" className="font-display text-2xl font-semibold">
+            Liên hệ
+          </h2>
+          <p className="leading-relaxed text-ink-muted">
+            Góp ý, báo lỗi nội dung hoặc yêu cầu xoá dữ liệu: gửi email tới{" "}
+            <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-accent hover:underline">
+              {CONTACT_EMAIL}
+            </a>
+            .
+          </p>
+        </section>
+      )}
 
       <section aria-labelledby="luu-y" className="max-w-3xl space-y-4">
         <h2 id="luu-y" className="font-display text-2xl font-semibold">

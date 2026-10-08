@@ -1,5 +1,37 @@
 export const SITE_NAME = "Sao Hợp";
 
+/** URL gốc của site (dùng cho dữ liệu có cấu trúc và ảnh OG). */
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://saohop.com";
+
+export type SocialKind = "facebook" | "tiktok" | "instagram" | "linkedin";
+export interface SocialLink {
+  kind: SocialKind;
+  label: string;
+  href: string;
+}
+
+/** Kênh chính thức của Sao Hợp. */
+export const SOCIAL_LINKS: readonly SocialLink[] = [
+  { kind: "facebook", label: "Facebook", href: "https://www.facebook.com/saohop.webapp/" },
+  { kind: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@saohop" },
+];
+
+/** Người sáng lập, phụ trách sản phẩm và duyệt nội dung. */
+export const FOUNDER = { name: "Nghĩa Đặng", role: "Người sáng lập" } as const;
+
+/** Kênh liên hệ trực tiếp với người sáng lập. */
+export const FOUNDER_LINKS: readonly SocialLink[] = [
+  { kind: "facebook", label: "Facebook", href: "https://www.facebook.com/tsmnonames/" },
+  { kind: "instagram", label: "Instagram", href: "https://www.instagram.com/big_meanz/" },
+  { kind: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/danghoangdainghia/" },
+];
+
+/**
+ * Email liên hệ công khai (góp ý, báo lỗi, yêu cầu xoá dữ liệu).
+ * Đặt qua biến NEXT_PUBLIC_CONTACT_EMAIL (GitHub Variable CONTACT_EMAIL); để trống thì các mục liên hệ tự ẩn.
+ */
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "";
+
 /** Ảnh chia sẻ mặc định (src/app/opengraph-image.jpg) cho các trang không có opengraph-image riêng. */
 const DEFAULT_OG_IMAGE = {
   url: "/opengraph-image.jpg",

@@ -22,6 +22,7 @@ import { ZODIAC_SIGNS } from "@/lib/engines/zodiac";
 import { ZODIAC_PAIRS } from "@/lib/kb";
 import { conGiapPairSlugsWithContent, conGiapSlugsWithContent } from "@/lib/kb/con-giap";
 import { pageSeo } from "@/lib/site";
+import { jsonLdString, siteGraphJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = pageSeo("/");
 
@@ -61,6 +62,7 @@ const LOOKUPS = [
 export default function Home() {
   return (
     <div className="space-y-24 md:space-y-32">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(siteGraphJsonLd()) }} />
       {/* Hero: chia đôi bất đối xứng */}
       <section className="grid items-center gap-8 pt-8 md:grid-cols-[1.1fr_1fr] md:pt-16">
         <div className="enter-up">

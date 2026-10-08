@@ -3,8 +3,9 @@ import { Be_Vietnam_Pro, Bricolage_Grotesque, Josefin_Sans } from "next/font/goo
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Link from "next/link";
 import Script from "next/script";
-import { ConsentBanner, ConsentSettingsLink } from "@/components/consent-banner";
+import { ConsentBanner } from "@/components/consent-banner";
 import { CosmicBackground } from "@/components/cosmic-background";
+import { SiteFooter } from "@/components/site-footer";
 import { CONSENT_DEFAULT_SCRIPT, GA_ID } from "@/lib/analytics";
 import { SITE_NAME } from "@/lib/site";
 import "./globals.css";
@@ -30,7 +31,7 @@ const heading = Bricolage_Grotesque({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: {
-    default: `${SITE_NAME}: thần số học, cung hoàng đạo và check crush bằng AI`,
+    default: `${SITE_NAME}: check crush, thần số học, cung hoàng đạo, tử vi`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
@@ -84,32 +85,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </nav>
         </header>
         <main className="mx-auto w-full max-w-7xl flex-1 px-4 pb-20 sm:px-6">{children}</main>
-        <footer className="mx-auto w-full max-w-7xl border-t border-line px-4 py-8 text-sm text-ink-muted sm:px-6">
-          <nav aria-label="Tra cứu" className="mb-4 flex flex-wrap gap-x-5 gap-y-2 font-medium text-ink">
-            <Link href="/cung-hoang-dao" className="hover:text-accent">Cung hoàng đạo</Link>
-            <Link href="/cung-hoang-dao/cap-doi" className="hover:text-accent">Cặp đôi hoàng đạo</Link>
-            <Link href="/than-so-hoc" className="hover:text-accent">Thần số học</Link>
-            <Link href="/tu-vi" className="hover:text-accent">Lá số tử vi</Link>
-            <Link href="/con-giap" className="hover:text-accent">Con giáp</Link>
-            <Link href="/con-giap/cap-doi" className="hover:text-accent">Cặp đôi con giáp</Link>
-            <Link href="/ngu-hanh" className="hover:text-accent">Ngũ hành</Link>
-            <Link href="/nam-sinh" className="hover:text-accent">Năm sinh</Link>
-            <Link href="/crush" className="hover:text-accent">Check crush</Link>
-          </nav>
-          <div className="flex flex-col justify-between gap-2 sm:flex-row">
-            <p>Nội dung mang tính giải trí và tham khảo, không thay thế lời khuyên chuyên môn.</p>
-            <p>Ngày sinh của crush ở chế độ xem nhanh không được lưu lại.</p>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-            <Link href="/gioi-thieu" className="hover:text-accent">
-              Giới thiệu
-            </Link>
-            <Link href="/chinh-sach-bao-mat" className="hover:text-accent">
-              Chính sách bảo mật
-            </Link>
-            {GA_ID && <ConsentSettingsLink />}
-          </div>
-        </footer>
+        <SiteFooter />
         {GA_ID && <ConsentBanner />}
       </body>
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}

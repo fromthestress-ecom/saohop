@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/kb-blocks";
-import { SITE_NAME, pageSeo } from "@/lib/site";
+import { CONTACT_EMAIL, SITE_NAME, pageSeo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chính sách bảo mật",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 // Cập nhật ngày này mỗi khi sửa nội dung. Cần người phụ trách pháp lý rà soát trước khi mở tài khoản trả phí.
-const UPDATED = "25/09/2026";
+const UPDATED = "08/10/2026";
 
 const SECTIONS: Array<{ title: string; items: string[] }> = [
   {
@@ -17,6 +17,8 @@ const SECTIONS: Array<{ title: string; items: string[] }> = [
     items: [
       "Ngày sinh (và họ tên nếu bạn nhập) của bạn và của crush, dùng để tính thần số học, cung hoàng đạo, con giáp và độ hợp.",
       "Ở chế độ xem nhanh hiện tại, chúng tôi không lưu các thông tin này vào cơ sở dữ liệu. Các con số được tính ngay khi bạn bấm xem.",
+      "Lá số tử vi cần thêm giờ sinh và giới tính. Lá số được tính ngay trên trình duyệt của bạn, các thông tin này không được gửi lên máy chủ.",
+      "Khi bạn nhập ngày sinh ở ô trên trang chủ, ngày sinh được giữ tạm trong bộ nhớ phiên (sessionStorage) của tab trình duyệt để chuyển sang trang Bản đồ bản thân, rồi xoá ngay sau khi được đọc. Việc chuyển này không đưa ngày sinh lên đường dẫn và không gửi gì lên máy chủ.",
     ],
   },
   {
@@ -49,6 +51,7 @@ const SECTIONS: Array<{ title: string; items: string[] }> = [
     title: "Quyền của bạn",
     items: [
       "Theo Nghị định 13/2023/NĐ-CP, bạn có quyền được biết, đồng ý, rút lại đồng ý, và yêu cầu xoá dữ liệu cá nhân của mình.",
+      ...(CONTACT_EMAIL ? [`Để thực hiện các quyền này hoặc hỏi về dữ liệu của mình, hãy gửi email tới ${CONTACT_EMAIL}.`] : []),
       "Nội dung trên trang mang tính giải trí và tham khảo, không thay thế lời khuyên chuyên môn.",
     ],
   },

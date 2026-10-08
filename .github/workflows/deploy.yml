@@ -71,6 +71,8 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ steps.target.outputs.site_url }}
           # Chỉ production có mã GA; môi trường test không gửi số liệu.
           NEXT_PUBLIC_GA_ID: ${{ steps.target.outputs.ga_id }}
+          # Email liên hệ công khai; đặt trong Settings > Variables > CONTACT_EMAIL. Để trống thì không hiện.
+          NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
           NEXT_TELEMETRY_DISABLED: "1"
 
       - name: Đóng gói bản standalone
