@@ -5,3 +5,4 @@ export * from "./zodiac";
 export * from "./numerology";
 export * from "./profile";
 export * from "./compatibility";
+export * from "./tuvi";
