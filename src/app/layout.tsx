@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Khám phá bản thân qua thần số học, cung hoàng đạo, con giáp và ngũ hành. Xem bạn với crush hợp nhau bao nhiêu phần trăm. Miễn phí, luận giải bằng AI.",
+    "Khám phá bản thân qua thần số học, cung hoàng đạo, con giáp, ngũ hành và lá số tử vi. Xem bạn với crush hợp nhau bao nhiêu phần trăm. Miễn phí, luận giải bằng AI.",
   applicationName: SITE_NAME,
   // Ảnh chia sẻ mặc định: src/app/opengraph-image.jpg và twitter-image.jpg (1200x630).
   openGraph: {
@@ -64,18 +64,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         )}
         <CosmicBackground />
         <header className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-2.5 whitespace-nowrap">
+          <Link href="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap sm:gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element -- SVG tĩnh, không cần tối ưu ảnh */}
             <img src="/brand/logo-mark.svg" alt="" width={38} height={38} className="h-[38px] w-[38px]" />
-            <span className="font-brand pt-[3px] text-[15px] font-semibold uppercase tracking-[0.14em] sm:text-[17px] sm:tracking-[0.22em]">
+            <span className="font-brand pt-[3px] text-[14px] font-semibold uppercase tracking-[0.1em] sm:text-[17px] sm:tracking-[0.22em]">
               {SITE_NAME}
             </span>
           </Link>
           <nav className="flex items-center gap-0.5 whitespace-nowrap text-sm sm:gap-2">
-            <Link href="/ban-do" className="rounded-full px-3 py-2 text-ink-muted transition-colors hover:text-ink">
+            <Link href="/ban-do" className="rounded-full px-1.5 py-2 text-ink-muted transition-colors hover:text-ink sm:px-3">
               Bản đồ<span className="hidden sm:inline"> bản thân</span>
             </Link>
-            <Link href="/crush" className="btn-primary px-4! py-2! text-sm">
+            <Link href="/tu-vi" className="rounded-full px-1.5 py-2 text-ink-muted transition-colors hover:text-ink sm:px-3">
+              Lá số<span className="hidden sm:inline"> tử vi</span>
+            </Link>
+            <Link href="/crush" className="btn-primary px-3! py-2! text-sm sm:px-4!">
               Check crush
             </Link>
           </nav>
@@ -86,7 +89,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/cung-hoang-dao" className="hover:text-accent">Cung hoàng đạo</Link>
             <Link href="/cung-hoang-dao/cap-doi" className="hover:text-accent">Cặp đôi hoàng đạo</Link>
             <Link href="/than-so-hoc" className="hover:text-accent">Thần số học</Link>
+            <Link href="/tu-vi" className="hover:text-accent">Lá số tử vi</Link>
             <Link href="/con-giap" className="hover:text-accent">Con giáp</Link>
+            <Link href="/con-giap/cap-doi" className="hover:text-accent">Cặp đôi con giáp</Link>
             <Link href="/ngu-hanh" className="hover:text-accent">Ngũ hành</Link>
             <Link href="/nam-sinh" className="hover:text-accent">Năm sinh</Link>
             <Link href="/crush" className="hover:text-accent">Check crush</Link>

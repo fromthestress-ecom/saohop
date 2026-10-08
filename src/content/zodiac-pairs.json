@@ -2,6 +2,7 @@
   "meta": {
     "system": "cap-doi-cung-hoang-dao",
     "version": 1,
+    "updated": "2026-09-25",
     "reviewed": true,
     "note": "Khối nội dung cho 78 trang cặp đôi, do AI soạn, chủ dự án duyệt cho index ngày 25/09/2026. Điểm số và góc chiếu lấy từ engine. Mục 'overrides' là bài viết riêng của từng cặp (khoá là slug cặp, vd. bach-duong-va-su-tu)."
   },

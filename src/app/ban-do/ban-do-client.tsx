@@ -1,13 +1,14 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AiReading } from "@/components/ai-reading";
 import { draftToPerson, emptyDraft, PersonFields, type PersonDraft } from "@/components/person-fields";
 import { CanChiCard, NumerologyCard, ZodiacCard } from "@/components/profile-cards";
 import { buildProfile } from "@/lib/engines/profile";
 import type { PersonInput } from "@/lib/engines/types";
 import { track } from "@/lib/analytics";
+import { takeBanDoPrefill } from "@/lib/ban-do-prefill";
 
 export function BanDoClient() {
   const reduce = useReducedMotion();
@@ -16,6 +17,21 @@ export function BanDoClient() {
   const [invalid, setInvalid] = useState(false);
 
   const profile = useMemo(() => (submitted ? buildProfile(submitted) : null), [submitted]);
+
+  // Ngày sinh nhập nhanh ở trang chủ: điền sẵn vào form và hiện kết quả luôn.
+  // Đọc sessionStorage (hệ thống bên ngoài) đúng một lần khi mở trang nên đặt state trong effect là có chủ ý.
+  /* eslint-disable react-hooks/set-state-in-effect */
+  useEffect(() => {
+    const prefill = takeBanDoPrefill();
+    if (!prefill) return;
+    const next = { ...emptyDraft, ...prefill };
+    const person = draftToPerson(next);
+    if (!person) return;
+    setDraft(next);
+    setSubmitted(person);
+    track("ban_do_view", { with_name: false });
+  }, []);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();

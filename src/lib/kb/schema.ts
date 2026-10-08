@@ -9,6 +9,8 @@ export const metaSchema = z.object({
   system: z.string(),
   version: z.number().int(),
   reviewed: z.boolean(),
+  /** Ngày nội dung đổi lần cuối (YYYY-MM-DD). Dùng làm lastmod trong sơ đồ trang; chỉ đổi khi nội dung thật sự đổi. */
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "dạng YYYY-MM-DD"),
   note: z.string(),
 });
 

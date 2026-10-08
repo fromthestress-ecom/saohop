@@ -77,8 +77,8 @@ const ROADMAP: Array<{ status: Status; icon: Icon; title: string; body: string; 
     body: `${TOTAL_PAGES} trang về cung hoàng đạo, cặp đôi và thần số học, viết riêng từng trang.`,
     href: "/cung-hoang-dao",
   },
+  { status: "co", icon: IconMoonStars, title: "Tử vi Đông phương: lá số 12 cung", body: "Lá số 12 cung theo giờ sinh âm lịch Việt Nam, giải nghĩa từng sao bằng lời dễ hiểu.", href: "/tu-vi" },
   { status: "sap", icon: IconUsersGroup, title: "Secret Crush: khi hai trái tim cùng hướng về nhau", body: "Gửi lời mời để crush tự nhập ngày sinh. Nếu cả hai cùng check nhau, Sao Hợp sẽ báo cho hai bạn biết." },
-  { status: "sap", icon: IconMoonStars, title: "Tử vi Đông phương: lá số 12 cung", body: "Lá số 12 cung theo giờ sinh âm lịch, luận giải từng cung." },
   { status: "sap", icon: IconYinYang, title: "Bát Tự và ngũ hành: vận mệnh qua tứ trụ", body: "Tứ trụ năm, tháng, ngày, giờ và ngũ hành vượng suy ở mức dễ hiểu." },
   { status: "sap", icon: IconCards, title: "Tarot tình yêu: một lá bài cho trái tim", body: "Rút một lá mỗi ngày và trải bài ba lá cho chuyện tình cảm." },
   { status: "sap", icon: IconSunMoon, title: "Hôm nay: năng lượng mỗi ngày của bạn", body: "Tử vi ngày theo cung, con giáp và số, kèm lịch âm." },
@@ -89,6 +89,7 @@ const ROADMAP: Array<{ status: Status; icon: Icon; title: string; body: string; 
 const TODAY_LINKS = [
   { href: "/crush", label: "Check độ hợp với crush" },
   { href: "/ban-do", label: "Xem bản đồ cá nhân" },
+  { href: "/tu-vi", label: "Lập lá số tử vi" },
   { href: "/cung-hoang-dao", label: "Giải mã 12 cung hoàng đạo" },
   { href: "/cung-hoang-dao/cap-doi", label: `Độ hợp của ${ZODIAC_PAIRS.length} cặp đôi hoàng đạo` },
   { href: "/than-so-hoc", label: "Tra cứu thần số học" },
